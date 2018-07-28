@@ -8,7 +8,10 @@
   "menu": [
     {"label": "Dashboard", "icon": "dashboard"},
     {"label": "Plugins", "icon": "extension"},
-    {"label": "Widgets", "icon": "description"}
+    {"label": "Widgets", "icon": "widgets"},
+    {"label": "Containers", "icon": "cloud"},
+    {"label": "Services", "icon": "storage"},
+    {"label": "Users", "icon": "groups"}
   ],
   "key": "value",
   "key2": "use this for variables you want to load globally",

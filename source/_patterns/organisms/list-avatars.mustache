@@ -2,7 +2,14 @@
   {{# listItems.six }}
   <li class="mdc-list-item">
     <img class="mdc-list-item__graphic" src="{{img.avatar.src}}" alt="{{img.avatar.alt}}"/> 
-    <span class="mdc-list-item__text">{{ name.first }}</span>
+    <span class="mdc-list-item__text">
+      {{ name.first }} {{ name.last }}
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          {{email}}
+        </span>
+      -->
+    </span>
   </li>
   {{/ listItems.six }}
 </ul>

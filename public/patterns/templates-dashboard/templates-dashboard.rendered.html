@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1532817169117" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1532817169117" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1532818842977" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1532818842977" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     
@@ -95,11 +95,12 @@
 .flex {
   display: flex;
 }
-
+.flex__item {
+  flex: 1;
+}
 </style>
 <div class="app top-app-bar__frame">
-
- <header class="mdc-top-app-bar mdc-toolbar--fixed">
+  <header class="mdc-top-app-bar mdc-toolbar--fixed">
   <div class="mdc-top-app-bar__row">
    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
     <button class="mdc-top-app-bar__navigation-icon menu-btn">
@@ -111,67 +112,53 @@
    </section>
    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
      <a class="mdc-top-app-bar__action-item" aria-label="Apps">
+  <i class="material-icons ">apps</i> 
 </a>
      <a class="mdc-top-app-bar__action-item" aria-label="Notifications">
+  <i class="material-icons ">notifications</i> 
 </a>
      <a class="mdc-top-app-bar__action-item" aria-label="Settings">
+  <i class="material-icons ">settings</i> 
 </a>
    </section>
   </div>
  </header>
-
- <div class="content drawer-container-flex flex">
-
-  <!-- ################# drawer-->
-  <aside class="mdc-drawer mdc-drawer--persistent">
-   <div class="mdc-drawer__toolbar-spacer"></div>
-   <!-- drawer header-->
-   <nav class="mdc-drawer__drawer">
-
-    <!--header class="mdc-drawer__header">
-     <div class="mdc-drawer__header-content mdc-theme--on-primary mdc-theme--primary-bg">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4" alt="" class="avatar">
-      <span>@username</span>
-     </div>
-    </header-->
-
-    <!-- drawer menu-->
-    <nav class="mdc-drawer__content mdc-list-group">
-     <div id="icon-with-text-demo" class="mdc-list">
-      <a class="mdc-list-item " tabindex="-1">
+  <div class="content drawer-container-flex flex">
+    <!-- ################# drawer-->
+    <aside class="mdc-drawer mdc-drawer--persistent">
+      <div class="mdc-drawer__toolbar-spacer"></div>
+      <nav class="mdc-drawer__drawer">
+  <nav class="mdc-drawer__content mdc-list-group">
+    <div class="mdc-list">
+      <a class="mdc-list-item" href="">
         <i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
         <span>Dashboard</span>
       </a>
-      <a class="mdc-list-item " tabindex="-1">
+      <a class="mdc-list-item" href="">
         <i class="material-icons mdc-list-item__graphic" aria-hidden="true">extension</i>
         <span>Plugins</span>
       </a>
-      <a class="mdc-list-item " tabindex="-1">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">description</i>
+      <a class="mdc-list-item" href="">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">widgets</i>
         <span>Widgets</span>
       </a>
-      
-     </div>
-     <hr class="mdc-list-divider mdc-list-divider--inset">
-     <div class="mdc-list">
-
-      <a class="mdc-list-item " tabindex="-1">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">group</i>
-        <span>Users &amp; Teams</span>
-       </a>
-      <a class="mdc-list-item " tabindex="-1">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_column</i>
-        <span>Layout</span>
-       </a>
-      <a class="mdc-list-item" tabindex="-1">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
-        <span>Sign out</span>
-       </a>
-     </div>
-    </nav>
-   </nav>
-  </aside>
-  <!--/ ############## drawer-->
+      <a class="mdc-list-item" href="">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">cloud</i>
+        <span>Containers</span>
+      </a>
+      <a class="mdc-list-item" href="">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">storage</i>
+        <span>Services</span>
+      </a>
+      <a class="mdc-list-item" href="">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">groups</i>
+        <span>Users</span>
+      </a>
+    </div>
+  </nav>
+</nav>
+    </aside>
+    <!--/ ############## drawer-->
 
   <!-- CONTENT -->
   <div class="mdc-top-app-bar--fixed-adjust flex__item">
@@ -180,12 +167,7 @@
 
     <div class="mdc-">
 
-     <div class="mdc-snackbar" aria-live="assertive" aria-atomic="true" aria-hidden="true">
-      <div class="mdc-snackbar__text"></div>
-      <div class="mdc-snackbar__action-wrapper">
-       <button type="button" class="mdc-snackbar__action-button"></button>
-      </div>
-     </div>
+     
 
 
 
@@ -203,14 +185,8 @@
      <section class="mdc-layout-grid demo-grid">
       <div class="mdc-layout-grid__inner">
        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 demo-cell">
-        
        </div>
        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 demo-cell">
-        
-      
-        
-        
-        
        </div>
        <div class="mdc-layout-grid__cell demo-cell"></div>
 
@@ -255,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>  
   <!--DO NOT REMOVE-->
   <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-app-bar","lineagePath":"../../patterns/organisms-app-bar/organisms-app-bar.rendered.html"}],"lineage":[{"lineagePattern":"organisms-app-bar","lineagePath":"../../patterns/organisms-app-bar/organisms-app-bar.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates"},"patternExtension":"mustache","patternName":"Dashboard","patternPartial":"templates-dashboard","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-app-bar","lineagePath":"../../patterns/organisms-app-bar/organisms-app-bar.rendered.html"},{"lineagePattern":"organisms-drawer","lineagePath":"../../patterns/organisms-drawer/organisms-drawer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-app-bar","lineagePath":"../../patterns/organisms-app-bar/organisms-app-bar.rendered.html"},{"lineagePattern":"organisms-drawer","lineagePath":"../../patterns/organisms-drawer/organisms-drawer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates"},"patternExtension":"mustache","patternName":"Dashboard","patternPartial":"templates-dashboard","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
 <script>
@@ -291,20 +267,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1532817169117">
+<script id="pl-js-polyfill-insert-1532818842977">
   (function() {
     if (self != top) {
-      var cb = '1532817169117';
+      var cb = '1532818842977';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1532817169117">
+<script id="pl-js-insert-1532818842977">
   (function() {
     if (self != top) {
-      var cb = '1532817169117';
+      var cb = '1532818842977';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

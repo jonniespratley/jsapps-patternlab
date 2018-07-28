@@ -72,58 +72,19 @@
 .flex {
   display: flex;
 }
-
+.flex__item {
+  flex: 1;
+}
 </style>
 <div class="app top-app-bar__frame">
-
- {{> organisms-app-bar }}
-
- <div class="content drawer-container-flex flex">
-
-  <!-- ################# drawer-->
-  <aside class="mdc-drawer mdc-drawer--persistent">
-   <div class="mdc-drawer__toolbar-spacer"></div>
-   <!-- drawer header-->
-   <nav class="mdc-drawer__drawer">
-
-    <!--header class="mdc-drawer__header">
-     <div class="mdc-drawer__header-content mdc-theme--on-primary mdc-theme--primary-bg">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4" alt="" class="avatar">
-      <span>@username</span>
-     </div>
-    </header-->
-
-    <!-- drawer menu-->
-    <nav class="mdc-drawer__content mdc-list-group">
-     <div id="icon-with-text-demo" class="mdc-list">
-     {{#menu}}
-      <a class="mdc-list-item " tabindex="-1">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{icon}}</i>
-        <span>{{label}}</span>
-      </a>
-      {{/menu}}
-      
-     </div>
-     <hr class="mdc-list-divider mdc-list-divider--inset">
-     <div class="mdc-list">
-
-      <a class="mdc-list-item " tabindex="-1">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">group</i>
-        <span>Users &amp; Teams</span>
-       </a>
-      <a class="mdc-list-item " tabindex="-1">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">view_column</i>
-        <span>Layout</span>
-       </a>
-      <a class="mdc-list-item" tabindex="-1">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
-        <span>Sign out</span>
-       </a>
-     </div>
-    </nav>
-   </nav>
-  </aside>
-  <!--/ ############## drawer-->
+  {{> organisms-app-bar }}
+  <div class="content drawer-container-flex flex">
+    <!-- ################# drawer-->
+    <aside class="mdc-drawer mdc-drawer--persistent">
+      <div class="mdc-drawer__toolbar-spacer"></div>
+      {{> organisms-drawer }}
+    </aside>
+    <!--/ ############## drawer-->
 
   <!-- CONTENT -->
   <div class="mdc-top-app-bar--fixed-adjust flex__item">
@@ -132,12 +93,7 @@
 
     <div class="mdc-">
 
-     <div class="mdc-snackbar" aria-live="assertive" aria-atomic="true" aria-hidden="true">
-      <div class="mdc-snackbar__text"></div>
-      <div class="mdc-snackbar__action-wrapper">
-       <button type="button" class="mdc-snackbar__action-button"></button>
-      </div>
-     </div>
+     
 
 
 
@@ -155,14 +111,8 @@
      <section class="mdc-layout-grid demo-grid">
       <div class="mdc-layout-grid__inner">
        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 demo-cell">
-        
        </div>
        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 demo-cell">
-        
-      
-        
-        
-        
        </div>
        <div class="mdc-layout-grid__cell demo-cell"></div>
 

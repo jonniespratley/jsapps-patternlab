@@ -1,1 +1,27 @@
-<h2>Login</h2>
+<style>
+body {
+  background-color: var(--mdc-theme-background);
+}
+:root {
+  --mdc-theme-primary: #343a40;
+  --mdc-theme-secondary: #343a40;
+  --mdc-theme-background: #eee;
+}
+.login-wrapper{
+  max-width: 330px;
+  margin: 3rem auto;
+}
+</style>
+
+
+<div class="login-wrapper">
+  <div class="mdc-card">
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle">
+    <h2>Login</h2>  
+        {{> atoms-text-field(label: "Username")}}
+      </div>
+    </div>
+    
+  </div>
+</div>
