@@ -1,0 +1,17 @@
+<header class="mdc-top-app-bar mdc-toolbar--fixed">
+  <div class="mdc-top-app-bar__row">
+   <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+    <button class="mdc-top-app-bar__navigation-icon menu-btn">
+      {{> atoms-icon(icon: "menu")}}
+    </button>
+    <span class="mdc-top-app-bar__title">AppName</span>
+   </section>
+   <section class="mdc-toolbar__section">
+   </section>
+   <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+    {{> molecules-app-bar-action(icon: "apps", label: "Apps")}}
+    {{> molecules-app-bar-action(icon: "notifications", label: "Notifications")}}
+    {{> molecules-app-bar-action(icon: "settings", label: "Settings")}}
+   </section>
+  </div>
+ </header>
