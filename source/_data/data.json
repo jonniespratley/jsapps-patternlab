@@ -1,4 +1,15 @@
 {
+  "appName": "PatternLab App",
+  "main": {
+    "items": [
+      {"label": "Dashboard", "icon": "dashboard"}
+    ]
+  },
+  "menu": [
+    {"label": "Dashboard", "icon": "dashboard"},
+    {"label": "Plugins", "icon": "extension"},
+    {"label": "Widgets", "icon": "description"}
+  ],
   "key": "value",
   "key2": "use this for variables you want to load globally",
   "title": "Nullizzle shizznit velizzle, hizzle, suscipit own yo', gravida vizzle, arcu.",

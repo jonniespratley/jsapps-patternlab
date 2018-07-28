@@ -1,0 +1,173 @@
+{
+  "main": {
+    "items": [{
+        "uri": "/",
+        "id": "index",
+        "label": "Home",
+        "icon": "fa-home home",
+        "host": "http://localhost:8080",
+        "path": "/",
+        "template": "index.html",
+        "location": "main",
+        "navService": "/nav/dashboard.json",
+        "order": 0,
+        "items": [],
+        "default": true
+      },
+      {
+
+        "id": "micro-app-1",
+        "host": "http://localhost:8080",
+        "path": "/dashboard",
+        "label": "Dashboard",
+        "icon": "fa-dashboard dashboard",
+        "location": "main",
+        "navService": "/nav/dashboard.json",
+        "order": 0
+      },
+      {
+        "uri": "/",
+        "id": "micro-app-2",
+        "host": "http://localhost:8080",
+        "path": "/about",
+        "label": "About",
+        "icon": "fa-book book",
+        "location": "main",
+        "navService": "/nav/dashboard.json",
+        "order": 0
+      },
+      {
+        "uri": "/",
+        "id": "micro-app-3",
+        "host": "http://localhost:8080",
+        "path": "/micro-app-3",
+        "label": "Analytics",
+        "icon": "fa-bar-chart",
+        "location": "main",
+        "navService": "/nav/dashboard.json",
+        "order": 0,
+        "badge": {
+          "status": "danger",
+          "count": 1
+        },
+        "items": [
+          {
+            "label": "Page 1",
+            "icon": "fa-dashboard",
+            "path": "#/micro-app-3/#/page-1",
+            "badge": {
+              "status": "dark",
+              "count": 1
+            }
+          },
+          {
+            "label": "Page 2",
+            "icon": "fa-dashboard",
+            "path": "#/micro-app-3/#/page-2",
+            "badge": {
+              "status": "warning",
+              "count": 2
+            }
+          },
+          {
+            "label": "Page 3",
+            "icon": "fa-dashboard",
+            "path": "#/micro-app-3/#/page-3",
+            "badge": {
+              "status": "success",
+              "count": 3
+            }
+          },
+          {
+            "label": "Page 4",
+            "icon": "fa-dashboard",
+            "path": "/micro-app-3/#/page-4",
+            "badge": {
+              "status": "primary",
+              "count": 4
+            }
+          },
+          {
+            "label": "Page 5",
+            "icon": "fa-dashboard",
+            "path": "#/micro-app-3/#/page-5",
+            "badge": {
+              "status": "secondary",
+              "count": 50
+            }
+          },
+          {
+            "label": "Page 6",
+            "icon": "fa-dashboard",
+            "path": "#/micro-app-3/#/page-6",
+            "badge": {
+              "status": "success",
+              "count": 60
+            }
+          },
+          {
+            "label": "Page 7",
+            "icon": "fa-dashboard",
+            "path": "/micro-app-3/#/page-7",
+            "badge": {
+              "status": "info",
+              "count": 70
+            }
+          },
+          {
+            "label": "Page 8",
+            "icon": "fa-dashboard",
+            "path": "/micro-app-3/#/page-8",
+            "badge": {
+              "status": "light",
+              "count": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "profile": {
+    "items": [
+      {
+      "label": "Profile",
+      "path": "/profile",
+      "id": "profile.0"
+    }
+  ]
+  },
+  "settings": {
+    "items": [
+      {
+        "label": "Settings",
+        "path": "/settings",
+        "id": "settings.0"
+      },
+      {
+        "label": "Help",
+        "path": "https://www.predix.io/resources",
+        "id": "settings.1"
+      }
+    ]
+  },
+  "paths": {
+    "microapp1": "/microapp1",
+    "microapp2": "/microapp2"
+  },
+  "contextPath": "",
+  "user": {
+    "name": "jonnie.spratley",
+    "firstName": "Jonnie",
+    "lastName": "Spratley",
+    "picture": "/apptheme/assets/avatar.png"
+  },
+  "preferences": {
+    "preferredLocale": "en"
+  },
+  "appName": "Theme Demo",
+  "localeData": {
+    "logOut": "Log out",
+    "toastTextDefault": "TOAST_TEXT_DEFAULT",
+    "toastActionLabelDefault": "TOAST_ACTION_LABEL_DEFAULT"
+  }
+}
