@@ -1,0 +1,12 @@
+
+<li class="mdc-list-item">
+    {{#avatar}}
+        <img class="mdc-list-item__graphic" src="{{img.avatar.src}}"/>    
+    {{/avatar}}
+    {{#icon}}
+        {{> atoms-icon(icon: "{{icon}}", className: "mdc-list-item__graphic") }}
+    {{/icon}}
+    <span class="mdc-list-item__text">
+       {{ title }} 
+    </span>
+  </li>
