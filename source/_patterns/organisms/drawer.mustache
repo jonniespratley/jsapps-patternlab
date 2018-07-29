@@ -7,13 +7,10 @@
     </header>
   {{/header}}
   <nav class="mdc-drawer__content mdc-list-group">
-    <div class="mdc-list">
+    <ul class="mdc-list">
     {{#menu}}
-      <a class="mdc-list-item" href="{{path}}">
-        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{icon}}</i>
-        <span>{{label}}</span>
-      </a>
+      {{> molecules-list-item(icon:"{{icon}}", title: "{{label}}", href: "{{path}}")}}
     {{/menu}}
-    </div>
+    </ul>
   </nav>
 </nav>
