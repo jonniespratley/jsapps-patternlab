@@ -1,17 +1,35 @@
 {
   "appName": "PatternLab App",
   "main": {
-    "items": [
-      {"label": "Dashboard", "icon": "dashboard"}
-    ]
+    "items": [{
+      "label": "Dashboard",
+      "icon": "dashboard"
+    }]
   },
-  "menu": [
-    {"label": "Dashboard", "icon": "dashboard"},
-    {"label": "Plugins", "icon": "extension"},
-    {"label": "Widgets", "icon": "widgets"},
-    {"label": "Containers", "icon": "cloud"},
-    {"label": "Services", "icon": "storage"},
-    {"label": "Users", "icon": "groups"}
+  "menu": [{
+      "label": "Dashboard",
+      "icon": "dashboard"
+    },
+    {
+      "label": "Plugins",
+      "icon": "extension"
+    },
+    {
+      "label": "Widgets",
+      "icon": "widgets"
+    },
+    {
+      "label": "Containers",
+      "icon": "cloud"
+    },
+    {
+      "label": "Services",
+      "icon": "storage"
+    },
+    {
+      "label": "Users",
+      "icon": "groups"
+    }
   ],
   "key": "value",
   "key2": "use this for variables you want to load globally",

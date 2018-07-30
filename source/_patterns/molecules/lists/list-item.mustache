@@ -3,9 +3,7 @@
         <img class="mdc-list-item__graphic" src="{{img.avatar.src}}"/>    
     {{/avatar}}
     {{#icon}}
-        {{> atoms-icon(icon: "{{icon}}", className: "mdc-list-item__graphic") }}
+        <span class="material-icons mdc-list-item__graphic">{{ icon }}</span>
     {{/icon}}
-    <span class="mdc-list-item__text">
-       {{ title }} 
-    </span>
+    <span class="mdc-list-item__text">{{ title }} </span>
   </li>
