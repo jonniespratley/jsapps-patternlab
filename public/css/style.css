@@ -2,6 +2,128 @@
  * YOUR STYLES HERE
  */
 
+ @media (max-width: 575px) {
+   .hidden-xs-only {
+     display: none !important
+   }
+ }
+
+ @media (min-width: 576px) and (max-width:767px) {
+   .hidden-sm-only {
+     display: none !important
+   }
+ }
+
+ @media (min-width: 768px) and (max-width:991px) {
+   .hidden-md-only {
+     display: none !important
+   }
+ }
+
+ @media (min-width: 992px) and (max-width:1199px) {
+   .hidden-lg-only {
+     display: none !important
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .hidden-xl-only {
+     display: none !important
+   }
+ }
+
+ .hidden-xs-up {
+   display: none !important;
+ }
+
+ @media (max-width: 575px) {
+   .hidden-xs-down {
+     display: none !important;
+   }
+ }
+
+ @media (min-width: 576px) {
+   .hidden-sm-up {
+     display: none !important;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .hidden-sm-down {
+     display: none !important;
+   }
+ }
+
+ @media (min-width: 768px) {
+   .hidden-md-up {
+     display: none !important;
+   }
+ }
+
+ @media (max-width: 991px) {
+   .hidden-md-down {
+     display: none !important;
+   }
+ }
+
+ @media (min-width: 992px) {
+   .hidden-lg-up {
+     display: none !important;
+   }
+ }
+
+ @media (max-width: 1199px) {
+   .hidden-lg-down {
+     display: none !important;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .hidden-xl-up {
+     display: none !important;
+   }
+ }
+
+ .hidden-xl-down {
+   display: none !important;
+ }
+
+ .visible-print-block {
+   display: none !important;
+ }
+
+ @media print {
+   .visible-print-block {
+     display: block !important;
+   }
+ }
+
+ .visible-print-inline {
+   display: none !important;
+ }
+
+ @media print {
+   .visible-print-inline {
+     display: inline !important;
+   }
+ }
+
+ .visible-print-inline-block {
+   display: none !important;
+ }
+
+ @media print {
+   .visible-print-inline-block {
+     display: inline-block !important;
+   }
+ }
+
+ @media print {
+   .hidden-print {
+     display: none !important;
+   }
+ }
+
  .text-center {
   text-align: center!important;
 }
@@ -26,7 +148,7 @@
 
 .demo-card {
     min-width: 220px;
-    max-width: 320px;
+   
     }
   
   .demo-card--hero {

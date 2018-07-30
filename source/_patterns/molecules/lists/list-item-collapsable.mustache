@@ -1,0 +1,43 @@
+
+<div class="mdc-list-ite">
+    <div class="collapsible">
+        <a href="#">
+       
+         <span class="mdc-list-item__text">
+            Open Section
+        </span>
+        </a>
+        <div class="content">
+            <p>Lorem ipsum dolor sit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+</div>
+
+
+<style>
+.collapsible{
+    height: auto;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+<script>
+var coll = document.querySelectorAll('.collapsible > a');
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>

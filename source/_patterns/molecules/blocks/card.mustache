@@ -1,23 +1,21 @@
-<div class="mdc-card demo-card">
+<div class="mdc-card demo-card flex__item">
   {{#image}}
     <div class="mdc-card__media mdc-card__media--16-9 demo-card__media">
       <img src="{{img}}"/>
     </div>
   {{/image}}
-  <div class="mdc-card__primary-action" tabindex="0">
-    <div class="demo-card__primary">
-      <h2 class="demo-card__title mdc-typography--headline6">{{title}}</h2>
-      {{#subtitle}}
-      <h3 class="demo-card__subtitle mdc-typography--subtitle2">{{subtitle}}</h3>
-      {{/subtitle}}
-    </div>
+  <header class="demo-card__primary">
+    <h2 class="demo-card__title mdc-typography--headline6">{{title}}</h2>
+    {{#subtitle}}
+    <h3 class="demo-card__subtitle mdc-typography--subtitle2">{{subtitle}}</h3>
+    {{/subtitle}}
+  </header>
     {{#description}}
     <div class="demo-card__secondary mdc-typography--body2">
       {{description}}
     </div>
     {{/description}}
-  </div>
-  <div class="mdc-card__actions">
+  <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
       <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
       <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
@@ -25,5 +23,5 @@
     <div class="mdc-card__action-icons">
       <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">more_vert</button>
     </div>
-  </div>
+  </footer>
 </div>
