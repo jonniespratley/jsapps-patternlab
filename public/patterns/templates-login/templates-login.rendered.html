@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1532897997029" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1532897997029" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1532968168246" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1532968168246" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     
     <!-- End Pattern Lab -->
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+       
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+  <link rel='stylesheet' href='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css'/>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'/>
 
-  <link rel='stylesheet' href='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-
-  
+  <script src='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js'></script>
+ 
   </head>
   <body class="">
     
@@ -41,12 +42,14 @@ body {
   <div class="mdc-card">
     <div class="mdc-layout-grid">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle">
-    <h2>Login</h2>  
-        <div class="mdc-text-field text-field ">
-  <input type="text" id="text-field-" class="mdc-text-field__input"/>
-  <label class="mdc-floating-label" for="text-field-">Username</label>
-  <div class="mdc-line-ripple"></div>
+        <h2>Login</h2>  
+        <div id="text-field-" class="mdc-text-field text-field mdc-text-field--box ">
+  <input type="" id="-input" class="mdc-text-field__input"/>
+  <label class="mdc-floating-label" for="-input">Username</label>
 </div>
+<script>
+document.querySelectorAll('.mdc-text-field').forEach((el) => new mdc.textField.MDCTextField(el))
+</script>
       </div>
     </div>
     
@@ -90,20 +93,20 @@ body {
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1532897997029">
+<script id="pl-js-polyfill-insert-1532968168246">
   (function() {
     if (self != top) {
-      var cb = '1532897997029';
+      var cb = '1532968168246';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1532897997029">
+<script id="pl-js-insert-1532968168246">
   (function() {
     if (self != top) {
-      var cb = '1532897997029';
+      var cb = '1532968168246';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
@@ -111,5 +114,7 @@ body {
 </script>
 
   
+
+    
   </body>
 </html>

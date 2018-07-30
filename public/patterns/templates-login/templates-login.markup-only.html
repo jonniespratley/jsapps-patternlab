@@ -18,12 +18,14 @@ body {
   <div class="mdc-card">
     <div class="mdc-layout-grid">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle">
-    <h2>Login</h2>  
-        <div class="mdc-text-field text-field ">
-  <input type="text" id="text-field-" class="mdc-text-field__input"/>
-  <label class="mdc-floating-label" for="text-field-">Username</label>
-  <div class="mdc-line-ripple"></div>
+        <h2>Login</h2>  
+        <div id="text-field-" class="mdc-text-field text-field mdc-text-field--box ">
+  <input type="" id="-input" class="mdc-text-field__input"/>
+  <label class="mdc-floating-label" for="-input">Username</label>
 </div>
+<script>
+document.querySelectorAll('.mdc-text-field').forEach((el) => new mdc.textField.MDCTextField(el))
+</script>
       </div>
     </div>
     

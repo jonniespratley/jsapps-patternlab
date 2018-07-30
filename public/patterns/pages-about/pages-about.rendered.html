@@ -5,26 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1532897997029" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1532897997029" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1532967727153" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1532967727153" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     
     <!-- End Pattern Lab -->
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+       
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+  <link rel='stylesheet' href='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css'/>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'/>
 
-  <link rel='stylesheet' href='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-
-  
+  <script src='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js'></script>
+ 
   </head>
   <body class="">
     
-<h2>About</h2>  
+<section class="hero text-center">
+    <div class="hero-content">
+        <h1 class="hero-title">About</h1>
+    </div>
+    <p class="hero-lead"></p>
+</section>
+
+<style>
+ .hero-title {
+  font-size: 2.75rem;
+}
+
+.hero-title {
+  line-height: 1.3;
+  color: rgba(0,0,0,.87);
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+}
+.hero-lead {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-lead, .hero-title.text-body-reverse {
+  font-weight: 300;
+}
+</style>  
   <!--DO NOT REMOVE-->
   <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"pages"},"patternExtension":"mustache","patternName":"About","patternPartial":"pages-about","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-hero","lineagePath":"../../patterns/molecules-hero/molecules-hero.rendered.html"}],"lineage":[{"lineagePattern":"molecules-hero","lineagePath":"../../patterns/molecules-hero/molecules-hero.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages"},"patternExtension":"mustache","patternName":"About","patternPartial":"pages-about","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
 <script>
@@ -60,20 +87,20 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1532897997029">
+<script id="pl-js-polyfill-insert-1532967727153">
   (function() {
     if (self != top) {
-      var cb = '1532897997029';
+      var cb = '1532967727153';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1532897997029">
+<script id="pl-js-insert-1532967727153">
   (function() {
     if (self != top) {
-      var cb = '1532897997029';
+      var cb = '1532967727153';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
@@ -81,5 +108,7 @@
 </script>
 
   
+
+    
   </body>
 </html>
