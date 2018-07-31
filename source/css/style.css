@@ -2,6 +2,10 @@
  * YOUR STYLES HERE
  */
 
+ .mdc-list-item{
+   user-select: none;
+ }
+
  @media (max-width: 575px) {
    .hidden-xs-only {
      display: none !important

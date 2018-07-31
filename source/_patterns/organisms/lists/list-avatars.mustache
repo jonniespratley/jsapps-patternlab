@@ -1,10 +1,11 @@
 <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
-  <li class="mdc-list-group__subheader">Contacts</li>
   {{# listItems.six }}
   <li class="mdc-list-item">
     <img class="mdc-list-item__graphic" src="{{img.avatar.src}}" alt="{{img.avatar.alt}}"/> 
     <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
       {{ name.first }} {{ name.last }}
+      </span>
       <!--
         <span class="mdc-list-item__secondary-text">
           {{email}}
@@ -14,3 +15,9 @@
   </li>
   {{/ listItems.six }}
 </ul>
+
+<script>
+var listEle = document.querySelector('.mdc-list--avatar-list');
+var list = new mdc.list.MDCList(listEle);
+list.singleSelection = true;
+</script>

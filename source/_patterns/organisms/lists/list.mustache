@@ -1,5 +1,16 @@
-<ul class="mdc-list" aria-orientation="vertical">
+<ul id="list1" class="mdc-list" aria-orientation="vertical">
   {{# listItems.five }}
-    {{> molecules-list-item(avatar:false)}}
+    <li class="mdc-list-item">
+      
+      <span class="mdc-list-item__text">
+        <span class="mdc-list-item__primary-text">{{title}}</span>
+      </span>
+    </li>
   {{/ listItems.five }}
 </ul>
+
+<script>
+var listEle = document.querySelector('#list1');
+var list = new mdc.list.MDCList(listEle);
+list.singleSelection = true;
+</script>

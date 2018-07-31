@@ -25,10 +25,6 @@
     {
       "label": "Services",
       "icon": "storage"
-    },
-    {
-      "label": "Users",
-      "icon": "groups"
     }
   ],
   "key": "value",
