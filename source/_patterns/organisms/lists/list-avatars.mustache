@@ -1,18 +1,6 @@
 <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
   {{# listItems.six }}
-  <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="{{img.avatar.src}}" alt="{{img.avatar.alt}}"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      {{ name.first }} {{ name.last }}
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          {{email}}
-        </span>
-      -->
-    </span>
-  </li>
+  {{> molecules-list-item-avatar}}
   {{/ listItems.six }}
 </ul>
 
