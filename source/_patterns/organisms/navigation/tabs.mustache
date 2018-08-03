@@ -1,0 +1,92 @@
+<section id="dynamic-demo-toolbar">
+ <nav class="mdc-tab-bar mdc-tab-bar--icons-with-text" role="tablist">
+  <div class="mdc-tab-scroller">
+    <div class="mdc-tab-scroller__scroll-area">
+      <div class="mdc-tab-scroller__scroll-content">
+        {{> molecules-tab(label: "Panel 1", icon: "phone", href: "#panel-1", active: true)}}
+        {{> molecules-tab(label: "Panel 2", icon: "favorite", href: "panel-2")}}
+        {{> molecules-tab(label: "Panel 3", icon: "person_pin", href: "panel-3")}}
+      </div>
+    </div>
+  </div>
+</nav>
+
+</section>
+<section>
+  <div class="panels">
+    <p class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">Item One</p>
+    <p class="panel" id="panel-2" role="tabpanel" aria-hidden="true">Item Two</p>
+    <p class="panel" id="panel-3" role="tabpanel" aria-hidden="true">Item Three</p>
+  </div>
+  <div class="dots">
+    <a class="dot active" data-trigger="panel-1" href="#panel-1"></a>
+    <a class="dot" data-trigger="panel-2" href="#panel-2"></a>
+    <a class="dot" data-trigger="panel-3" href="#panel-3"></a>
+  </div>
+</section>
+<style>
+.panels{
+  display: none;
+}
+.panels.active{
+  display: block;
+}
+</style>
+<script>
+//mdc.tabBar.MDCTabBar
+document.addEventListener('DOMContentLoaded', function(){
+  var dynamicTabBar = window.dynamicTabBar = new mdc.tabBar.MDCTabBar(document.querySelector('#dynamic-tab-bar'));
+  var dots = document.querySelector('.dots');
+  var panels = document.querySelector('.panels');
+
+  dynamicTabBar.tabs.forEach(function(tab) {
+    tab.preventDefaultOnClick = true;
+  });
+
+  function updateDot(index) {
+    var activeDot = dots.querySelector('.dot.active');
+    if (activeDot) {
+      activeDot.classList.remove('active');
+    }
+    var newActiveDot = dots.querySelector('.dot:nth-child(' + (index + 1) + ')');
+    if (newActiveDot) {
+      newActiveDot.classList.add('active');
+    }
+  }
+
+  function updatePanel(index) {
+    var activePanel = panels.querySelector('.panel.active');
+    if (activePanel) {
+      activePanel.classList.remove('active');
+    }
+    var newActivePanel = panels.querySelector('.panel:nth-child(' + (index + 1) + ')');
+    if (newActivePanel) {
+      newActivePanel.classList.add('active');
+    }
+  }
+
+  dynamicTabBar.listen('MDCTabBar:change', function ({detail: tabs}) {
+    var nthChildIndex = tabs.activeTabIndex;
+
+    updatePanel(nthChildIndex);
+    updateDot(nthChildIndex);
+  });
+
+  dots.addEventListener('click', function (evt) {
+    if (!evt.target.classList.contains('dot')) {
+      return;
+    }
+
+    evt.preventDefault();
+
+    var dotIndex = [].slice.call(dots.querySelectorAll('.dot')).indexOf(evt.target);
+
+    if (dotIndex >= 0) {
+      dynamicTabBar.activeTabIndex = dotIndex;
+    }
+
+    updatePanel(dotIndex);
+    updateDot(dotIndex);
+  })
+});
+</script>

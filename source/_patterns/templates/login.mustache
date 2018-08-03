@@ -13,15 +13,12 @@ body {
 }
 </style>
 
+<div class="app-login">
 
-<div class="login-wrapper">
-  <div class="mdc-card">
-    <div class="mdc-layout-grid">
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle">
-        <h2>Login</h2>  
-        {{> atoms-text-field(label: "Username", outlined: true)}}
-      </div>
-    </div>
-    
+  <div class="login-wrapper">
+    {{> organisms-header(title: "App") }}
+    {{> organisms-login-form }}
   </div>
+  
+
 </div>
