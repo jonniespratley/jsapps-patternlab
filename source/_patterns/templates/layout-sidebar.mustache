@@ -4,10 +4,12 @@
   {{> organisms-app-drawer}}
   
   <!-- APP-CONTENT -->
+
   <main class="app-content">
+    {{> molecules-hero(title: title)}}
     <div>
-      <h2>Home</h2>
-      
+
+      {{content}}
     </div>
   </main>
 

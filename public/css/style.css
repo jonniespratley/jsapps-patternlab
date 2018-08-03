@@ -893,7 +893,9 @@ body {
   margin: 3px; }
 
 .app {
-  display: flex; }
+  display: flex; 
+  height: 100vh;
+}
 
   .app-content {
     flex: 1;

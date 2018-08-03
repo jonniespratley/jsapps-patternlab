@@ -9,25 +9,43 @@
   },
   "menu": [{
       "label": "Dashboard",
-      "icon": "dashboard"
+      "icon": "dashboard",
+      "href" : "link.pages-dashboard"
     },
     {
-      "label": "Plugins",
-      "icon": "extension"
+      "label": "Sample Page",
+      "icon": "extension",
+      "href" : "link.pages-sample-page"
     },
     {
-      "label": "Widgets",
-      "icon": "widgets"
+      "label": "Products",
+      "icon": "list",
+      "href" : "link.pages-products"
     },
     {
       "label": "Containers",
       "icon": "cloud"
     },
     {
-      "label": "Services",
-      "icon": "storage"
+      "label": "My Account",
+      "icon": "user",
+       "href" : "link.pages-account"
+    },
+    {
+      "label": "Forms",
+      "icon": "list",
+      "href" : "link.pages-forms"
+    },
+    {
+      "label": "About",
+      "icon": "info",
+      "href" : "link.pages-about"
     }
   ],
+  "user": {
+    "name": "@jonniespratley",
+    "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4"
+  },
   "key": "value",
   "key2": "use this for variables you want to load globally",
   "title": "Nullizzle shizznit velizzle, hizzle, suscipit own yo', gravida vizzle, arcu.",
