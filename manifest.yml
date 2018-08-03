@@ -1,0 +1,13 @@
+---
+applications:
+  - name: jsapps-patternlab
+    buildpack: https://github.com/cloudfoundry/heroku-buildpack-staticfile.git
+    memory: 64MB
+    #instances: 2
+    #stack: cflinuxfs2
+    path: .
+    #command: node app
+    #services:
+    #  - demo-uaa
+    env:
+      NODE_ENV: 'production'
