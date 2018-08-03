@@ -1,5 +1,6 @@
 {
   "appName": "PatternLab App",
+  "avatar": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4",
   "main": {
     "items": [{
       "label": "Dashboard",

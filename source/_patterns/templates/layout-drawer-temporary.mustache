@@ -2,14 +2,8 @@
     <div class="drawer-container-flex">
         {{>organisms-drawer-temporary}}
         <div class="drawer-header-flex">
-            <header class="mdc-top-app-bar" style="top: 0px;">
-                <div class="mdc-top-app-bar__row">
-                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                        <button class="material-icons mdc-top-app-bar__navigation-icon">menu</button>
-                        <span class="mdc-top-app-bar__title">Temporary Drawer</span>
-                    </section>
-                </div>
-            </header>
+        {{> organisms-app-bar(user: true) }}
+        
         </div>
         <div class="mdc-top-app-bar--fixed-adjust">
            <section class="u-mh u-p--">
@@ -19,6 +13,7 @@
     </div>
 </div>
 
+
 <script>
  const drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector(".mdc-drawer"));
 document.querySelector(".mdc-top-app-bar__navigation-icon").addEventListener("click", () => {
@@ -26,3 +21,16 @@ document.querySelector(".mdc-top-app-bar__navigation-icon").addEventListener("cl
     console.log("drawerOpen", drawer);
 });
 </script>
+<style>
+ body {
+   background: var(--mdc-theme-background);
+ }
+
+ :root {
+   --mdc-theme-primary: #343a40;
+   --mdc-theme-secondary: #343a40;
+   --mdc-theme-background: #eee;
+
+
+
+</style>

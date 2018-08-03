@@ -1,0 +1,32 @@
+
+
+<nav class="app-drawer mdc-drawer mdc-drawer--permanent">
+      
+      <div class="flex flex--col flex--center flex--middle">
+        {{> molecules-app-logo }}
+        <h1 class="app-title">{{appName}}</h1>
+      </div>
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+          <a class="mdc-list-item mdc-list-item--selected" href="{{link.pages-home}}">
+            Home
+          </a>
+          <a class="mdc-list-item" href="{{link.pages-page}}">
+            Sample Page
+          </a>
+          <a class="mdc-list-item" href="{{link.pages-blog}}">
+            Blog
+          </a>
+          <a class="mdc-list-item" href="{{link.pages-products}}">
+            Products
+          </a>
+          <a class="mdc-list-item" href="{{link.pages-about}}">
+            About
+          </a>
+      
+          <a class="mdc-list-item" href="{{link.pages-account}}">
+            My Account
+          </a>
+        </nav>
+      </div>
+    </nav>

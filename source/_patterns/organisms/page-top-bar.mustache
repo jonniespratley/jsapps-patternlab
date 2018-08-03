@@ -1,0 +1,27 @@
+<style>
+  :root {
+  --mdc-theme-primary: #fefefe;
+  --mdc-theme-secondary: #343a40;
+  --mdc-theme-background: #eee;
+}
+.hamburger .material-icons {
+    color: inherit;
+}
+
+.hamburger{    
+    fill: black;
+    color: black !important;
+  }
+
+
+</style>
+<header class="page-top-bar mdc-top-app-bar mdc-top-app-bar--short {{#fixed}}mdc-top-app-bar--fixed{{/fixed}}">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="hamburger mdc-top-app-bar__navigation-icon menu">
+                <span class="material-icons ">menu</span>
+            </button>
+            <span class="mdc-top-app-bar__title">{{pageTitle}}</span>
+        </section>
+    </div>
+</header>
