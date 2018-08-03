@@ -96,10 +96,7 @@
     </section>
     <section class="mdc-toolbar__section">
     <div class="mdc-text-field mdc-text-field--full mdc-text-field--with-leading-icon">
-      <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">search</i>
-        <input type="text" id="my-input" class="mdc-text-field__input">
-        
-      </div>
+     
     </section>
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
       {{> molecules-app-bar-action(icon: "more_vert", label: "Settings")}}
@@ -114,14 +111,14 @@
     <aside class="mdc-drawer mdc-drawer--permimant sidebar">
       <div class="mdc-drawer__toolbar-spacer"></div>
       <ul class="mdc-list mdc-list--dense" aria-orientation="vertical">
-        {{# listItems.four }}
+        {{# listItems.ten }}
         <li class="mdc-list-item v-centered folder-label">
           <span class="folder-icon mdc-list-item__graphic">
             <i class="material-icons" aria-hidden="true">folder</i>
           </span>
           <span class="menu-label elided-text" title="{{title}}">{{title}}</span>
         </li>
-        {{/ listItems.four }}
+        {{/ listItems.ten }}
       </ul>
     </aside>
 

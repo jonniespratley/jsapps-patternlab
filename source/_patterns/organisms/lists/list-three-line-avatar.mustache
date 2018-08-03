@@ -1,0 +1,19 @@
+
+<ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
+ {{# listItems.six }}
+  <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="{{img.avatar.src}}" alt="{{img.avatar.alt}}"/> 
+    <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
+    <span class="mdc-list-item__text">  
+      <span class="mdc-list-item__primary-text">
+        {{title}}
+      </span>
+      <span class="mdc-list-item__secondary-text">
+        <strong>{{ name.first }} {{ name.last }}</strong> --
+        {{description}}
+      </span>
+    </span>
+  </li>
+  <li class="mdc-list-divider mdc-list-divider--inset"></li>
+ {{/ listItems.six }}
+</ul>

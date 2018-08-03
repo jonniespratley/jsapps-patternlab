@@ -3,20 +3,3 @@
 </div>
 
 
-<script>
-
-  var drawerOpen = false;
-  var app = document.querySelector('.app');
-  //permanent
-  //var drawer = new mdc.drawer.MDCPersistentDrawer(document.querySelector('.mdc-drawer--persistent'));
-  //const drawer = new mdc.drawer.MDCPersistentDrawer(document.querySelector('.mdc-drawer--persistent'));
-   let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector(".mdc-drawer--temporary"));
-  document.
-  querySelector(".mdc-top-app-bar__navigation-icon").
-  addEventListener("click", function () {
-    drawer.open = !drawer.open;
-    drawerOpen = drawer.open;console.log('drawerOpen', drawerOpen);
-    //app.classList.toggle('drawer-open')
-  });
-
-</script>
