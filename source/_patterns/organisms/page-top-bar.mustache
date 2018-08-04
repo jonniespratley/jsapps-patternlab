@@ -13,15 +13,30 @@
     color: black !important;
   }
 
+  .avatar{
+ height: 30px;
+ border-radius: 50%;
+}
+
 
 </style>
-<header class="page-top-bar mdc-top-app-bar mdc-top-app-bar--short {{#fixed}}mdc-top-app-bar--fixed{{/fixed}}">
-    <div class="mdc-top-app-bar__row">
+<header class="page-top-bar mdc-top-app-bar mdc-top-app-bar--static {{#fixed}}mdc-top-app-bar--fixed{{/fixed}}">
+    <div class="mdc-top-app-bar__row flex flex--spaced">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
             <button class="hamburger mdc-top-app-bar__navigation-icon menu">
                 <span class="material-icons ">menu</span>
             </button>
             <span class="mdc-top-app-bar__title">{{pageTitle}}</span>
+        </section>
+         <section class="mdc-toolbar__sectio">
+
+   </section>
+           <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+            <a href="#" class="mdc-top-app-bar__action-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4" alt="" class="avatar">
+                
+                </a>
+   
         </section>
     </div>
 </header>

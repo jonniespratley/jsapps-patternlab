@@ -10,17 +10,17 @@
   "menu": [{
       "label": "Dashboard",
       "icon": "dashboard",
-      "href" : "link.pages-dashboard"
+      "href": "link.pages-dashboard"
     },
     {
       "label": "Sample Page",
       "icon": "extension",
-      "href" : "link.pages-sample-page"
+      "href": "link.pages-sample-page"
     },
     {
       "label": "Products",
       "icon": "list",
-      "href" : "link.pages-products"
+      "href": "link.pages-products"
     },
     {
       "label": "Containers",
@@ -29,17 +29,17 @@
     {
       "label": "My Account",
       "icon": "user",
-       "href" : "link.pages-account"
+      "href": "link.pages-account"
     },
     {
       "label": "Forms",
       "icon": "list",
-      "href" : "link.pages-forms"
+      "href": "link.pages-forms"
     },
     {
       "label": "About",
       "icon": "info",
-      "href" : "link.pages-about"
+      "href": "link.pages-about"
     }
   ],
   "user": {
