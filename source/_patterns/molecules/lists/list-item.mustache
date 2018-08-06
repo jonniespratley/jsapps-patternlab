@@ -1,10 +1,9 @@
 <li class="mdc-list-item {{#avatar}}mdc-list--avatar-list{{/avatar}}">
-    {{#avatar}}
-        <img class="mdc-list-item__graphic" src="{{img.avatar.src}}"/>    
-    {{/avatar}}
+    {{#img}}
+        <img class="mdc-list-item__graphic" src="{{img}}"/>    
+    {{/img}}
     {{#icon}}
-        <span class="material-icons mdc-list-item__graphic">{{ icon }}</span>
+      <span class="material-icons mdc-list-item__graphic">{{ icon }}</span>
     {{/icon}}
     <span>{{ title }}</span>
-    
   </li>

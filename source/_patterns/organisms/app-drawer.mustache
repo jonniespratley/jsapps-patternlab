@@ -1,26 +1,32 @@
-
-
-<nav class="app-drawer mdc-drawer mdc-drawer--permanent">
+<nav class="app-drawer mdc-drawer mdc-drawer--persistent {{#open}}mdc-drawer--open{{/open}}">
+  <div class="mdc-drawer__drawer">
+    <header class="mdc-drawer__header">
+          <div class="mdc-drawer__header-content">
+          <div class="flex flex--col flex--center flex--middle">
+            {{> molecules-app-logo }}
+            <h1 class="app-title">{{appName}}</h1>
+          </div>
+          </div>
+        </header>
+  
       
-      <div class="flex flex--col flex--center flex--middle">
-        {{> molecules-app-logo }}
-        <h1 class="app-title">{{appName}}</h1>
-      </div>
-      <div class="mdc-drawer__content">
-        <nav class="mdc-list">
-        {{# menu}}
-          <a class="mdc-list-item" href="{{href}}">
-            {{label}}
-          </a>
-        {{/menu}}
-        </nav>
-      </div>
-    </nav>
+    
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+      {{# menu}}
+        <a class="mdc-list-item" href="{{href}}">
+          {{label}}
+        </a>
+      {{/menu}}
+      </nav>
+    </div>
+    </div>
+  </nav>
 
-    <style>
+  <style>
 .app-drawer .app-logo {
-  width: 50px;
-  height: 50px;
-  padding-top: 20px;
-  fill: currentColor; }
+width: 50px;
+height: 50px;
+padding-top: 20px;
+fill: currentColor; }
 </style>

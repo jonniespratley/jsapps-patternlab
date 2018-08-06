@@ -1,19 +1,24 @@
 <style>
   :root {
-  --mdc-theme-primary: #fefefe;
+  
   --mdc-theme-secondary: #343a40;
   --mdc-theme-background: #eee;
 }
-.hamburger .material-icons {
+
+.test .mdc-top-app-bar__title{
+    color: var(--mdc-theme-secondary, black)
+}
+
+.test .hamburger .material-icons {
     color: inherit;
 }
 
-.hamburger{    
+.test .hamburger{    
     fill: black;
     color: black !important;
   }
 
-  .avatar{
+.avatar{
  height: 30px;
  border-radius: 50%;
 }
@@ -26,17 +31,32 @@
             <button class="hamburger mdc-top-app-bar__navigation-icon menu">
                 <span class="material-icons ">menu</span>
             </button>
-            <span class="mdc-top-app-bar__title">{{pageTitle}}</span>
+            
+            {{#backBtn}}
+            <a href="../" class="mdc-top-app-bar__action-item">
+                <span class="material-icons ">chevron_left</span> Back
+            </a>
+            {{/backBtn}}
+            <span class="mdc-top-app-bar__title">{{ pageTitle }}</span>
         </section>
-         <section class="mdc-toolbar__sectio">
-
-   </section>
-           <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+        <section class="mdc-toolbar__sectio"></section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
             <a href="#" class="mdc-top-app-bar__action-item">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4" alt="" class="avatar">
-                
-                </a>
-   
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4" alt="" class="avatar"/>    
+            </a>
         </section>
     </div>
 </header>
+
+<script>
+document.querySelector('.menu').addEventListener('click', function(e){
+    console.log('Find and toggle drawer');
+    let appDrawer = document.querySelector('.app-drawer');
+    
+    if(appDrawer){
+        let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
+        drawer.open = !drawer.open;
+        console.log('Toggle', drawer);
+    }
+});
+</script>

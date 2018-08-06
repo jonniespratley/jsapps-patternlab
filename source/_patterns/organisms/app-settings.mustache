@@ -1,0 +1,44 @@
+<aside class="app-settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--persistent">
+  <nav class="mdc-drawer__drawer">
+    <header class="mdc-drawer__header">
+        <div class="mdc-drawer__header-content">
+        Settings
+        </div>
+    </header>
+    <nav class="mdc-drawer__content">
+      <ul class="mdc-list">
+        <li class="mdc-list-group__subheader">Categries</li>
+        {{#listItems.six}}
+          <li class="mdc-list-item">
+            {{> atoms-checkbox(label: "Category") }}
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+        {{/listItems.six}}
+        <li class="mdc-list-group__subheader">Category</li>
+        <li class="mdc-list-item">
+          {{> atoms-slider }}
+        </li>
+        <li role="separator" class="mdc-list-divider"></li>
+        <li class="mdc-list-group__subheader">Category</li>
+        <li class="mdc-list-item">
+          {{> atoms-slider }}
+        </li>
+        <li role="separator" class="mdc-list-divider"></li>
+      </ul>
+    </nav>
+  </nav>
+</aside>
+
+<style>
+.app-drawer .app-logo {
+  width: 50px;
+  height: 50px;
+  padding-top: 20px;
+  fill: currentColor; 
+}
+
+.mdc-drawer--right{
+  right: 0;
+  left: auto;
+}
+</style>

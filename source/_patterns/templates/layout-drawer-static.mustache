@@ -1,26 +1,3 @@
-<div class="top-app-bar__frame">
-    <div class="drawer-container-flex">
-        {{>organisms-drawer-temporary}}
-        <div class="drawer-header-flex">
-        {{> organisms-app-bar(user: true) }}
-        
-        </div>
-        <div class="mdc-top-app-bar--fixed-adjust">
-           <section class="u-mh u-p--">
-                {{> molecules-paragraph}}
-           </section>
-        </div>
-    </div>
-</div>
-
-
-<script>
- const drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector(".mdc-drawer"));
-document.querySelector(".mdc-top-app-bar__navigation-icon").addEventListener("click", () => {
-    drawer.open = !drawer.open;
-    console.log("drawerOpen", drawer);
-});
-</script>
 <style>
  body {
    background: var(--mdc-theme-background);
@@ -31,6 +8,28 @@ document.querySelector(".mdc-top-app-bar__navigation-icon").addEventListener("cl
    --mdc-theme-secondary: #343a40;
    --mdc-theme-background: #eee;
 
-
-
+ }
 </style>
+
+<div class="top-app-bar__frame">
+    <div class="drawer-container-flex flex">
+        {{> organisms-drawer-persistent(header: false)}}
+        {{> organisms-app-bar(fixed: true) }}
+        <div class="mdc-top-app-bar--fixed-adjust">
+           <section class="u-mh u-p--">
+                {{> molecules-paragraph}}
+                {{> molecules-paragraph}}
+                {{> molecules-paragraph}}
+                {{> molecules-paragraph}}
+           </section>
+        </div>
+    </div>
+</div>
+
+
+<script>
+const drawer = new mdc.drawer.MDCPersistentDrawer(document.querySelector(".mdc-drawer--persistent"));
+document.querySelector(".menu-btn").addEventListener("click", () => {
+    drawer.open = !drawer.open;
+});
+</script>

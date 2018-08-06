@@ -22,40 +22,7 @@ body {
 }
 </style>
 
-<header class="mdc-top-app-bar mdc-elevation--z1">
-    <div class="mdc-top-app-bar__row">
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <button class="hamburger mdc-top-app-bar__navigation-icon menu">
-                <span class="material-icons ">menu</span>
-            </button>
-            <span class="mdc-top-app-bar__title">{{pageTitle}}</span>
-        </section>
-    </div>
-</header>
 
-<div class="mdc-top-app-bar--fixed-adjust mdc-typography">
-    <section >
-    
-    <!-- CONTENT -->
-    <main class="content">
-    <div class="u-ml+">
-        <h2>Subheader</h2>
-    </div>
-    <section class="mdc-layout-grid demo-grid">
-      <div class="mdc-layout-grid__inner">
-        {{# listItems.six}}
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-phone mdc-layout-grid__cell--span-4-tablet demo-cell mdc-elevation--z1 "></div>
-       {{/ listItems.six}}
-       {{# listItems.two}}
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop demo-cell mdc-elevation--z1"></div>
-       {{/ listItems.two}}
-      </div>
-     </section>
-
-        
-    </main> 
-    </section>
-</div>
 
 <div class="app">
 
@@ -65,7 +32,19 @@ body {
   <!-- APP-CONTENT -->
   <main class="app-content">
     <div>
-      
+
+<div class="mdc-top-app-bar--fixed-adjust mdc-typography">
+  <section class="mdc-layout-grid demo-grid">
+      <div class="mdc-layout-grid__inner">
+        {{# listItems.six}}
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-phone mdc-layout-grid__cell--span-4-tablet demo-cell mdc-elevation--z1 "></div>
+       {{/ listItems.six}}
+       {{# listItems.two}}
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop demo-cell mdc-elevation--z1"></div>
+       {{/ listItems.two}}
+      </div>
+     </section>
+</div>      
     </div>
   </main>
 
