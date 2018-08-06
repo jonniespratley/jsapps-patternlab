@@ -1,10 +1,5 @@
-<aside class="app-settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--persistent">
-  <nav class="mdc-drawer__drawer">
-    <header class="mdc-drawer__header">
-        <div class="mdc-drawer__header-content">
-        Settings
-        </div>
-    </header>
+<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
+  <nav class="mdc-drawer__drawer ">
     <nav class="mdc-drawer__content">
       <ul class="mdc-list">
         <li class="mdc-list-group__subheader">Categries</li>
@@ -30,6 +25,21 @@
 </aside>
 
 <style>
+
+    .mdc-drawer.mdc-drawer--right .mdc-drawer__drawer {
+        -webkit-transform: translateX(107%);
+        transform: translateX(107%);
+        -webkit-transform: translateX(calc(100% + 20px));
+        transform: translateX(calc(100% + 20px));
+        left: auto;
+        right: 0;
+    }
+    .mdc-drawer--open.mdc-drawer--right .mdc-drawer__drawer {
+        -webkit-transform: none;
+        transform: none;
+         border-right: 0px;
+    border-left: 1px solid #e4e4e4;
+    }
 .app-drawer .app-logo {
   width: 50px;
   height: 50px;
@@ -38,7 +48,20 @@
 }
 
 .mdc-drawer--right{
-  right: 0;
-  left: auto;
+  right: 0 !important;
+  left: auto  !important;
 }
 </style>
+
+<script>
+document.querySelector('.app__settings-toggle').addEventListener('click', function(e){
+    console.log('Find and toggle settings drawer');
+    let appDrawer = document.querySelector('.app__settings-drawer');
+    
+    if(appDrawer){
+        let drawer = new mdc.drawer.MDCTemporaryDrawer(appDrawer);
+        drawer.open = !drawer.open;
+        console.log('Toggle', drawer);
+    }
+});
+</script>
