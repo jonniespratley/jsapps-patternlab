@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1533594223924" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533594223924" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1533678179355" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533678179355" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     
@@ -25,11 +25,13 @@
   </head>
   <body class="">
     
-<button class="mdc-button">
-</button>  
+<button type="" class="mdc-button  "></button>
+<script>
+document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRipple.attachTo(el); });
+</script>  
   <!--DO NOT REMOVE-->
   <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms"},"patternExtension":"mustache","patternName":"Button","patternPartial":"atoms-button","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-login-form","lineagePath":"../../patterns/organisms-forms-login-form/organisms-forms-login-form.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-login-form","lineagePath":"../../patterns/organisms-forms-login-form/organisms-forms-login-form.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms"},"patternExtension":"mustache","patternName":"Button","patternPartial":"atoms-button","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 </script>
 
 <script>
@@ -65,20 +67,20 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1533594223924">
+<script id="pl-js-polyfill-insert-1533678179355">
   (function() {
     if (self != top) {
-      var cb = '1533594223924';
+      var cb = '1533678179355';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1533594223924">
+<script id="pl-js-insert-1533678179355">
   (function() {
     if (self != top) {
-      var cb = '1533594223924';
+      var cb = '1533678179355';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

@@ -1,5 +1,4 @@
-<button class="mdc-button">
-  {{#label}}
-    {{label}}
-  {{/label}}
-</button>
+<button type="{{type}}" class="mdc-button {{className}} {{#raised}}mdc-button--raised{{/raised}}">{{label}}</button>
+<script>
+document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRipple.attachTo(el); });
+</script>

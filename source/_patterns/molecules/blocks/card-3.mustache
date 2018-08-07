@@ -1,15 +1,20 @@
 <div class="mdc-card demo-card flex__item card-3">
-    <div class="mdc-card__media mdc-card__media--16-9 demo-card__media">
-      <img src="{{img.landscape-16x9.src}}" alt="{{img.landscape-16x9.alt}}"/>
-    </div>
+  <div class="mdc-card__media demo-card__media">
+    <img src="{{img.landscape-16x9.src}}" alt="{{img.landscape-16x9.alt}}" />
+  </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
-      
+
     </div>
     <div class="mdc-card__action-icons">
-      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">love</button>
+      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">favorite</button>
       <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">bookmark</button>
       <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">share</button>
     </div>
   </footer>
 </div>
+<style>
+  .demo-card__media img {
+    width: 100%;
+  }
+</style>

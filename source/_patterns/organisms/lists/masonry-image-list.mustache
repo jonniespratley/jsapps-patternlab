@@ -1,0 +1,33 @@
+<ul class="mdc-image-list mdc-image-list--masonry my-masonry-image-list">
+    {{# listItems.ten }} {{> molecules-image-list-item(title: "Image", img: "http://placeimg.com/240/160/tech", alt: "img1")}}
+    {{/ listItems.ten }}
+</ul>
+<style>
+    .masonry-image-list {
+        -webkit-column-count: 5;
+        column-count: 5;
+        -webkit-column-gap: 16px;
+        column-gap: 16px;
+        max-width: 900px;
+    }
+
+    .masonry-image-list .mdc-image-list__item {
+        margin-bottom: 16px;
+    }
+
+    @media (max-width: 599px) {
+        .standard-image-list .mdc-image-list__item {
+            width: calc(100% / 3 - 4.33333px);
+            margin: 2px;
+        }
+        .masonry-image-list {
+            -webkit-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap: 16px;
+            column-gap: 16px;
+        }
+        .masonry-image-list .mdc-image-list__item {
+            margin-bottom: 16px;
+        }
+    }
+</style>

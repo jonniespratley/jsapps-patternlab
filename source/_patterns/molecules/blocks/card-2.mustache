@@ -1,0 +1,34 @@
+<div class="mdc-card demo-card flex__item card-2 mdc-typography">
+    <div class="mdc-card__media demo-card__media">
+        <img src="{{img.landscape-16x9.src}}" alt="{{img.landscape-16x9.alt}}" />
+        <div class="mdc-card__media-overlay u-ph">
+            <h3 class="mdc-typography--headline6">{{cardTitle}}</h3>
+        </div>
+    </div>
+    <footer class="mdc-card__actions">
+        <div class="mdc-card__actin-icons flex flex--spaced flex__item flex--middle u-pb--">
+            <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">favorite</button>
+            <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">bookmark</button>
+            <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">share</button>
+        </div>
+    </footer>
+</div>
+<style>
+    .demo-card img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .demo-card .mdc-card__media {
+        position: relative;
+    }
+
+    .demo-card .mdc-card__media-overlay {
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.67);
+        color: white;
+    }
+</style>
