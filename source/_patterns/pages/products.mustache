@@ -1,12 +1,23 @@
-<div class="app flex">
+<style>
+  body {
+    background: var(--mdc-theme-background);
+  }
 
+  :root {
+    --mdc-theme-primary: #343a40;
+    --mdc-theme-secondary: #343a40;
+    --mdc-theme-background: #eee;
+  }
+</style>
+
+<div class="app flex">
   <!-- APP-DRAWER -->
-  {{> organisms-app-drawer}}
-  
+ {{> organisms-page-top-bar(pageTitle: "Products")}}
   <!-- APP-CONTENT -->
-  <main class="app-content">
-   {{> organisms-page-top-bar(pageTitle: "Products")}}
-    <div>
+  <main class="app-content flex">
+   
+    {{> organisms-app-drawer}}
+    <div class="flex__item">
       <h2>Products</h2>
        <section class="mdc-layout-grid demo-grid">
       <div class="mdc-layout-grid__inner">
@@ -31,6 +42,5 @@
         
     </div>
   </main>
-
+  {{> organisms-app-settings}}
 </div>
-

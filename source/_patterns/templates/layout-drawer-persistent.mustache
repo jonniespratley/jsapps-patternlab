@@ -1,4 +1,15 @@
-<div class="drawer-container-flex app flex">
+<style>
+ body {
+  background: var(--mdc-theme-background);
+}
+
+:root {
+  --mdc-theme-primary: #343a40;
+  --mdc-theme-secondary: #343a40;
+  --mdc-theme-background: #eee;
+}
+</style>
+<div class="drawer-container-flex app flex mdc-typography">
     <aside class="mdc-drawer mdc-drawer--persistent">
         <nav class="mdc-drawer__drawer">
             <header class="mdc-drawer__header">
@@ -30,6 +41,13 @@
                         data-mdc-tabindex-handled="true">
                         <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>Spam</a>
                 </div>
+            <hr class="mdc-list-divider">
+<div class="mdc-list">
+    <a class="mdc-list-item demo-drawer-list-item" tabindex="-1" data-mdc-tabindex="-1" data-mdc-tabindex-handled="true">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">gear</i>Settings</a>
+    <a class="mdc-list-item demo-drawer-list-item" tabindex="-1" data-mdc-tabindex="-1" data-mdc-tabindex-handled="true">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">exit</i>Log out</a>
+</div>
             </nav>
         </nav>
     </aside>
