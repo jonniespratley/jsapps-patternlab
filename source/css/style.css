@@ -893,7 +893,7 @@ body {
   margin: 3px; }
 
 .app {
-  display: flex; 
+  
   height: 100vh;
 }
 
@@ -907,3 +907,9 @@ body {
   border-radius: 5px;
   min-height: 160px;
 }
+ 
+:root {
+   --mdc-theme-primary: #343a40;
+   --mdc-theme-secondary: #343a40;
+   --mdc-theme-background: #eee;
+ }

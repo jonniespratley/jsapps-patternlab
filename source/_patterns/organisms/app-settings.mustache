@@ -54,14 +54,15 @@
 </style>
 
 <script>
-document.querySelector('.app__settings-toggle').addEventListener('click', function(e){
+(function(){
+  document.querySelector('.app__settings-toggle').addEventListener('click', function(e){
     console.log('Find and toggle settings drawer');
     let appDrawer = document.querySelector('.app__settings-drawer');
     
     if(appDrawer){
         let drawer = new mdc.drawer.MDCTemporaryDrawer(appDrawer);
         drawer.open = !drawer.open;
-        console.log('Toggle', drawer);
     }
-});
+  });
+})();
 </script>

@@ -12,6 +12,7 @@
   </div>
 </div>
 <script>
-let  slider = new mdc.slider.MDCSlider(document.querySelector('.mdc-slider'));
-slider.listen('MDCSlider:change', () => console.log(`Value changed to ${slider.value}`));
+(function(){
+document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.attachTo(el))
+})()
 </script>
