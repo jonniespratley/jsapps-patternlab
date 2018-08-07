@@ -1,0 +1,32 @@
+<style>
+    .mdc-drawer__user .mdc-menu {
+        width: 100%;
+    }
+
+    .mdc-drawer__user-avatar {
+        border-radius: 50%;
+        max-height: 44px;
+    }
+</style>
+
+<div class="mdc-drawer__user u-ph mdc-typography">
+    <img src="{{avatar}}" alt="{{username}}" class="mdc-drawer__user-avatar" />
+
+    <h3 class="mdc-typography--headline6 u-m0">{{username}}</h3>
+
+    <div class="mdc-select {{className}}">
+        <select class="mdc-select__native-control">
+            <option value="" disabled selected></option>
+            {{# emails }}
+            <option value="{{val}}">{{ label }}</option>
+            {{/emails }}
+        </select>
+        <label class="mdc-floating-label"> </label>
+        <div class="mdc-line-ripple"></div>
+    </div>
+</div>
+
+
+<script>
+    mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
+</script>

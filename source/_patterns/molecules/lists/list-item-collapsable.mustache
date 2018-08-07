@@ -1,11 +1,9 @@
 
-<div class="mdc-list-ite">
+<div class="mdc-list-item">
     <div class="collapsible">
-        <a href="#">
-       
-         <span class="mdc-list-item__text">
-            Open Section
-        </span>
+        <a href="#" class="flex flex--spaced">
+            <span class="mdc-list-item__text">Open Section</span>
+            <span class="mdc-list-item__meta material-icons" aria-hidden="true">expand</span>
         </a>
         <div class="content">
             <p>Lorem ipsum dolor sit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -15,6 +13,9 @@
 
 
 <style>
+.mdc-list-item--open{
+ height: auto;
+}
 .collapsible{
     height: auto;
 }
@@ -31,6 +32,7 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener('click', function() {
+        this.classList.toggle('mdc-list-item--open');
         this.classList.toggle('active');
         var content = this.nextElementSibling;
         if (content.style.display === "block") {

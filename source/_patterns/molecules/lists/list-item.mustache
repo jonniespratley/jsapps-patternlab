@@ -1,9 +1,15 @@
-<li class="mdc-list-item {{#avatar}}mdc-list--avatar-list{{/avatar}}">
-    {{#img}}
-        <img class="mdc-list-item__graphic" src="{{img}}"/>    
-    {{/img}}
+<li class="mdc-list-item" data-href="{{href}}">
+ {{#showAvatar}}
+  <img class="mdc-list-item__graphic" src="{{avatar}}" />
+ {{/showAvatar}}
     {{#icon}}
       <span class="material-icons mdc-list-item__graphic">{{ icon }}</span>
     {{/icon}}
-    <span>{{ title }}</span>
-  </li>
+  
+<span>{{label}}</span>
+
+
+  {{#href}}
+    <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
+  {{/href}}
+</li>

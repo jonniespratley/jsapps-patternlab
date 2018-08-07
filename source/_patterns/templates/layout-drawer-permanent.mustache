@@ -16,28 +16,13 @@
                 <div class="mdc-drawer__header-content mdc-theme--on-primary mdc-theme--primary-bg">Header here</div>
             </header>
             <nav class="mdc-drawer__content mdc-list-group">
-                <div id="icon-with-text-demo" class="mdc-list">
-                    <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" data-mdc-tabindex-handled="true" tabindex="-1">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox</a>
-                    <a class="mdc-list-item demo-drawer-list-item" data-mdc-tabindex-handled="true"
-                        tabindex="-1">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star</a>
-                    <a class="mdc-list-item demo-drawer-list-item" data-mdc-tabindex-handled="true" tabindex="-1">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Sent Mail</a>
-                    <a class="mdc-list-item demo-drawer-list-item" data-mdc-tabindex-handled="true"
-                        tabindex="-1">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts</a>
-                </div>
-                <hr class="mdc-list-divider">
-                <div class="mdc-list">
-                    <a class="mdc-list-item demo-drawer-list-item" data-mdc-tabindex-handled="true" tabindex="-1">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>All Mail</a>
-                    <a class="mdc-list-item demo-drawer-list-item" data-mdc-tabindex-handled="true"
-                        tabindex="-1">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>Trash</a>
-                    <a class="mdc-list-item demo-drawer-list-item" data-mdc-tabindex-handled="true"
-                        tabindex="-1">
-                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>Spam</a>
+               <div class="mdc-list">
+                    {{# menu}}
+                    <a class="mdc-list-item" href="{{href}}">
+                        <span class="material-icons mdc-list-item__graphic">{{ icon }}</span>
+                        {{label}}
+                    </a>
+                    {{/menu}}
                 </div>
             </nav>
         </nav>

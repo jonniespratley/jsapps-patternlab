@@ -1,0 +1,39 @@
+
+<div id="toolbar" class="toolbar mdc-menu-anchor">
+    <button class="menu-toggle">Menu</button>
+    <div class="mdc-menu" tabindex="-1">
+    <ul class="mdc-menu__items mdc-list" role="menu" aria-hidden="true">
+        <li class="mdc-list-item" role="menuitem" tabindex="0">
+            A Menu Item
+        </li>
+        <li class="mdc-list-item" role="menuitem" tabindex="0">
+            A Menu Item
+        </li>
+        <li class="mdc-list-item" role="menuitem" tabindex="0">
+            A Menu Item
+        </li>
+    <li class="mdc-list-item" role="menuitem" tabindex="0" aria-disabled="true">
+            Disabled Menu Item
+        </li>
+    </ul>
+    </div>
+</div>
+
+
+<script>
+    // Instantiation
+    var menuEl = document.querySelector('.mdc-menu');
+    var menu = new mdc.menu.MDCMenu(menuEl);
+    var menuButtonEl = document.querySelector('.menu-toggle');
+
+    // Toggle menu open
+    menuButtonEl.addEventListener('click', function () {
+        menu.open = !menu.open;
+    });
+
+    // Listen for selected item
+    menuEl.addEventListener('MDCMenu:selected', function (evt) {
+        var detail = evt.detail;
+ console.log(evt.type, detail);
+    });
+</script>

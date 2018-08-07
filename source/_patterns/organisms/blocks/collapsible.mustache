@@ -1,0 +1,40 @@
+<style>
+    .collapsible {
+        height: auto;
+    }
+
+    .collapse {
+        display: none;
+        overflow: hidden;
+    }
+    .collapse--is-open {
+        display: block;
+        overflow: auto;
+    }
+</style>
+<div  class="mdc-theme--secondary-bg collapsible">
+    <div class="u-p">
+        <a href="#" data-toggle="collapse" data-target="#collapse-1" class="mdc-theme--on-secondary">collapse content</a>
+    </div>
+    <div id="collapse-1" class="collapse u-pv">
+        <p>Lorem ipsum dolor sit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</div>
+<script>
+    var coll = document.querySelectorAll('[data-toggle="collapse"]');
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener('click', function (e) {
+            this.classList.toggle('active');
+            var content = document.querySelector(e.currentTarget.getAttribute('data-target'));
+            content.classList.toggle('collapse--is-open');
+            if (content.style.display === "block") {
+              //  content.style.display = "none";
+            } else {
+               // content.style.display = "block";
+            }
+        });
+    }
+</script>

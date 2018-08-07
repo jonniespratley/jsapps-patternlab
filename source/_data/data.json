@@ -1,9 +1,17 @@
 {
   "appName": "PatternLab App",
+  "username": "Jonnie Spratley",
+  "email": "jonniespratley@gmail.com",
   "avatar": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4",
   "cardTitle": "Card Title",
   "cardSubtitle": "Subtitle",
-
+  "label": "Text Label",
+  "icon": "home",
+"emails": [{
+  "val": "jonniedollas@gmail.com",
+  "label": "jonniedollas@gmail.com",
+  "key": "email1"
+}],
   "main": {
     "items": [{
       "label": "Dashboard",
@@ -25,13 +33,10 @@
       "icon": "list",
       "href": "link.pages-products"
     },
-    {
-      "label": "Containers",
-      "icon": "cloud"
-    },
+    
     {
       "label": "My Account",
-      "icon": "user",
+      "icon": "account_circle",
       "href": "link.pages-account"
     },
     {
@@ -43,6 +48,16 @@
       "label": "About",
       "icon": "info",
       "href": "link.pages-about"
+    },
+    {
+      "label": "Layouts (permanent)",
+      "icon": "view_quilt",
+      "href": "link.templates-layout-drawer-permanent"
+    },
+    {
+      "label": "Layouts (temporary)",
+      "icon": "web",
+      "href": "link.templates-layout-drawer-temporary"
     }
   ],
   "user": {

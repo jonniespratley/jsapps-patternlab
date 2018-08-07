@@ -1,17 +1,11 @@
-<div class="mdc-select">
+<div class="mdc-select {{className}}">
     <select class="mdc-select__native-control">
         <option value="" disabled selected></option>
-        <option value="grains">
-            Bread, Cereal, Rice, and Pasta
-        </option>
-        <option value="vegetables">
-            Vegetables
-        </option>
-        <option value="fruit">
-            Fruit
-        </option>
+        {{# emails }}
+            <option value="{{val}}">{{ label }}</option>
+        {{/emails }}
     </select>
-    <label class="mdc-floating-label">Pick a Food Group</label>
+    <label class="mdc-floating-label">{{label}}</label>
     <div class="mdc-line-ripple"></div>
 </div>
 <!--
