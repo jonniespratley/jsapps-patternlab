@@ -6,10 +6,11 @@
   "scripts": {
     "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run pl:build",
     "pl:build": "patternlab build --config ./patternlab-config.json",
     "pl:help": "patternlab --help",
     "pl:install": "patternlab install --config ./patternlab-config.json",
-    "pl:serve": "patternlab serve --config ./patternlab-config.json",
+    "pl:serve": "PORT=9001 patternlab serve --config ./patternlab-config.json",
     "pl:version": "patternlab --version"
   },
   "author": "",

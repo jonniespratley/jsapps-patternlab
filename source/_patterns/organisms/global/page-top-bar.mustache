@@ -28,7 +28,6 @@
             <button class="hamburger mdc-top-app-bar__navigation-icon app__drawer-toggle" title="Toggle Drawer">
                 <span class="material-icons">menu</span>
             </button>
-
             {{#backBtn}}
             <a href="../" class="mdc-top-app-bar__action-item">
                 <span class="material-icons ">chevron_left</span> Back
@@ -39,7 +38,7 @@
         <section class="mdc-toolbar__sectio"></section>
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
             <div class="hidden-sm-down flex">
-                {{> molecules-app-bar-action(icon: "notifications", label: "Notifications")}}
+                {{> molecules-app-bar-action(icon: "notifications", label: "Notifications")}} 
                 {{> molecules-app-bar-action(icon: "apps", label: "Apps")}} 
                 {{> molecules-app-bar-action(icon: "tune", label: "Settings", className: "app__settings-toggle")}}
             </div>
@@ -58,41 +57,61 @@
                     </ul>
                 </div>
             </div>
-            
+
         </section>
     </div>
 </header>
 
+
+{{> organisms-app-settings }}
+
 <script>
+    // Instantiation
+    var menuEl = document.querySelector('.mdc-menu');
+    var menu = new mdc.menu.MDCMenu(menuEl);
+    var menuButtonEl = document.querySelector('.app__user-toggle');
 
-// Instantiation
- var menuEl = document.querySelector('.mdc-menu');
-  var menu = new mdc.menu.MDCMenu(menuEl);
- var menuButtonEl = document.querySelector('.app__user-toggle');
-
-  // Toggle menu open
-  menuButtonEl.addEventListener('click', function() {
-    menu.open = !menu.open;
-  });
-
-  // Listen for selected item
-  menuEl.addEventListener('MDCMenu:selected', function(evt) {
-     var detail = evt.detail;
-  });
-
-  // Set Anchor Corner to Bottom End
- //menu.setAnchorCorner(mdc.menu.Corner.BOTTOM_LEFT);
-
-  // Turn off menu open animations
-  menu.quickOpen = true;
-    document.querySelector('.app__drawer-toggle').addEventListener('click', function (e) {
-        console.log('Find and toggle drawer');
-        let appDrawer = document.querySelector('.app-drawer');
-
-        if (appDrawer) {
-            let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
-            drawer.open = !drawer.open;
-            console.log('Toggle', drawer);
-        }
+    // Toggle menu open
+    menuButtonEl.addEventListener('click', function () {
+        menu.open = !menu.open;
     });
+
+    // Listen for selected item
+    menuEl.addEventListener('MDCMenu:selected', function (evt) {
+        var detail = evt.detail;
+    });
+
+    // Set Anchor Corner to Bottom End
+    //menu.setAnchorCorner(mdc.menu.Corner.BOTTOM_LEFT);
+
+    // Turn off menu open animations
+    menu.quickOpen = true;
+
+
+    (function () {
+        let drawerToggle = document.querySelector('.app__drawer-toggle');
+        if (drawerToggle) {
+            drawerToggle.addEventListener('click', function (e) {
+                console.log('Find and toggle drawer');
+                let appDrawer = document.querySelector('.app__drawer');
+                if (appDrawer) {
+                    let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
+                    drawer.open = !drawer.open;
+                    console.log('Toggle', drawer);
+                }
+            });
+        }
+
+        let settingsToggle = document.querySelector('.app__settings-toggle');
+        if (settingsToggle) {
+            settingsToggle.addEventListener('click', function (e) {
+                console.log('Find and toggle settings drawer');
+                let appDrawer = document.querySelector('.app__settings-drawer');
+                if (appDrawer) {
+                    let drawer = new mdc.drawer.MDCTemporaryDrawer(appDrawer);
+                    drawer.open = !drawer.open;
+                }
+            });
+        }
+    })();
 </script>

@@ -1,0 +1,64 @@
+<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
+  <nav class="mdc-drawer__drawer ">
+    <nav class="mdc-drawer__content">
+      <ul class="mdc-list">
+        <li class="mdc-list-group__subheader">Categries</li>
+        {{#listItems.six}}
+        <li class="mdc-list-item">
+          {{> atoms-checkbox(label: "Category") }}
+        </li>
+        <li role="separator" class="mdc-list-divider"></li>
+        {{/listItems.six}}
+        <li class="mdc-list-group__subheader">Category</li>
+        <li class="mdc-list-item">
+          {{> atoms-slider }}
+        </li>
+        <li role="separator" class="mdc-list-divider"></li>
+        <li class="mdc-list-group__subheader">Category</li>
+        <li class="mdc-list-item">
+          {{> atoms-slider }}
+        </li>
+        <li role="separator" class="mdc-list-divider"></li>
+      </ul>
+    </nav>
+  </nav>
+</aside>
+
+<style>
+  .mdc-drawer.mdc-drawer--right .mdc-drawer__drawer {
+    -webkit-transform: translateX(107%);
+    transform: translateX(107%);
+    -webkit-transform: translateX(calc(100% + 20px));
+    transform: translateX(calc(100% + 20px));
+    left: auto;
+    right: 0;
+  }
+
+  .mdc-drawer--open.mdc-drawer--right .mdc-drawer__drawer {
+    -webkit-transform: none;
+    transform: none;
+    border-right: 0px;
+    border-left: 1px solid #e4e4e4;
+  }
+
+  .mdc-drawer--right {
+    right: 0 !important;
+    left: auto !important;
+  }
+</style>
+
+<script>
+  (function () {
+    let settingsToggle = document.querySelector('.app__settings-toggle');
+    if (settingsToggle) {
+      settingsToggle.addEventListener('click', function (e) {
+        console.log('Find and toggle settings drawer');
+        let appDrawer = document.querySelector('.app__settings-drawer');
+        if (appDrawer) {
+          let drawer = new mdc.drawer.MDCTemporaryDrawer(appDrawer);
+          drawer.open = !drawer.open;
+        }
+      });
+    }
+  })();
+</script>

@@ -1,0 +1,102 @@
+<style>
+.flex .flex__item {
+    min-width: 300px;
+}
+</style>
+<div class="flex flex--wrap flex--spaced">
+    <div class="flex__item">
+        <h3>Single Line</h3>
+        <ul id="list2" class="mdc-list" aria-orientation="vertical">
+            {{#listItems.three}}
+            <li class="mdc-list-item">
+                <span>Single-line item</span>
+            </li>
+            {{/listItems.three}}
+        </ul>
+    </div>
+
+    <div class="flex__item">
+        <h3>Single Line with icon</h3>
+        <ul id="list3" class="mdc-list" aria-orientation="vertical">
+            {{#listItems.three}}
+            <li class="mdc-list-item">
+                <span class="mdc-list-item__graphic material-icons" aria-hidden="true">stars</span>
+                <span>Single-line item</span>
+            </li>
+            {{/listItems.three}}
+        </ul>
+    </div>
+
+    <div class="flex__item">
+        <h3>Single Line with icon / meta</h3>
+        <ul id="list4" class="mdc-list " aria-orientation="vertical">
+            {{#listItems.three}}
+            <li class="mdc-list-item">
+                <span class="mdc-list-item__graphic material-icons" aria-hidden="true">account_circle</span>
+                <span>Single-line text</span>
+                <span class="mdc-list-item__meta material-icons" aria-hidden="true">check_box_outline_blank</span>
+            </li>
+            {{/listItems.three}}
+        </ul>
+    </div>
+</div>
+
+<hr>
+
+<div class="flex flex--spaced flex--wrap">
+    <div class="flex__item">
+        <h3>Two Line</h3>
+        <ul class="mdc-list mdc-list--two-line" aria-orientation="vertical">
+            {{# listItems.three }}
+            <li class="mdc-list-item">
+                <div class="mdc-list-item__text">
+                    <span class="mdc-list-item__primary-text">Two-line item</span>
+                    <span class="mdc-list-item__secondary-text">Secondary text</span>
+                </div>
+            </li>
+            {{/ listItems.three }}
+        </ul>
+    </div>
+    <div class="flex__item">
+        <h3>
+
+            Two Line with icon</h3>
+        <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
+            {{# listItems.three }}
+            <li class="mdc-list-item">
+                <span class="mdc-list-item__graphic material-icons" aria-hidden="true">stars</span>
+                <div class="mdc-list-item__text">
+                    <span class="mdc-list-item__primary-text">Two-line item</span>
+                    <span class="mdc-list-item__secondary-text">Secondary text</span>
+                </div>
+            </li>
+            {{/ listItems.three }}
+        </ul>
+    </div>
+    <div class="flex__item">
+        <h3>
+            Two Line with icon / meta</h3>
+        <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
+            {{# listItems.three }}
+            <li class="mdc-list-item">
+                <span class="mdc-list-item__graphic material-icons" aria-hidden="true">stars</span>
+                <div class="mdc-list-item__text">
+                    <span class="mdc-list-item__primary-text">Two-line item</span>
+                    <span class="mdc-list-item__secondary-text">Secondary text</span>
+                </div>
+                <span class="mdc-list-item__meta material-icons" aria-hidden="true">check_box_outline_blank</span>
+            </li>
+            {{/ listItems.three }}
+        </ul>
+    </div>
+</div>
+
+
+
+
+<script>
+    document.querySelectorAll('.mdc-list').forEach(function (el) {
+        let list = mdc.list.MDCList.attachTo(el);
+        list.singleSelection = true;
+    });
+</script>

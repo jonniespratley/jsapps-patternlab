@@ -1,15 +1,6 @@
 <li class="mdc-list-item" data-href="{{href}}">
- {{#showAvatar}}
-  <img class="mdc-list-item__graphic" src="{{avatar}}" />
- {{/showAvatar}}
-    {{#icon}}
-      <span class="material-icons mdc-list-item__graphic">{{ icon }}</span>
-    {{/icon}}
-  
-<span>{{label}}</span>
-
-
-  {{#href}}
-    <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-  {{/href}}
+ {{#showAvatar}}<img class="mdc-list-item__graphic" src="{{avatar}}" />{{/showAvatar}}
+  {{#icon}}<span class="material-icons mdc-list-item__graphic">{{ icon }}</span>{{/icon}}
+  <span>{{label}}</span>
+  {{#href}}<span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>{{/href}}
 </li>

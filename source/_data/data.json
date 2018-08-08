@@ -18,6 +18,9 @@
       "icon": "dashboard"
     }]
   },
+  "items": [
+    {"label": "Single-line item"}
+  ],
   "menu": [{
       "label": "Dashboard",
       "icon": "dashboard",
@@ -50,12 +53,12 @@
       "href": "link.pages-about"
     },
     {
-      "label": "Layouts (permanent)",
+      "label": "Permanent Drawer",
       "icon": "view_quilt",
       "href": "link.templates-layout-drawer-permanent"
     },
     {
-      "label": "Layouts (temporary)",
+      "label": "Temporary Layout",
       "icon": "web",
       "href": "link.templates-layout-drawer-temporary"
     }

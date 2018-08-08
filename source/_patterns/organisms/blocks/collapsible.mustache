@@ -1,24 +1,61 @@
 <style>
     .collapsible {
         height: auto;
+        
+        transition: height 1s;
+    }
+
+    .collapsible .collapsible__close-icon {
+        display: none;
+    }
+
+    .collapsible .collapsible__open-icon {
+        display: block;
+    }
+
+    .collapsible--is-open .collapsible__open-icon {
+        display: none;
+    }
+
+    .collapsible--is-open .collapsible__close-icon {
+        display: block !important;
+    }
+
+    .collapsible a {
+        text-decoration: none;
+    }
+
+    .collapsible__header {
+        color: var(--px-headings-heading-subsection-color,#2c404c); 
+        background-color: var(--px-headings-heading-subsection-background,rgba(136,154,165,.15));
     }
 
     .collapse {
-        display: none;
         overflow: hidden;
+        
+        height: 0;
+        padding: 0 !important;
     }
+
     .collapse--is-open {
         display: block;
         overflow: auto;
+        height: auto;
+        padding: auto;
     }
 </style>
-<div  class="mdc-theme--secondary-bg collapsible">
-    <div class="u-p">
-        <a href="#" data-toggle="collapse" data-target="#collapse-1" class="mdc-theme--on-secondary">collapse content</a>
+<div class="mdc-theme---bg mdc-typography collapsible">
+    <div class="u-p- collapsible__header">
+<a href="#" data-toggle="collapse" data-target="#collapse-1" class=" flex flex--spaced ">
+        Collapse content
+            <span class="mdc-list-item__meta material-icons collapsible__open-icon" aria-hidden="true">keyboard_arrow_down</span>
+            <span class="mdc-list-item__meta material-icons collapsible__close-icon" aria-hidden="true">keyboard_arrow_up</span>
+        </a>
+        
     </div>
-    <div id="collapse-1" class="collapse u-pv">
-        <p>Lorem ipsum dolor sit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div id="collapse-1" class="collapse">
+<p class="u-p-">Lorem ipsum dolor sit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 </div>
 <script>
@@ -29,11 +66,12 @@
         coll[i].addEventListener('click', function (e) {
             this.classList.toggle('active');
             var content = document.querySelector(e.currentTarget.getAttribute('data-target'));
+            this.parentElement.parentElement.classList.toggle('collapsible--is-open');
             content.classList.toggle('collapse--is-open');
             if (content.style.display === "block") {
-              //  content.style.display = "none";
+                //  content.style.display = "none";
             } else {
-               // content.style.display = "block";
+                // content.style.display = "block";
             }
         });
     }

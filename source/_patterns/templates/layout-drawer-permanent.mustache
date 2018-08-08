@@ -12,18 +12,9 @@
 <div class="drawer-container-flex flex app mdc-typography">
     <aside class="mdc-drawer mdc-drawer--permanent">
         <nav class="mdc-drawer__drawer">
-            <header class="mdc-drawer__header">
-                <div class="mdc-drawer__header-content mdc-theme--on-primary mdc-theme--primary-bg">Header here</div>
-            </header>
+            {{> molecules-drawer-header-user }}
             <nav class="mdc-drawer__content mdc-list-group">
-               <div class="mdc-list">
-                    {{# menu}}
-                    <a class="mdc-list-item" href="{{href}}">
-                        <span class="material-icons mdc-list-item__graphic">{{ icon }}</span>
-                        {{label}}
-                    </a>
-                    {{/menu}}
-                </div>
+               {{> organisms-nav-list }}
             </nav>
         </nav>
     </aside>

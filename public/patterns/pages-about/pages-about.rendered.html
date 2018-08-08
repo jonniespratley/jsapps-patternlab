@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1533685715218" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533685715218" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1533759069077" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533759069077" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     
@@ -30,13 +30,13 @@
 <div class="app">
 
   <!-- APP-DRAWER -->
-  <nav class="app-drawer mdc-drawer mdc-drawer--persistent ">
+  <nav class="app__drawer mdc-drawer mdc-drawer--persistent mdc-drawer--open">
   <div class="mdc-drawer__toolbar-spacer"></div>
   <div class="mdc-drawer__drawer">
     <header class="mdc-drawer__header">
-          <div class="mdc-drawer__header-content">
-          <div class="flex flex--col flex--center flex--middle">
-            <style>
+      <div class="mdc-drawer__header-content">
+        <div class="flex flex--col flex--center flex--middle flex__item">
+          <style>
 .app-logo {
   width: 150px;
   height: 150px;
@@ -58,54 +58,80 @@
   <rect width="630" height="630" fill="#f7df1e"/>
   <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
 </svg>
+<style>
+.app-svg-logo {
+  max-width: 300px;
+}
+</style>
 </div>
-            <span class="app-title">Theme Demo</span>
-          </div>
-          </div>
-        </header>
-  
-      
-    
+          <strong class="app-title u-mt">Theme Demo</strong>
+        </div>
+      </div>
+    </header>
+
     <div class="mdc-drawer__content">
-      <nav class="mdc-list">
-        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html">
-          Dashboard
-        </a>
-        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html">
-          Sample Page
-        </a>
-        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html">
-          Products
-        </a>
-        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html">
-          My Account
-        </a>
-        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html">
-          Forms
-        </a>
-        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html">
-          About
-        </a>
-        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html">
-          Layouts (permanent)
-        </a>
-        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html">
-          Layouts (temporary)
+      <nav class="mdc-list mdc-list--dense">
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html" title="Dashboard">
+   
+        <span class="material-icons mdc-list-item__graphic">dashboard</span>
+    <span>Dashboard</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html" title="Sample Page">
+   
+        <span class="material-icons mdc-list-item__graphic">extension</span>
+    <span>Sample Page</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html" title="Products">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Products</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html" title="My Account">
+   
+        <span class="material-icons mdc-list-item__graphic">account_circle</span>
+    <span>My Account</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html" title="Forms">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Forms</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html" title="About">
+   
+        <span class="material-icons mdc-list-item__graphic">info</span>
+    <span>About</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html" title="Permanent Drawer">
+   
+        <span class="material-icons mdc-list-item__graphic">view_quilt</span>
+    <span>Permanent Drawer</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html" title="Temporary Layout">
+   
+        <span class="material-icons mdc-list-item__graphic">web</span>
+    <span>Temporary Layout</span>
+</a>
+        <hr class="mdc-list-divider">
+        <a class="mdc-list-item" tabindex="-1" href="/logout">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
+          <span>Sign out</span>
         </a>
       </nav>
     </div>
-    </div>
-  </nav>
+  </div>
+</nav>
 
-  <style>
-  .app-drawer{
-    header:100vh;
+<style>
+  .app__drawer {
+    header: 100vh;
   }
-.app-drawer .app-logo {
-width: 50px;
-height: 50px;
-padding-top: 20px;
-fill: currentColor; }
+
+  .app__drawer .app-logo {
+    width: 50px;
+    height: 50px;
+    padding-top: 20px;
+    fill: currentColor;
+  }
 </style>
   
   <!-- APP-CONTENT -->
@@ -158,20 +184,20 @@ fill: currentColor; }
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1533685715218">
+<script id="pl-js-polyfill-insert-1533759069077">
   (function() {
     if (self != top) {
-      var cb = '1533685715218';
+      var cb = '1533759069077';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1533685715218">
+<script id="pl-js-insert-1533759069077">
   (function() {
     if (self != top) {
-      var cb = '1533685715218';
+      var cb = '1533759069077';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
