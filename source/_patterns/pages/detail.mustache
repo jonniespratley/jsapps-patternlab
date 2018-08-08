@@ -1,22 +1,33 @@
+<style>
+  body {
+    background: var(--mdc-theme-background);
+  }
 
-<div class="flex mdc-typography">
-{{> organisms-app-drawer(open: false)}}
+  .theme1 {
+    --mdc-theme-primary: #343a40;
+    --mdc-theme-secondary: #343a40;
+    --mdc-theme-background: #eee;
+  }
+</style>
 
-<div class=" flex__item ">
-    {{> organisms-page-top-bar(pageTitle: "Detail", fixed: true, backBtn: true, menuBtn: false)}}
-    
-        <!-- CONTENT -->
-        
-    <main class="content mdc-top-app-bar--fixed-adjust">
-            <section class="mdc-layout-grid demo-grid">
-                <div class="mdc-layout-grid__inner">
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 demo-cell mdc-elevation--z1"></div>
-                </div>
-            </section>
-        </main> 
-</div>
+{{> organisms-page-top-bar(pageTitle: "Details")}}
 
+<div class="app mdc-top-app-bar--fixed-adjust">
+  <!-- APP-DRAWER -->
   
+  <!-- PAGE-TABS -->
+  {{> organisms-tab-bar}}
 
-
+  <!-- PAGE-CONTENT -->
+  <main class="app-content flex">
+   
+    <div class="flex__item">
+      <div class="cards flex flex--wrap">
+          {{#listItems.ten}}
+              {{> organisms-card-3(title: 'Card 1')}}
+          {{/listItems.ten}}    
+      </div> 
+    </div>
+  </main>
+  {{> organisms-app-settings}}
 </div>

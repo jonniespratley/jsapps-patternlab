@@ -2,7 +2,7 @@
   <div class="mdc-tab-scroller">
     <div class="mdc-tab-scroller__scroll-area">
       <div class="mdc-tab-scroller__scroll-content">
-        {{> molecules-tab(label: "Recents", icon: "phone", href: "#")}}
+        {{> molecules-tab(label: "Recents", icon: "access_time", href: "#")}}
         {{> molecules-tab(label: "Favorites", icon: "favorite", href: "#", active: true)}}
         {{> molecules-tab(label: "Nearby", icon: "person_pin", href: "#")}}
       </div>
@@ -12,6 +12,9 @@
 
 <script>
 //const tabBar = new mdc.MDCTabBar(document.querySelector('.mdc-tab-bar'));
-//mdc.tabs.MDCTabBar.attachTo(document.querySelector('#mdc-tabs'));
-const tabBar = new mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
+//mdc.tabBar.MDCTabBar.attachTo(document.querySelector('.mdc-tab-bar'));
+(function(){
+  const tabBar = new mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
+})();
+
 </script>

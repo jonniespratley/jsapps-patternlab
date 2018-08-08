@@ -1,7 +1,19 @@
 <div class="cards flex flex--wrap">
-    {{> organisms-card(title: 'Card 1')}}
-    {{> organisms-card-2(title: 'Card 2')}}
-    {{> organisms-card-3(title: 'Card 3')}}
-    {{> organisms-card-4(title: 'Card 4')}}
-    {{> organisms-card-5(title: 'Card 4')}}
+    {{#listItems.three}}
+        {{> organisms-card(title: 'Card 1')}}
+    {{/listItems.three}}    
+</div>
+
+<div class="cards flex flex--wrap">
+    {{#listItems.four}}
+        {{> organisms-card-3(title: 'Card 1')}}
+    {{/listItems.four}}    
+</div>
+
+
+<div class="cards flex flex--wrap">
+    {{#listItems.two}}
+        {{> organisms-card-4(title: 'Card 1')}}
+        {{> organisms-card-2(title: 'Card 1')}}
+    {{/listItems.two}}    
 </div>
