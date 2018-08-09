@@ -1,0 +1,48 @@
+    /**
+--mdc-theme-primary	The theme primary color
+--mdc-theme-secondary	The theme secondary color
+--mdc-theme-background	The theme background color
+--mdc-theme-surface	The theme surface color
+--mdc-theme-on-primary	Text color on top of a primary background
+--mdc-theme-on-secondary	Text color on top of a secondary background
+--mdc-theme-on-surface	Text color on top of a surface background
+--mdc-theme-text-<TEXT_STYLE>-on-light	Text color for TEXT_STYLE on top of light background
+--mdc-theme-text-<TEXT_STYLE>-on-dark	Text color for TEXT_STYLE on top of dark background
+*/
+.theme-0 {
+    --mdc-theme-primary: rgb(8, 107, 238);
+    --mdc-theme-secondary: #23272c;
+    --mdc-theme-background: #ececec;
+}
+.theme-1 {
+    --mdc-theme-primary: #343a40;
+    --mdc-theme-secondary: #23272c;
+    --mdc-theme-background: #ececec;
+}
+
+.theme-2 {
+    --mdc-theme-primary: #4291f7;
+    --mdc-theme-secondary: green;
+    --mdc-theme-background: white;
+}
+
+.theme-3 {
+    --mdc-theme-primary: #7bb872;
+    --mdc-theme-secondary: green;
+    --mdc-theme-background: white;
+}
+.theme-4 {
+    --mdc-theme-primary: #53bad1;
+    --mdc-theme-secondary: green;
+    --mdc-theme-background: white;
+}
+.theme-5 {
+    --mdc-theme-primary: #ffc53d;
+    --mdc-theme-secondary: green;
+    --mdc-theme-background: white;
+}
+.theme-6 {
+    --mdc-theme-primary: #ff4d4f;
+    --mdc-theme-secondary: green;
+    --mdc-theme-background: white;
+}
