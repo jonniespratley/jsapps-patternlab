@@ -6,9 +6,22 @@
     <p>Adjust settings in real time.</p>
 
     <hr class="mdc-list-divider"/>
-    <h4>Layout</h4>
-    
+    <h4>Layout Options</h4>
+    <div class="layout-options u-pb flex flex--col">
+      
+      {{> atoms-checkbox(label: "Fixed header", name: "fixedHeader", value: false) }}
 
+      {{> atoms-checkbox(label: "Fixed sidenav", name: "fixedSidenav", value: false) }}
+      {{> atoms-checkbox(label: "Collapsed sidenav", name: "collapsedSidenav") }}
+      
+    </div>
+
+    <script>
+    $('[type="checkbox"]').bind('change', function(e){
+      console.log(e.target.name, e.target.checked);
+    })
+    </script>
+    
 
     <hr class="mdc-list-divider"/>
     <h4>Color Options</h4>

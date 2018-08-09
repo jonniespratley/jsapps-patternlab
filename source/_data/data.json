@@ -7,20 +7,46 @@
   "cardSubtitle": "Subtitle",
   "label": "Text Label",
   "icon": "home",
-"emails": [{
-  "val": "jonniedollas@gmail.com",
-  "label": "jonniedollas@gmail.com",
-  "key": "email1"
-}],
+  "layoutOptions": {
+    "sidebar" : ["fixed", "static"]
+  },
+  "themes": [
+    {
+      "name": "0"
+    },
+    {
+      "name": "1"
+    },
+    {
+      "name": "2"
+    },
+    {
+      "name": "3"
+    },
+    {
+      "name": "4"
+    },
+    {
+      "name": "5"
+    },
+    {
+      "name": "6"
+    }
+  ],
+  "emails": [{
+    "val": "jonniedollas@gmail.com",
+    "label": "jonniedollas@gmail.com",
+    "key": "email1"
+  }],
   "main": {
     "items": [{
       "label": "Dashboard",
       "icon": "dashboard"
     }]
   },
-  "items": [
-    {"label": "Single-line item"}
-  ],
+  "items": [{
+    "label": "Single-line item"
+  }],
   "menu": [{
       "label": "Dashboard",
       "icon": "dashboard",
@@ -36,7 +62,7 @@
       "icon": "list",
       "href": "link.pages-products"
     },
-    
+
     {
       "label": "My Account",
       "icon": "account_circle",
