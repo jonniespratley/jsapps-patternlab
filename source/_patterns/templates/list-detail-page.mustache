@@ -1,0 +1,48 @@
+<div class="app" id="list-detail">
+
+  <!-- APP-DRAWER -->
+  
+  {{> organisms-app-settings}}
+  {{> organisms-app-topbar(pageTitle: "Page Title")}} 
+  
+  
+  <main class="app-content flex">
+    {{> organisms-app-drawer(open: false)}}   
+
+    <div class="flex__item mdc-top-app-bar--fixed-adjust mdc-typography">
+    <!-- PAGE-CONTENT -->
+      <div class="page mdc-theme--background">
+        <section class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-list-group">
+                
+            <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
+                {{# listItems.ten }}
+                <li class="mdc-list-item">
+                    
+                        <img
+                            class="mdc-list-item__graphic" 
+                            src="{{img.avatar.src}}" 
+                            alt="{{img.avatar.alt}}"/>
+                    
+                    <div class="mdc-list-item__text">
+                        <span class="mdc-list-item__primary-text">Two-line item</span>
+                        <span class="mdc-list-item__secondary-text">Secondary text lorem ipsum.</span>
+                    </div>
+                    <span class="mdc-list-item__meta material-icons" aria-hidden="true">check_box_outline_blank</span>
+                </li>
+                <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
+                {{/ listItems.ten }}
+            </ul>
+            </div>
+
+            
+
+            
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+</div>

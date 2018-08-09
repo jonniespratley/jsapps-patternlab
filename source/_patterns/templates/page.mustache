@@ -1,56 +1,30 @@
-<style>
-  :root {
-  --mdc-theme-primary: #fefefe;
-  --mdc-theme-secondary: #343a40;
-  --mdc-theme-background: #eee;
-}
-.hamburger .material-icons {
-    color: inherit;
-}
-body {
-  background: #eee;
-}
-.hamburger{    
-    fill: black;
-    color: black !important;
-  }
-
-.demo-cell {
-  background: white;
-  border-radius: 5px;
-  min-height: 160px;
-}
-</style>
 
 
 
 <div class="app">
 
   <!-- APP-DRAWER -->
-  {{> organisms-app-drawer}}
   
+  {{> organisms-app-settings}}
+  {{> organisms-app-topbar}} 
   <!-- APP-CONTENT -->
-  <main class="app-content">
-    <div>
-
-<div class="mdc-top-app-bar--fixed-adjust mdc-typography">
-  <section class="mdc-layout-grid demo-grid">
-      <div class="mdc-layout-grid__inner">
-        {{# listItems.six}}
+  <main class="app-content flex">
+    {{> organisms-app-drawer}}   
+    <div class="flex__item">
+      <div class="mdc-top-app-bar--fixed-adjust mdc-typography">
+        <section class="mdc-layout-grid demo-grid">
+          <div class="mdc-layout-grid__inner">
+            {{# listItems.six}}
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-phone mdc-layout-grid__cell--span-4-tablet demo-cell mdc-elevation--z1 "></div>
-       {{/ listItems.six}}
-       {{# listItems.two}}
+            {{/ listItems.six}} 
+
+            {{# listItems.two}}
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop demo-cell mdc-elevation--z1"></div>
-       {{/ listItems.two}}
+            {{/ listItems.two}}
+          </div>
+        </section>
       </div>
-     </section>
-</div>      
     </div>
   </main>
 
 </div>
-
-
-
-  
-

@@ -2,48 +2,35 @@
   <nav class="mdc-drawer__drawer">
     <nav class="mdc-drawer__content u-p">
 
-    <h3>Settings</h3>
-    <p>Adjust settings in real time.</p>
+      <h3>Settings</h3>
+      <p>Adjust settings in real time.</p>
 
-    <hr class="mdc-list-divider"/>
-    <h4>Layout Options</h4>
-    <div class="layout-options u-pb flex flex--col">
-      
-      {{> atoms-checkbox(label: "Fixed header", name: "fixedHeader", value: false) }}
+      <hr class="mdc-list-divider" />
+      <h4>Layout Options</h4>
+      <div class="layout-options u-pb flex flex--col">
 
-      {{> atoms-checkbox(label: "Fixed sidenav", name: "fixedSidenav", value: false) }}
-      {{> atoms-checkbox(label: "Collapsed sidenav", name: "collapsedSidenav") }}
-      
-    </div>
+        {{> atoms-checkbox(label: "Fixed header", name: "fixedHeader", value: false) }} {{> atoms-checkbox(label: "Fixed sidenav",
+        name: "fixedSidenav", value: false) }} {{> atoms-checkbox(label: "Collapsed sidenav", name: "collapsedSidenav") }}
 
-    <script>
-    $('[type="checkbox"]').bind('change', function(e){
-      console.log(e.target.name, e.target.checked);
-    })
-    </script>
-    
+      </div>
 
-    <hr class="mdc-list-divider"/>
-    <h4>Color Options</h4>
-    <div class="color-options">
-    {{> organisms-settings-colors }}
-    </div>
+      <script>
+        $('[type="checkbox"]').bind('change', function (e) {
+          console.log(e.target.name, e.target.checked);
+        })
+      </script>
+
+
+      <hr class="mdc-list-divider" />
+      <h4>Color Options</h4>
+      <div class="color-options">
+        {{> organisms-settings-colors }}
+      </div>
 
 
       <ul class="mdc-list">
-        <li class="mdc-list-group__subheader">Categries</li>
-        {{#listItems.six}}
-        <li class="mdc-list-item">
-          {{> atoms-checkbox(label: "Category") }}
-        </li>
-        <li role="separator" class="mdc-list-divider"></li>
-        {{/listItems.six}}
-        <li class="mdc-list-group__subheader">Category</li>
-        <li class="mdc-list-item">
-          {{> atoms-slider }}
-        </li>
-        <li role="separator" class="mdc-list-divider"></li>
-        <li class="mdc-list-group__subheader">Category</li>
+
+        <li class="mdc-list-group__subheader">Sidebar width</li>
         <li class="mdc-list-item">
           {{> atoms-slider }}
         </li>
@@ -78,7 +65,7 @@
 
 <script>
   (function () {
-    let settingsToggle = document.querySelector('.app__settings-toggle');
+    let settingsToggle = document.querySelector('.app__settings-toggle-alt');
     if (settingsToggle) {
       settingsToggle.addEventListener('click', function (e) {
         console.log('Find and toggle settings drawer');

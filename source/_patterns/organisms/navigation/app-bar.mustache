@@ -1,10 +1,10 @@
-<header class="mdc-top-app-bar {{#short}}mdc-top-app-bar--short{{/short}} {{#dense}}mdc-top-app-bar--dense{{/dense}} {{#fixed}}mdc-toolbar--fixed{{/fixed}}">
+<header class="mdc-top-app-bar mdc-theme--on-primary mdc-theme--primary-bg {{#short}}mdc-top-app-bar--short{{/short}} {{#dense}}mdc-top-app-bar--dense{{/dense}} {{#themeOptions.fixedHeader}}mdc-toolbar--fixed{{/themeOptions.fixedHeader}}">
   <div class="mdc-top-app-bar__row">
    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
     <button class="mdc-top-app-bar__navigation-icon menu-btn">
       {{> atoms-icon(icon: "menu")}}
     </button>
-    <span class="mdc-top-app-bar__title">{{appName}}</span>
+    <span class="mdc-top-app-bar__title">{{pageTitle}}</span>
    </section>
    <section class="mdc-toolbar__section"></section>
    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">

@@ -93,6 +93,27 @@
 
 
 
+ <ul class="mdc-list">
+        <li class="mdc-list-group__subheader">Categries</li>
+        {{#listItems.six}}
+        <li class="mdc-list-item">
+          {{> atoms-checkbox(label: "Category") }}
+        </li>
+        <li role="separator" class="mdc-list-divider"></li>
+        {{/listItems.six}}
+        <li class="mdc-list-group__subheader">Category</li>
+        <li class="mdc-list-item">
+          {{> atoms-slider }}
+        </li>
+        <li role="separator" class="mdc-list-divider"></li>
+        <li class="mdc-list-group__subheader">Category</li>
+        <li class="mdc-list-item">
+          {{> atoms-slider }}
+        </li>
+        <li role="separator" class="mdc-list-divider"></li>
+      </ul>
+
+
 
 <script>
     document.querySelectorAll('.mdc-list').forEach(function (el) {
