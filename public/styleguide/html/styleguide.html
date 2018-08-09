@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1533761099909" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533761099909" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1533836654620" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533836654620" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1533761099909" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1533836654620" media="all">
     <!-- End Pattern Lab -->
 
        
@@ -24,6 +24,7 @@
   -->
 
   <script src="../../js/vendor/jquery.min.js"></script>
+  <script src="../../js/vendor/Chart.min.js"></script>
   <script src="../../js/vendor/material-components-web.min.js"></script>
   <script src="../../js/app.js"></script>
   </head>
@@ -571,18 +572,21 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<div class="mdc-switch">
-    <div class="mdc-switch__track"></div>
-    <div class="mdc-switch__thumb-underlay">
-        <div class="mdc-switch__thumb">
-            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+	<div class="mdc-typography">
+    <div class="mdc-switch">
+        <div class="mdc-switch__track"></div>
+        <div class="mdc-switch__thumb-underlay">
+            <div class="mdc-switch__thumb">
+                <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+            </div>
         </div>
     </div>
-</div>
-<label for="basic-switch">Text Label</label>
-<script>
-mdc.switchControl.MDCSwitch.attachTo(document.querySelector('.mdc-switch'));
-</script>
+    <label for="basic-switch mdc-typography">Text Label</label>
+
+    </div>
+    <script>
+        mdc.switchControl.MDCSwitch.attachTo(document.querySelector('.mdc-switch'));
+    </script>
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-atoms-switch" class="pl-js-pattern-data">
@@ -1711,17 +1715,26 @@ for (i = 0; i < coll.length; i++) {
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<a class="mdc-tab mdc-tab--with-icon-and-text" role="tab" aria-selected="true" tabindex="0" href="">
+	<button class="mdc-tab mdc-tab--with-icon-and-text" role="tab" tabindex="0" href="">
   <div class="mdc-tab__content">
     <span class="mdc-tab__icon material-icons">home</span>
     <span class="mdc-tab__text-label">Text Label</span>
   </div>
+
+  <span class="mdc-tab-indicator">
+    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+  </span>
   <div class="mdc-tab__ripple"></div>
-</a>
+</button>
+<script>
+document.querySelectorAll('.mdc-tab').forEach(function(el){
+  mdc.tab.MDCTab.attachTo(el);
+});
+</script>
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-molecules-tab" class="pl-js-pattern-data">
-	
+	{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-tab-bar","lineagePath":"../../patterns/organisms-navigation-tab-bar/organisms-navigation-tab-bar.rendered.html"},{"lineagePattern":"organisms-tabs","lineagePath":"../../patterns/organisms-navigation-tabs/organisms-navigation-tabs.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-tab-bar","lineagePath":"../../patterns/organisms-navigation-tab-bar/organisms-navigation-tab-bar.rendered.html"},{"lineagePattern":"organisms-tabs","lineagePath":"../../patterns/organisms-navigation-tabs/organisms-navigation-tabs.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Tab","patternPartial":"molecules-tab","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 	</script>
 
 </div><!--end pl-c-pattern--><div id="viewall-molecules-text" class="pl-c-category">
@@ -2341,6 +2354,1483 @@ for (i = 0; i < coll.length; i++) {
 	
 	</script>
 
+</div><!--end pl-c-pattern--><div id="viewall-organisms-charts" class="pl-c-category">
+		
+	<h2 class="pl-c-category__title">
+		<a href="../../patterns/organisms-charts&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-organisms-charts">charts</a>
+	</h2><!--end pl-c-category__title-->
+
+	<div class="pl-c-category__description pl-c-text-passage">
+		
+	</div><!--end pl-c-category__description-->
+	
+</div><!--end pl-c-category-->
+	<div id="organisms-chartjs" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-charts-00-chartjs&#x2F;organisms-charts-00-chartjs.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-chartjs" title="Link to Pattern">
+				Chartjs
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-chartjs" data-patternpartial="organisms-chartjs" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-chartjs">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  
+
+<script>
+'use strict';
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)'
+};
+
+(function(global) {
+	var Months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+
+	var COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+
+	var Samples = global.Samples || (global.Samples = {});
+	var Color = global.Color;
+
+	Samples.utils = {
+		// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+		srand: function(seed) {
+			this._seed = seed;
+		},
+
+		rand: function(min, max) {
+			var seed = this._seed;
+			min = min === undefined ? 0 : min;
+			max = max === undefined ? 1 : max;
+			this._seed = (seed * 9301 + 49297) % 233280;
+			return min + (this._seed / 233280) * (max - min);
+		},
+
+		numbers: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 1;
+			var from = cfg.from || [];
+			var count = cfg.count || 8;
+			var decimals = cfg.decimals || 8;
+			var continuity = cfg.continuity || 1;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var data = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = (from[i] || 0) + this.rand(min, max);
+				if (this.rand() <= continuity) {
+					data.push(Math.round(dfactor * value) / dfactor);
+				} else {
+					data.push(null);
+				}
+			}
+
+			return data;
+		},
+
+		labels: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 100;
+			var count = cfg.count || 8;
+			var step = (max - min) / count;
+			var decimals = cfg.decimals || 8;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var prefix = cfg.prefix || '';
+			var values = [];
+			var i;
+
+			for (i = min; i < max; i += step) {
+				values.push(prefix + Math.round(dfactor * i) / dfactor);
+			}
+
+			return values;
+		},
+
+		months: function(config) {
+			var cfg = config || {};
+			var count = cfg.count || 12;
+			var section = cfg.section;
+			var values = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = Months[Math.ceil(i) % 12];
+				values.push(value.substring(0, section));
+			}
+
+			return values;
+		},
+
+		color: function(index) {
+			return COLORS[index % COLORS.length];
+		},
+
+		transparentize: function(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+	};
+
+	// DEPRECATED
+	window.randomScalingFactor = function() {
+		return Math.round(Samples.utils.rand(-100, 100));
+	};
+
+	// INITIALIZATION
+
+	Samples.utils.srand(Date.now());
+
+	// Google Analytics
+	
+	
+
+}(this));
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-chartjs" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-charts-demo" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-charts-00-charts-demo&#x2F;organisms-charts-00-charts-demo.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-charts-demo" title="Link to Pattern">
+				Charts Demo
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-charts-demo" data-patternpartial="organisms-charts-demo" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-charts-demo">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  
+
+<script>
+'use strict';
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)'
+};
+
+(function(global) {
+	var Months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+
+	var COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+
+	var Samples = global.Samples || (global.Samples = {});
+	var Color = global.Color;
+
+	Samples.utils = {
+		// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+		srand: function(seed) {
+			this._seed = seed;
+		},
+
+		rand: function(min, max) {
+			var seed = this._seed;
+			min = min === undefined ? 0 : min;
+			max = max === undefined ? 1 : max;
+			this._seed = (seed * 9301 + 49297) % 233280;
+			return min + (this._seed / 233280) * (max - min);
+		},
+
+		numbers: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 1;
+			var from = cfg.from || [];
+			var count = cfg.count || 8;
+			var decimals = cfg.decimals || 8;
+			var continuity = cfg.continuity || 1;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var data = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = (from[i] || 0) + this.rand(min, max);
+				if (this.rand() <= continuity) {
+					data.push(Math.round(dfactor * value) / dfactor);
+				} else {
+					data.push(null);
+				}
+			}
+
+			return data;
+		},
+
+		labels: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 100;
+			var count = cfg.count || 8;
+			var step = (max - min) / count;
+			var decimals = cfg.decimals || 8;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var prefix = cfg.prefix || '';
+			var values = [];
+			var i;
+
+			for (i = min; i < max; i += step) {
+				values.push(prefix + Math.round(dfactor * i) / dfactor);
+			}
+
+			return values;
+		},
+
+		months: function(config) {
+			var cfg = config || {};
+			var count = cfg.count || 12;
+			var section = cfg.section;
+			var values = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = Months[Math.ceil(i) % 12];
+				values.push(value.substring(0, section));
+			}
+
+			return values;
+		},
+
+		color: function(index) {
+			return COLORS[index % COLORS.length];
+		},
+
+		transparentize: function(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+	};
+
+	// DEPRECATED
+	window.randomScalingFactor = function() {
+		return Math.round(Samples.utils.rand(-100, 100));
+	};
+
+	// INITIALIZATION
+
+	Samples.utils.srand(Date.now());
+
+	// Google Analytics
+	
+	
+
+}(this));
+</script>
+
+
+
+
+
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-charts-demo" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-bar-chart" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-charts-bar-chart&#x2F;organisms-charts-bar-chart.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-bar-chart" title="Link to Pattern">
+				Bar Chart
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-bar-chart" data-patternpartial="organisms-bar-chart" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-bar-chart">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  
+
+<script>
+'use strict';
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)'
+};
+
+(function(global) {
+	var Months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+
+	var COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+
+	var Samples = global.Samples || (global.Samples = {});
+	var Color = global.Color;
+
+	Samples.utils = {
+		// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+		srand: function(seed) {
+			this._seed = seed;
+		},
+
+		rand: function(min, max) {
+			var seed = this._seed;
+			min = min === undefined ? 0 : min;
+			max = max === undefined ? 1 : max;
+			this._seed = (seed * 9301 + 49297) % 233280;
+			return min + (this._seed / 233280) * (max - min);
+		},
+
+		numbers: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 1;
+			var from = cfg.from || [];
+			var count = cfg.count || 8;
+			var decimals = cfg.decimals || 8;
+			var continuity = cfg.continuity || 1;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var data = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = (from[i] || 0) + this.rand(min, max);
+				if (this.rand() <= continuity) {
+					data.push(Math.round(dfactor * value) / dfactor);
+				} else {
+					data.push(null);
+				}
+			}
+
+			return data;
+		},
+
+		labels: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 100;
+			var count = cfg.count || 8;
+			var step = (max - min) / count;
+			var decimals = cfg.decimals || 8;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var prefix = cfg.prefix || '';
+			var values = [];
+			var i;
+
+			for (i = min; i < max; i += step) {
+				values.push(prefix + Math.round(dfactor * i) / dfactor);
+			}
+
+			return values;
+		},
+
+		months: function(config) {
+			var cfg = config || {};
+			var count = cfg.count || 12;
+			var section = cfg.section;
+			var values = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = Months[Math.ceil(i) % 12];
+				values.push(value.substring(0, section));
+			}
+
+			return values;
+		},
+
+		color: function(index) {
+			return COLORS[index % COLORS.length];
+		},
+
+		transparentize: function(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+	};
+
+	// DEPRECATED
+	window.randomScalingFactor = function() {
+		return Math.round(Samples.utils.rand(-100, 100));
+	};
+
+	// INITIALIZATION
+
+	Samples.utils.srand(Date.now());
+
+	// Google Analytics
+	
+	
+
+}(this));
+</script>
+<canvas id="bar-chart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById("bar-chart").getContext('2d');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-bar-chart" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-basic-line-chart" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-charts-basic-line-chart&#x2F;organisms-charts-basic-line-chart.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-basic-line-chart" title="Link to Pattern">
+				Basic Line Chart
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-basic-line-chart" data-patternpartial="organisms-basic-line-chart" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-basic-line-chart">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  
+
+<script>
+'use strict';
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)'
+};
+
+(function(global) {
+	var Months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+
+	var COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+
+	var Samples = global.Samples || (global.Samples = {});
+	var Color = global.Color;
+
+	Samples.utils = {
+		// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+		srand: function(seed) {
+			this._seed = seed;
+		},
+
+		rand: function(min, max) {
+			var seed = this._seed;
+			min = min === undefined ? 0 : min;
+			max = max === undefined ? 1 : max;
+			this._seed = (seed * 9301 + 49297) % 233280;
+			return min + (this._seed / 233280) * (max - min);
+		},
+
+		numbers: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 1;
+			var from = cfg.from || [];
+			var count = cfg.count || 8;
+			var decimals = cfg.decimals || 8;
+			var continuity = cfg.continuity || 1;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var data = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = (from[i] || 0) + this.rand(min, max);
+				if (this.rand() <= continuity) {
+					data.push(Math.round(dfactor * value) / dfactor);
+				} else {
+					data.push(null);
+				}
+			}
+
+			return data;
+		},
+
+		labels: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 100;
+			var count = cfg.count || 8;
+			var step = (max - min) / count;
+			var decimals = cfg.decimals || 8;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var prefix = cfg.prefix || '';
+			var values = [];
+			var i;
+
+			for (i = min; i < max; i += step) {
+				values.push(prefix + Math.round(dfactor * i) / dfactor);
+			}
+
+			return values;
+		},
+
+		months: function(config) {
+			var cfg = config || {};
+			var count = cfg.count || 12;
+			var section = cfg.section;
+			var values = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = Months[Math.ceil(i) % 12];
+				values.push(value.substring(0, section));
+			}
+
+			return values;
+		},
+
+		color: function(index) {
+			return COLORS[index % COLORS.length];
+		},
+
+		transparentize: function(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+	};
+
+	// DEPRECATED
+	window.randomScalingFactor = function() {
+		return Math.round(Samples.utils.rand(-100, 100));
+	};
+
+	// INITIALIZATION
+
+	Samples.utils.srand(Date.now());
+
+	// Google Analytics
+	
+	
+
+}(this));
+</script>
+
+<div style="width:75%;">
+	<canvas id="basic-line-chart"></canvas>
+</div>
+<br>
+<br>
+<button id="randomizeData">Randomize Data</button>
+<button id="addDataset">Add Dataset</button>
+<button id="removeDataset">Remove Dataset</button>
+<button id="addData">Add Data</button>
+<button id="removeData">Remove Data</button>
+<script>
+	(function(){
+var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+		'November', 'December'
+	];
+	var config = {
+		type: 'line',
+		data: {
+			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			datasets: [{
+				label: 'My First dataset',
+				backgroundColor: window.chartColors.red,
+				borderColor: window.chartColors.red,
+				data: [
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor()
+				],
+				fill: false,
+			}, {
+				label: 'My Second dataset',
+				fill: false,
+				backgroundColor: window.chartColors.blue,
+				borderColor: window.chartColors.blue,
+				data: [
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor(),
+					randomScalingFactor()
+				],
+			}]
+		},
+		options: {
+			responsive: true,
+			title: {
+				display: true,
+				text: 'Chart.js Line Chart'
+			},
+			tooltips: {
+				mode: 'index',
+				intersect: false,
+			},
+			hover: {
+				mode: 'nearest',
+				intersect: true
+			},
+			scales: {
+				xAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Month'
+					}
+				}],
+				yAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Value'
+					}
+				}]
+			}
+		}
+	};
+
+	window.onload = function () {
+		var ctx = document.getElementById('basic-line-chart').getContext('2d');
+		window.myLine = new Chart(ctx, config);
+	};
+
+	document.getElementById('randomizeData').addEventListener('click', function () {
+		config.data.datasets.forEach(function (dataset) {
+			dataset.data = dataset.data.map(function () {
+				return randomScalingFactor();
+			});
+
+		});
+
+		window.myLine.update();
+	});
+
+	var colorNames = Object.keys(window.chartColors);
+	document.getElementById('addDataset').addEventListener('click', function () {
+		var colorName = colorNames[config.data.datasets.length % colorNames.length];
+		var newColor = window.chartColors[colorName];
+		var newDataset = {
+			label: 'Dataset ' + config.data.datasets.length,
+			backgroundColor: newColor,
+			borderColor: newColor,
+			data: [],
+			fill: false
+		};
+
+		for (var index = 0; index < config.data.labels.length; ++index) {
+			newDataset.data.push(randomScalingFactor());
+		}
+
+		config.data.datasets.push(newDataset);
+		window.myLine.update();
+	});
+
+	document.getElementById('addData').addEventListener('click', function () {
+		if (config.data.datasets.length > 0) {
+			var month = MONTHS[config.data.labels.length % MONTHS.length];
+			config.data.labels.push(month);
+
+			config.data.datasets.forEach(function (dataset) {
+				dataset.data.push(randomScalingFactor());
+			});
+
+			window.myLine.update();
+		}
+	});
+
+	document.getElementById('removeDataset').addEventListener('click', function () {
+		config.data.datasets.splice(0, 1);
+		window.myLine.update();
+	});
+
+	document.getElementById('removeData').addEventListener('click', function () {
+		config.data.labels.splice(-1, 1); // remove the label first
+
+		config.data.datasets.forEach(function (dataset) {
+			dataset.data.pop();
+		});
+
+		window.myLine.update();
+	});
+	})()
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-basic-line-chart" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-basic-pie-chart" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-charts-basic-pie-chart&#x2F;organisms-charts-basic-pie-chart.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-basic-pie-chart" title="Link to Pattern">
+				Basic Pie Chart
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-basic-pie-chart" data-patternpartial="organisms-basic-pie-chart" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-basic-pie-chart">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  
+
+<script>
+'use strict';
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)'
+};
+
+(function(global) {
+	var Months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+
+	var COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+
+	var Samples = global.Samples || (global.Samples = {});
+	var Color = global.Color;
+
+	Samples.utils = {
+		// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+		srand: function(seed) {
+			this._seed = seed;
+		},
+
+		rand: function(min, max) {
+			var seed = this._seed;
+			min = min === undefined ? 0 : min;
+			max = max === undefined ? 1 : max;
+			this._seed = (seed * 9301 + 49297) % 233280;
+			return min + (this._seed / 233280) * (max - min);
+		},
+
+		numbers: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 1;
+			var from = cfg.from || [];
+			var count = cfg.count || 8;
+			var decimals = cfg.decimals || 8;
+			var continuity = cfg.continuity || 1;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var data = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = (from[i] || 0) + this.rand(min, max);
+				if (this.rand() <= continuity) {
+					data.push(Math.round(dfactor * value) / dfactor);
+				} else {
+					data.push(null);
+				}
+			}
+
+			return data;
+		},
+
+		labels: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 100;
+			var count = cfg.count || 8;
+			var step = (max - min) / count;
+			var decimals = cfg.decimals || 8;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var prefix = cfg.prefix || '';
+			var values = [];
+			var i;
+
+			for (i = min; i < max; i += step) {
+				values.push(prefix + Math.round(dfactor * i) / dfactor);
+			}
+
+			return values;
+		},
+
+		months: function(config) {
+			var cfg = config || {};
+			var count = cfg.count || 12;
+			var section = cfg.section;
+			var values = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = Months[Math.ceil(i) % 12];
+				values.push(value.substring(0, section));
+			}
+
+			return values;
+		},
+
+		color: function(index) {
+			return COLORS[index % COLORS.length];
+		},
+
+		transparentize: function(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+	};
+
+	// DEPRECATED
+	window.randomScalingFactor = function() {
+		return Math.round(Samples.utils.rand(-100, 100));
+	};
+
+	// INITIALIZATION
+
+	Samples.utils.srand(Date.now());
+
+	// Google Analytics
+	
+	
+
+}(this));
+</script>
+<div id="canvas-holder" style="width:40%">
+		<canvas id="basic-pie-chart"></canvas>
+	</div>
+	<button id="randomizeData">Randomize Data</button>
+	<button id="addDataset">Add Dataset</button>
+	<button id="removeDataset">Remove Dataset</button>
+	<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.orange,
+						window.chartColors.yellow,
+						window.chartColors.green,
+						window.chartColors.blue,
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Red',
+					'Orange',
+					'Yellow',
+					'Green',
+					'Blue'
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('basic-pie-chart').getContext('2d');
+			window.myPie = new Chart(ctx, config);
+		};
+
+		document.getElementById('randomizeData').addEventListener('click', function() {
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+			});
+
+			window.myPie.update();
+		});
+
+		var colorNames = Object.keys(window.chartColors);
+		document.getElementById('addDataset').addEventListener('click', function() {
+			var newDataset = {
+				backgroundColor: [],
+				data: [],
+				label: 'New dataset ' + config.data.datasets.length,
+			};
+
+			for (var index = 0; index < config.data.labels.length; ++index) {
+				newDataset.data.push(randomScalingFactor());
+
+				var colorName = colorNames[index % colorNames.length];
+				var newColor = window.chartColors[colorName];
+				newDataset.backgroundColor.push(newColor);
+			}
+
+			config.data.datasets.push(newDataset);
+			window.myPie.update();
+		});
+
+		document.getElementById('removeDataset').addEventListener('click', function() {
+			config.data.datasets.splice(0, 1);
+			window.myPie.update();
+		});
+	</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-basic-pie-chart" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-doughnut-chart" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-charts-doughnut-chart&#x2F;organisms-charts-doughnut-chart.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-doughnut-chart" title="Link to Pattern">
+				Doughnut Chart
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-doughnut-chart" data-patternpartial="organisms-doughnut-chart" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-doughnut-chart">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<canvas id="doughnut-chart" width="400" height="300"></canvas>
+<script>
+    new Chart(document.getElementById("doughnut-chart"), {
+        "type": "doughnut",
+        "data": {
+            "labels": ["Red", "Blue", "Yellow"],
+            "datasets": [{
+                "label": "My First Dataset",
+                "data": [300, 50, 100],
+                "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
+            }]
+        }
+    });
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-doughnut-chart" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-horizontal-bar-chart" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-charts-horizontal-bar-chart&#x2F;organisms-charts-horizontal-bar-chart.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-horizontal-bar-chart" title="Link to Pattern">
+				Horizontal Bar Chart
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-horizontal-bar-chart" data-patternpartial="organisms-horizontal-bar-chart" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-horizontal-bar-chart">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<canvas id="horizontal-bar-chart" width="400" height="300"></canvas>
+<script>
+    new Chart(document.getElementById("horizontal-bar-chart"), {
+        "type": "horizontalBar",
+        "data": {
+            "labels": ["January", "February", "March", "April", "May", "June", "July"],
+            "datasets": [{
+                "label": "My First Dataset",
+                "data": [65, 59, 80, 81, 56, 55, 40],
+                "fill": false,
+                "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
+                    "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)",
+                    "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
+                ],
+                "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+                    "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)",
+                    "rgb(201, 203, 207)"
+                ],
+                "borderWidth": 1
+            }]
+        },
+        "options": {
+            "scales": {
+                "xAxes": [{
+                    "ticks": {
+                        "beginAtZero": true
+                    }
+                }]
+            }
+        }
+    });
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-horizontal-bar-chart" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-line-chart" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-charts-line-chart&#x2F;organisms-charts-line-chart.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-line-chart" title="Link to Pattern">
+				Line Chart
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-line-chart" data-patternpartial="organisms-line-chart" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-line-chart">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	 <canvas class="my-4" id="line-chart" width="700" height="380"></canvas>
+
+ <!-- Graphs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  
+
+<script>
+'use strict';
+
+window.chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(201, 203, 207)'
+};
+
+(function(global) {
+	var Months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December'
+	];
+
+	var COLORS = [
+		'#4dc9f6',
+		'#f67019',
+		'#f53794',
+		'#537bc4',
+		'#acc236',
+		'#166a8f',
+		'#00a950',
+		'#58595b',
+		'#8549ba'
+	];
+
+	var Samples = global.Samples || (global.Samples = {});
+	var Color = global.Color;
+
+	Samples.utils = {
+		// Adapted from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+		srand: function(seed) {
+			this._seed = seed;
+		},
+
+		rand: function(min, max) {
+			var seed = this._seed;
+			min = min === undefined ? 0 : min;
+			max = max === undefined ? 1 : max;
+			this._seed = (seed * 9301 + 49297) % 233280;
+			return min + (this._seed / 233280) * (max - min);
+		},
+
+		numbers: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 1;
+			var from = cfg.from || [];
+			var count = cfg.count || 8;
+			var decimals = cfg.decimals || 8;
+			var continuity = cfg.continuity || 1;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var data = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = (from[i] || 0) + this.rand(min, max);
+				if (this.rand() <= continuity) {
+					data.push(Math.round(dfactor * value) / dfactor);
+				} else {
+					data.push(null);
+				}
+			}
+
+			return data;
+		},
+
+		labels: function(config) {
+			var cfg = config || {};
+			var min = cfg.min || 0;
+			var max = cfg.max || 100;
+			var count = cfg.count || 8;
+			var step = (max - min) / count;
+			var decimals = cfg.decimals || 8;
+			var dfactor = Math.pow(10, decimals) || 0;
+			var prefix = cfg.prefix || '';
+			var values = [];
+			var i;
+
+			for (i = min; i < max; i += step) {
+				values.push(prefix + Math.round(dfactor * i) / dfactor);
+			}
+
+			return values;
+		},
+
+		months: function(config) {
+			var cfg = config || {};
+			var count = cfg.count || 12;
+			var section = cfg.section;
+			var values = [];
+			var i, value;
+
+			for (i = 0; i < count; ++i) {
+				value = Months[Math.ceil(i) % 12];
+				values.push(value.substring(0, section));
+			}
+
+			return values;
+		},
+
+		color: function(index) {
+			return COLORS[index % COLORS.length];
+		},
+
+		transparentize: function(color, opacity) {
+			var alpha = opacity === undefined ? 0.5 : 1 - opacity;
+			return Color(color).alpha(alpha).rgbString();
+		}
+	};
+
+	// DEPRECATED
+	window.randomScalingFactor = function() {
+		return Math.round(Samples.utils.rand(-100, 100));
+	};
+
+	// INITIALIZATION
+
+	Samples.utils.srand(Date.now());
+
+	// Google Analytics
+	
+	
+
+}(this));
+</script>
+  <script>
+    var ctx = document.getElementById("line-chart");
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        datasets: [{
+          data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+          lineTension: 0,
+          backgroundColor: 'transparent',
+          borderColor: '#007bff',
+          borderWidth: 4,
+          pointBackgroundColor: '#007bff'
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: false
+            }
+          }]
+        },
+        legend: {
+          display: false,
+        }
+      }
+    });
+  </script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-line-chart" class="pl-js-pattern-data">
+	
+	</script>
+
 </div><!--end pl-c-pattern--><div id="viewall-organisms-dialogs" class="pl-c-category">
 		
 	<h2 class="pl-c-category__title">
@@ -2414,10 +3904,10 @@ for (i = 0; i < coll.length; i++) {
       <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
         <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;sepia" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Matthias Macguinness
+      Bertil Aaij
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -2440,10 +3930,10 @@ for (i = 0; i < coll.length; i++) {
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Siguror Hanigan
+      Freyr Hines
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -2479,10 +3969,10 @@ for (i = 0; i < coll.length; i++) {
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Frans Keegan
+      Siguror Hanigan
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -2531,10 +4021,10 @@ list.singleSelection = true;
       <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
         <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;sepia" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Matthias Macguinness
+      Bertil Aaij
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -2557,10 +4047,10 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Siguror Hanigan
+      Freyr Hines
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -2596,10 +4086,10 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Frans Keegan
+      Siguror Hanigan
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -3043,8 +4533,26 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
 
 	<div class="pl-js-pattern-example">
 	<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
-  <nav class="mdc-drawer__drawer ">
+  <nav class="mdc-drawer__drawer">
     <nav class="mdc-drawer__content">
+
+    <h3>Settings</h3>
+    <p>Adjust settings in real time.</p>
+
+    <hr class="mdc-list-divider"/>
+    <h4>Layout</h4>
+    
+
+
+    <hr class="mdc-list-divider"/>
+    <h4>Color Options</h4>
+    <ul>
+      <li>Color 1</li>
+    </ul>
+
+
+
+
       <ul class="mdc-list">
         <li class="mdc-list-group__subheader">Categries</li>
         <li class="mdc-list-item">
@@ -3324,8 +4832,26 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 
 
 <aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
-  <nav class="mdc-drawer__drawer ">
+  <nav class="mdc-drawer__drawer">
     <nav class="mdc-drawer__content">
+
+    <h3>Settings</h3>
+    <p>Adjust settings in real time.</p>
+
+    <hr class="mdc-list-divider"/>
+    <h4>Layout</h4>
+    
+
+
+    <hr class="mdc-list-divider"/>
+    <h4>Color Options</h4>
+    <ul>
+      <li>Color 1</li>
+    </ul>
+
+
+
+
       <ul class="mdc-list">
         <li class="mdc-list-group__subheader">Categries</li>
         <li class="mdc-list-item">
@@ -3862,11 +5388,11 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 	<div class="pl-js-pattern-example">
 	<ul id="list1" class="mdc-list" aria-orientation="vertical">
     <li class="mdc-list-item">
-      <span>Danish danish candy canes bonbon cheesecake danish marzipan</span>
+      <span>Yeah, I like animals better than people sometimes</span>
     </li>
     <li class="mdc-list-item">
       <span class="mdc-list-item__text">
-        <span class="mdc-list-item__primary-text">Danish danish candy canes bonbon cheesecake danish marzipan</span>
+        <span class="mdc-list-item__primary-text">Yeah, I like animals better than people sometimes</span>
       </span>
     </li>
     <li class="mdc-list-item">
@@ -3878,11 +5404,11 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
       </span>
     </li>
     <li class="mdc-list-item">
-      <span>Veggies sunt bona vobis</span>
+      <span>Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo</span>
     </li>
     <li class="mdc-list-item">
       <span class="mdc-list-item__text">
-        <span class="mdc-list-item__primary-text">Veggies sunt bona vobis</span>
+        <span class="mdc-list-item__primary-text">Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo</span>
       </span>
     </li>
 </ul>
@@ -3924,10 +5450,10 @@ list.singleSelection = true;
 	<div class="pl-js-pattern-example">
 	<ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;sepia" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Matthias Macguinness
+      Bertil Aaij
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -3950,10 +5476,10 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Siguror Hanigan
+      Freyr Hines
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -3989,10 +5515,10 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Frans Keegan
+      Siguror Hanigan
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4402,16 +5928,16 @@ list.singleSelection = true;
 	
 <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;sepia" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any" alt="Avatar"/> 
     <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
     <span class="mdc-list-item__text">  
       <span class="mdc-list-item__primary-text">
-        Danish danish candy canes bonbon cheesecake danish marzipan
+        Yeah, I like animals better than people sometimes
       </span>
       
       <span class="mdc-list-item__secondary-text">
-        <strong>Matthias Macguinness</strong> --
-        Sugar plum wafer soufflé ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.
+        <strong>Bertil Aaij</strong> --
+        Especially dogs. Dogs are the best. Every time you come home, they act like they haven&#39;t seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man&#39;s best friend... or the wrong man&#39;s worst enemy. You going to give me a dog for a pet, give me a pit bull.
       </span>
     </span>
   </li>
@@ -4432,16 +5958,16 @@ list.singleSelection = true;
   </li>
   <li class="mdc-list-divider mdc-list-divider--inset"></li>
   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
     <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
     <span class="mdc-list-item__text">  
       <span class="mdc-list-item__primary-text">
-        Veggies sunt bona vobis
+        Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo
       </span>
       
       <span class="mdc-list-item__secondary-text">
-        <strong>Siguror Hanigan</strong> --
-        Mung bean squash sorrel taro coriander collard greens gumbo bitterleaf tomato. Taro water chestnut celtuce turnip yarrow celery endive scallion black-eyed pea onion. Aubergine dulse turnip greens mustard salsify garlic soybean parsley bitterleaf desert raisin courgette.
+        <strong>Freyr Hines</strong> --
+        Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.
       </span>
     </span>
   </li>
@@ -4477,16 +6003,16 @@ list.singleSelection = true;
   </li>
   <li class="mdc-list-divider mdc-list-divider--inset"></li>
   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;nature" alt="Avatar"/> 
     <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
     <span class="mdc-list-item__text">  
       <span class="mdc-list-item__primary-text">
-        Marshall McLuhan Colbert bump backpack journalist vast wasteland Romenesko CPM
+        Veggies sunt bona vobis
       </span>
       
       <span class="mdc-list-item__secondary-text">
-        <strong>Frans Keegan</strong> --
-        Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.
+        <strong>Siguror Hanigan</strong> --
+        Mung bean squash sorrel taro coriander collard greens gumbo bitterleaf tomato. Taro water chestnut celtuce turnip yarrow celery endive scallion black-eyed pea onion. Aubergine dulse turnip greens mustard salsify garlic soybean parsley bitterleaf desert raisin courgette.
       </span>
     </span>
   </li>
@@ -5401,55 +6927,47 @@ margin: 2px; }
 
   <nav class="mdc-drawer__content mdc-list-group">
     <ul class="mdc-list">
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html">
+<li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html">
  
   <span class="material-icons mdc-list-item__graphic">dashboard</span>
   <span>Dashboard</span>
   <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html">
+</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html">
  
   <span class="material-icons mdc-list-item__graphic">extension</span>
   <span>Sample Page</span>
   <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html">
+</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html">
  
   <span class="material-icons mdc-list-item__graphic">list</span>
   <span>Products</span>
   <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html">
+</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html">
  
   <span class="material-icons mdc-list-item__graphic">account_circle</span>
   <span>My Account</span>
   <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html">
+</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html">
  
   <span class="material-icons mdc-list-item__graphic">list</span>
   <span>Forms</span>
   <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html">
+</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html">
  
   <span class="material-icons mdc-list-item__graphic">info</span>
   <span>About</span>
   <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html">
+</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html">
  
   <span class="material-icons mdc-list-item__graphic">view_quilt</span>
   <span>Permanent Drawer</span>
   <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html">
+</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html">
  
   <span class="material-icons mdc-list-item__graphic">web</span>
   <span>Temporary Layout</span>
   <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-    </ul>
+</li>    </ul>
   </nav>
 </nav>
 </div>
@@ -5590,36 +7108,59 @@ margin: 2px; }
   <div class="mdc-tab-scroller">
     <div class="mdc-tab-scroller__scroll-area">
       <div class="mdc-tab-scroller__scroll-content">
-        <a class="mdc-tab mdc-tab--with-icon-and-text" role="tab" aria-selected="true" tabindex="0" href="#">
+        <button class="mdc-tab mdc-tab--with-icon-and-text" role="tab" tabindex="0" href="#">
   <div class="mdc-tab__content">
     <span class="mdc-tab__icon material-icons">access_time</span>
     <span class="mdc-tab__text-label">Recents</span>
   </div>
+
+  <span class="mdc-tab-indicator">
+    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+  </span>
   <div class="mdc-tab__ripple"></div>
-</a>
-        <a class="mdc-tab mdc-tab--with-icon-and-text" role="tab" aria-selected="true" tabindex="0" href="#">
+</button>
+<script>
+document.querySelectorAll('.mdc-tab').forEach(function(el){
+  mdc.tab.MDCTab.attachTo(el);
+});
+</script>
+        <button class="mdc-tab mdc-tab--with-icon-and-text" role="tab" tabindex="0" href="#">
   <div class="mdc-tab__content">
     <span class="mdc-tab__icon material-icons">favorite</span>
     <span class="mdc-tab__text-label">Favorites</span>
   </div>
-  
-    <span class="mdc-tab-indicator mdc-tab-indicator--active">
-      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-    </span>
-  
+
+  <span class="mdc-tab-indicator">
+    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+  </span>
   <div class="mdc-tab__ripple"></div>
-</a>
-        <a class="mdc-tab mdc-tab--with-icon-and-text" role="tab" aria-selected="true" tabindex="0" href="#">
+</button>
+<script>
+document.querySelectorAll('.mdc-tab').forEach(function(el){
+  mdc.tab.MDCTab.attachTo(el);
+});
+</script>
+        <button class="mdc-tab mdc-tab--with-icon-and-text" role="tab" tabindex="0" href="#">
   <div class="mdc-tab__content">
     <span class="mdc-tab__icon material-icons">person_pin</span>
     <span class="mdc-tab__text-label">Nearby</span>
   </div>
+
+  <span class="mdc-tab-indicator">
+    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+  </span>
   <div class="mdc-tab__ripple"></div>
-</a>
+</button>
+<script>
+document.querySelectorAll('.mdc-tab').forEach(function(el){
+  mdc.tab.MDCTab.attachTo(el);
+});
+</script>
       </div>
     </div>
   </div>
 </nav>
+
 
 <script>
 //const tabBar = new mdc.MDCTabBar(document.querySelector('.mdc-tab-bar'));
@@ -5660,42 +7201,64 @@ margin: 2px; }
 
 	<div class="pl-js-pattern-example">
 	<section id="dynamic-demo-toolbar">
- <nav class="mdc-tab-bar mdc-tab-bar--icons-with-text" role="tablist">
-  <div class="mdc-tab-scroller">
-    <div class="mdc-tab-scroller__scroll-area">
-      <div class="mdc-tab-scroller__scroll-content">
-        <a class="mdc-tab mdc-tab--with-icon-and-text" role="tab" aria-selected="true" tabindex="0" href="#panel-1">
+  <nav class="mdc-tab-bar mdc-tab-bar--icons-with-text" role="tablist">
+    <div class="mdc-tab-scroller">
+      <div class="mdc-tab-scroller__scroll-area">
+        <div class="mdc-tab-scroller__scroll-content">
+          <button class="mdc-tab mdc-tab--with-icon-and-text" role="tab" tabindex="0" href="#panel-1">
   <div class="mdc-tab__content">
-    <span class="mdc-tab__icon material-icons">phone</span>
+    <span class="mdc-tab__icon material-icons">home</span>
     <span class="mdc-tab__text-label">Panel 1</span>
   </div>
-  
-    <span class="mdc-tab-indicator mdc-tab-indicator--active">
-      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-    </span>
-  
+
+  <span class="mdc-tab-indicator">
+    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+  </span>
   <div class="mdc-tab__ripple"></div>
-</a>
-        <a class="mdc-tab mdc-tab--with-icon-and-text" role="tab" aria-selected="true" tabindex="0" href="panel-2">
+</button>
+<script>
+document.querySelectorAll('.mdc-tab').forEach(function(el){
+  mdc.tab.MDCTab.attachTo(el);
+});
+</script> 
+          <button class="mdc-tab mdc-tab--with-icon-and-text" role="tab" tabindex="0" href="panel-2">
   <div class="mdc-tab__content">
     <span class="mdc-tab__icon material-icons">favorite</span>
     <span class="mdc-tab__text-label">Panel 2</span>
   </div>
+
+  <span class="mdc-tab-indicator">
+    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+  </span>
   <div class="mdc-tab__ripple"></div>
-</a>
-        <a class="mdc-tab mdc-tab--with-icon-and-text" role="tab" aria-selected="true" tabindex="0" href="panel-3">
+</button>
+<script>
+document.querySelectorAll('.mdc-tab').forEach(function(el){
+  mdc.tab.MDCTab.attachTo(el);
+});
+</script> 
+          <button class="mdc-tab mdc-tab--with-icon-and-text" role="tab" tabindex="0" href="panel-3">
   <div class="mdc-tab__content">
     <span class="mdc-tab__icon material-icons">person_pin</span>
     <span class="mdc-tab__text-label">Panel 3</span>
   </div>
+
+  <span class="mdc-tab-indicator">
+    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+  </span>
   <div class="mdc-tab__ripple"></div>
-</a>
+</button>
+<script>
+document.querySelectorAll('.mdc-tab').forEach(function(el){
+  mdc.tab.MDCTab.attachTo(el);
+});
+</script>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-
+  </nav>
 </section>
+
 <section>
   <div class="panels">
     <p class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">Item One</p>
@@ -5708,76 +7271,87 @@ margin: 2px; }
     <a class="dot" data-trigger="panel-3" href="#panel-3"></a>
   </div>
 </section>
+
+
 <style>
-.panels{
-  display: none;
-}
-.panels.active{
-  display: block;
-}
+  .panels .panel {
+    display: none;
+  }
+
+  .panels .active {
+    display: block;
+  }
 </style>
+
+
+
 <script>
-//mdc.tabBar.MDCTabBar
-document.addEventListener('DOMContentLoaded', function(){
-  var dynamicTabBar = window.dynamicTabBar = new mdc.tabBar.MDCTabBar(document.querySelector('#dynamic-tab-bar'));
-  var dots = document.querySelector('.dots');
-  var panels = document.querySelector('.panels');
+  //mdc.tabBar.MDCTabBar
+  document.addEventListener('DOMContentLoaded', function () {
+    var dynamicTabBar = window.dynamicTabBar = new mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
+    console.log('dynamicTabBar', dynamicTabBar);
+    var dots = document.querySelector('.dots');
+    var panels = document.querySelector('.panels');
 
-  dynamicTabBar.tabs.forEach(function(tab) {
-    tab.preventDefaultOnClick = true;
+    if (dynamicTabBar && dynamicTabBar.tabList) {
+      dynamicTabBar.tabList.forEach(function (tab) {
+        tab.preventDefaultOnClick = true;
+      });
+    }
+
+
+    function updateDot(index) {
+      var activeDot = dots.querySelector('.dot.active');
+      if (activeDot) {
+        activeDot.classList.remove('active');
+      }
+      var newActiveDot = dots.querySelector('.dot:nth-child(' + (index + 1) + ')');
+      if (newActiveDot) {
+        newActiveDot.classList.add('active');
+      }
+    }
+
+    function updatePanel(index) {
+      var activePanel = panels.querySelector('.panel.active');
+      if (activePanel) {
+        activePanel.classList.remove('active');
+      }
+      var newActivePanel = panels.querySelector('.panel:nth-child(' + (index + 1) + ')');
+      if (newActivePanel) {
+        newActivePanel.classList.add('active');
+      }
+    }
+
+    dynamicTabBar.listen('MDCTabBar:activated', function (e) {
+      let tabs = e.detail;
+      console.log(e);
+      var nthChildIndex = tabs.activeTabIndex;
+      updatePanel(nthChildIndex);
+      updateDot(nthChildIndex);
+    });
+
+    dots.addEventListener('click', function (evt) {
+      if (!evt.target.classList.contains('dot')) {
+        return;
+      }
+
+      evt.preventDefault();
+
+      var dotIndex = [].slice.call(dots.querySelectorAll('.dot')).indexOf(evt.target);
+
+      if (dotIndex >= 0) {
+        dynamicTabBar.activeTabIndex = dotIndex;
+      }
+
+      updatePanel(dotIndex);
+      updateDot(dotIndex);
+    })
   });
-
-  function updateDot(index) {
-    var activeDot = dots.querySelector('.dot.active');
-    if (activeDot) {
-      activeDot.classList.remove('active');
-    }
-    var newActiveDot = dots.querySelector('.dot:nth-child(' + (index + 1) + ')');
-    if (newActiveDot) {
-      newActiveDot.classList.add('active');
-    }
-  }
-
-  function updatePanel(index) {
-    var activePanel = panels.querySelector('.panel.active');
-    if (activePanel) {
-      activePanel.classList.remove('active');
-    }
-    var newActivePanel = panels.querySelector('.panel:nth-child(' + (index + 1) + ')');
-    if (newActivePanel) {
-      newActivePanel.classList.add('active');
-    }
-  }
-
-  dynamicTabBar.listen('MDCTabBar:change', function ({detail: tabs}) {
-    var nthChildIndex = tabs.activeTabIndex;
-
-    updatePanel(nthChildIndex);
-    updateDot(nthChildIndex);
-  });
-
-  dots.addEventListener('click', function (evt) {
-    if (!evt.target.classList.contains('dot')) {
-      return;
-    }
-
-    evt.preventDefault();
-
-    var dotIndex = [].slice.call(dots.querySelectorAll('.dot')).indexOf(evt.target);
-
-    if (dotIndex >= 0) {
-      dynamicTabBar.activeTabIndex = dotIndex;
-    }
-
-    updatePanel(dotIndex);
-    updateDot(dotIndex);
-  })
-});
 </script>
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-tabs" class="pl-js-pattern-data">
-	
+	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-tab","lineagePath":"../../patterns/molecules-navigation-tab/molecules-navigation-tab.rendered.html"}],"lineage":[{"lineagePattern":"molecules-tab","lineagePath":"../../patterns/molecules-navigation-tab/molecules-navigation-tab.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Tabs","patternPartial":"organisms-tabs","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-toolbar" class="pl-c-pattern">
@@ -5860,7 +7434,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <h2 class="demo-card__title mdc-typography--headline6">Card 1</h2>
   </header>
     <div class="demo-card__secondary mdc-typography--body2">
-      Sugar plum wafer soufflé ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.
+      Especially dogs. Dogs are the best. Every time you come home, they act like they haven&#39;t seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man&#39;s best friend... or the wrong man&#39;s worst enemy. You going to give me a dog for a pet, give me a pit bull.
     </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -5896,7 +7470,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <h2 class="demo-card__title mdc-typography--headline6">Card 1</h2>
   </header>
     <div class="demo-card__secondary mdc-typography--body2">
-      Mung bean squash sorrel taro coriander collard greens gumbo bitterleaf tomato. Taro water chestnut celtuce turnip yarrow celery endive scallion black-eyed pea onion. Aubergine dulse turnip greens mustard salsify garlic soybean parsley bitterleaf desert raisin courgette.
+      Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.
     </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -5913,7 +7487,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <div class="cards flex flex--wrap">
         <div class="mdc-card demo-card flex__item card-3">
   <div class="mdc-card__media demo-card__media">
-    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;arch&#x2F;sepia" alt="16x9 Image" />
+    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;any" alt="16x9 Image" />
   </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -5953,7 +7527,7 @@ document.addEventListener('DOMContentLoaded', function(){
 </style>
         <div class="mdc-card demo-card flex__item card-3">
   <div class="mdc-card__media demo-card__media">
-    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;people" alt="16x9 Image" />
+    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;any&#x2F;grayscale" alt="16x9 Image" />
   </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -6016,7 +7590,7 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
         <div class="mdc-card demo-card flex__item card-2 mdc-typography">
     <div class="mdc-card__media demo-card__media">
-        <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;arch&#x2F;sepia" alt="16x9 Image" />
+        <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;any" alt="16x9 Image" />
         <div class="mdc-card__media-overlay u-ph">
             <h3 class="mdc-typography--headline6">Card Title</h3>
         </div>
@@ -6245,20 +7819,20 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1533761099909">
+<script id="pl-js-polyfill-insert-1533836654620">
   (function() {
     if (self != top) {
-      var cb = '1533761099909';
+      var cb = '1533836654620';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1533761099909">
+<script id="pl-js-insert-1533836654620">
   (function() {
     if (self != top) {
-      var cb = '1533761099909';
+      var cb = '1533836654620';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

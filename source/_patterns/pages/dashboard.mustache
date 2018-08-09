@@ -1,151 +1,67 @@
+ {{> organisms-app-bar }}
+<div class="app top-app-bar__frame mdc-typography">
+
+  {{> organisms-app-settings }}
+  <div class="content drawer-container-flex flex">
+    <!-- ################# drawer-->
+    {{> organisms-app-drawer }}
+
+
+    <!--/ ############## drawer-->
+
+    <!-- CONTENT -->
+    <div class="mdc-top-app-bar--fixed-adjust flex__item">
+
+      <section class="content">
+        <section class="mdc-layout-grid demo-grid">
+          <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell">
+            <h2>Dashboard</h2>
+          </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-elevation--z1 mdc-paper u-p">
+            {{> organisms-line-chart }}
+            </div>
+            {{# listItems.six}}
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-phone mdc-layout-grid__cell--span-4-tablet demo-cell mdc-elevation--z1 "></div>
+            {{/ listItems.six}} {{# listItems.four}}
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop demo-cell mdc-elevation--z1"></div>
+            {{/ listItems.four}}
+
+
+
+
+          </div>
+        </section>
+      </section>
+
+    </div>
+  </div>
+</div>
+
 <style>
- body {
-  background: var(--mdc-theme-background);
-}
-
-:root {
-  --mdc-theme-primary: #343a40;
-  --mdc-theme-secondary: #343a40;
-  --mdc-theme-background: #eee;
-}
-
-.color-option-1 {
-  --mdc-theme-primary: #343a40;
-  --mdc-theme-secondary: #23272c;
-  --mdc-theme-background: #ececec;
-}
-.color-option-2 {
-  --mdc-theme-primary: #fec44c;
-  --mdc-theme-secondary: green;
-  --mdc-theme-background: white;
-}
-.color-option-3 {
-  --mdc-theme-primary: #fc4f54;
-  --mdc-theme-secondary: green;
-  --mdc-theme-background: white;
-}
-
-.app .menu-close {
-  display: none;
-}
-.app.drawer--open .menu-open {
-  display: none;
-}
-.app.drawer--open .menu-close {
-  display: block;
-}
-
-
-.theme1 {
-  --mdc-theme-primary: #19262d;
-  --mdc-theme-secondary: green;
-  --mdc-theme-background: white;
-}
-
-.demo-cell {
-  background: white;
-  border-radius: 5px;
-  min-height: 100px;
-}
-
 .mdc-paper {
   background: white;
 }
-
-.avatar {
-  height: 30px;
-  border-radius: 50%;
-}
-
-
-.app,
-.mdc-drawer__content {
-  height: 100vh;
-}
-
-.drawer-header-flex {
-  display: inline-flex;
-  flex: 1 1 auto;
-  box-sizing: border-box;
-}
-
-.flex {
-  display: flex;
-}
-.flex__item {
-  flex: 1;
-}
 </style>
-<div class="app top-app-bar__frame">
-  {{> organisms-app-bar }}
-  <div class="content drawer-container-flex flex">
-    <!-- ################# drawer-->
-    <aside class="mdc-drawer mdc-drawer--persistent">
-      <div class="mdc-drawer__toolbar-spacer"></div>
-      {{> organisms-drawer }}
-    </aside>
-    <!--/ ############## drawer-->
 
-  <!-- CONTENT -->
-  <div class="mdc-top-app-bar--fixed-adjust flex__item">
 
-   <section class="content">
 
-    <div class="mdc-">
 
-    
-     <section class="mdc-layout-grid demo-grid">
-      
-      <div class="mdc-layout-grid__inner">
-      
-      <div class="mdc-layout-grid__cell demo-cell mdc-layout-grid__cell--span-12">
-      
-      </div>
-      <div class="mdc-layout-grid__cell demo-cell mdc-layout-grid__cell--span-12">
-      
-      </div>
-       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 demo-cell"></div>
-       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 demo-cell"></div>
-       <div class="mdc-layout-grid__cell demo-cell">
-         </div>
-       <div class="mdc-layout-grid__cell demo-cell"></div>
-
-       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 demo-cell"></div>
-       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5 demo-cell"></div>
-
-       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 demo-cell"></div>
-       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 demo-cell"></div>
-
-       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 demo-cell"></div>
-      </div>
-     </section>
-     <!--/layout-grid-->
-
-    </div>
-
-   </section>
-
-  </div>
- </div>
-</div>
-
- 
-
-  
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  var drawerOpen = false;
-  var app = document.querySelector('.app');
-  //permanent
-  var drawer = new mdc.drawer.MDCPersistentDrawer(document.querySelector('.mdc-drawer--persistent'));
-  //const drawer = new mdc.drawer.MDCPersistentDrawer(document.querySelector('.mdc-drawer--persistent'));
-  // let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector(".mdc-drawer--temporary"));
-  document.
-  querySelector(".mdc-top-app-bar__navigation-icon").
-  addEventListener("click", function () {
-    drawer.open = !drawer.open;
-    drawerOpen = drawer.open;console.log('drawerOpen', drawerOpen);
-    //app.classList.toggle('drawer-open')
+  document.addEventListener("DOMContentLoaded", function () {
+    var drawerOpen = false;
+    var app = document.querySelector('.app');
+    //permanent
+    var drawer = new mdc.drawer.MDCPersistentDrawer(document.querySelector('.mdc-drawer--persistent'));
+    //const drawer = new mdc.drawer.MDCPersistentDrawer(document.querySelector('.mdc-drawer--persistent'));
+    // let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector(".mdc-drawer--temporary"));
+    document.
+    querySelector(".mdc-top-app-bar__navigation-icon").
+    addEventListener("click", function () {
+      drawer.open = !drawer.open;
+      drawerOpen = drawer.open;
+      console.log('drawerOpen', drawerOpen);
+      //app.classList.toggle('drawer-open')
+    });
   });
-});
 </script>
