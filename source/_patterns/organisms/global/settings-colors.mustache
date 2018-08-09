@@ -1,0 +1,141 @@
+<style>
+    /**
+--mdc-theme-primary	The theme primary color
+--mdc-theme-secondary	The theme secondary color
+--mdc-theme-background	The theme background color
+--mdc-theme-surface	The theme surface color
+--mdc-theme-on-primary	Text color on top of a primary background
+--mdc-theme-on-secondary	Text color on top of a secondary background
+--mdc-theme-on-surface	Text color on top of a surface background
+--mdc-theme-text-<TEXT_STYLE>-on-light	Text color for TEXT_STYLE on top of light background
+--mdc-theme-text-<TEXT_STYLE>-on-dark	Text color for TEXT_STYLE on top of dark background
+*/
+
+    .theme-1 {
+        --mdc-theme--primary: var(--mdc-theme--primary, black);
+        --mdc-theme--secondary: red !important;
+
+        .bg-dark {
+            background-color: var(--mdc-theme--primary) !important;
+        }
+    }
+</style>
+
+<section class="mdc-layout-grid u-p-">
+    <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+
+
+
+            <label class="color-option-check theme-1b">
+                <input type="radio" name="color" value="1b">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+
+
+            <label class="color-option-check">
+                <input type="radio" name="color" value="2">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-primary item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="3">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-success item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="4">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-info item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="5">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-warning item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="6">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-danger item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+
+
+
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+            <label class="color-option-check theme-1a">
+                <input type="radio" name="color" value="1">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark mdc-theme--primary-bg item-header"></span>
+                    <span class="bg-white mdc-theme--primary-bg item-header"></span>
+                    <span class="mdc-theme--background"></span>
+                </span>
+            </label>
+            <label class="color-option-check theme-1a">
+                <input type="radio" name="color" value="1a">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark mdc-theme--secondary-bg item-header"></span>
+                    <span class="bg-white mdc-theme--secondary-bg item-header"></span>
+                    <span class="mdc-theme--background"></span>
+                </span>
+            </label>
+        </div>
+</section>
+
+
+<script>
+    $(function () {
+        $('input[name="color"]').bind('change', function (e) {
+            var prevName = $('body').attr('data-theme');
+            var newName = 'theme-' + e.target.value;
+            $('body')
+                .removeClass(newName)
+                .attr('data-theme', newName)
+                .addClass(newName);
+            console.log('changeTheme', newName);
+        })
+    });
+</script>

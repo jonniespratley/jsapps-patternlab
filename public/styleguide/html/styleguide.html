@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1533836654620" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533836654620" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1533847399421" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533847399421" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1533836654620" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1533847399421" media="all">
     <!-- End Pattern Lab -->
 
        
@@ -1734,7 +1734,7 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-molecules-tab" class="pl-js-pattern-data">
-	{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-tab-bar","lineagePath":"../../patterns/organisms-navigation-tab-bar/organisms-navigation-tab-bar.rendered.html"},{"lineagePattern":"organisms-tabs","lineagePath":"../../patterns/organisms-navigation-tabs/organisms-navigation-tabs.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-tab-bar","lineagePath":"../../patterns/organisms-navigation-tab-bar/organisms-navigation-tab-bar.rendered.html"},{"lineagePattern":"organisms-tabs","lineagePath":"../../patterns/organisms-navigation-tabs/organisms-navigation-tabs.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Tab","patternPartial":"molecules-tab","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	
 	</script>
 
 </div><!--end pl-c-pattern--><div id="viewall-molecules-text" class="pl-c-category">
@@ -4534,7 +4534,7 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
 	<div class="pl-js-pattern-example">
 	<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
   <nav class="mdc-drawer__drawer">
-    <nav class="mdc-drawer__content">
+    <nav class="mdc-drawer__content u-p">
 
     <h3>Settings</h3>
     <p>Adjust settings in real time.</p>
@@ -4546,11 +4546,149 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
 
     <hr class="mdc-list-divider"/>
     <h4>Color Options</h4>
-    <ul>
-      <li>Color 1</li>
-    </ul>
+    <div class="color-options">
+    <style>
+    /**
+--mdc-theme-primary	The theme primary color
+--mdc-theme-secondary	The theme secondary color
+--mdc-theme-background	The theme background color
+--mdc-theme-surface	The theme surface color
+--mdc-theme-on-primary	Text color on top of a primary background
+--mdc-theme-on-secondary	Text color on top of a secondary background
+--mdc-theme-on-surface	Text color on top of a surface background
+--mdc-theme-text-<TEXT_STYLE>-on-light	Text color for TEXT_STYLE on top of light background
+--mdc-theme-text-<TEXT_STYLE>-on-dark	Text color for TEXT_STYLE on top of dark background
+*/
+
+    .theme-1 {
+        --mdc-theme--primary: var(--mdc-theme--primary, black);
+        --mdc-theme--secondary: red !important;
+
+        .bg-dark {
+            background-color: var(--mdc-theme--primary) !important;
+        }
+    }
+</style>
+
+<section class="mdc-layout-grid u-p-">
+    <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
 
 
+
+            <label class="color-option-check theme-1b">
+                <input type="radio" name="color" value="1b">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+
+
+            <label class="color-option-check">
+                <input type="radio" name="color" value="2">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-primary item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="3">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-success item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="4">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-info item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="5">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-warning item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="6">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-danger item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+
+
+
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+            <label class="color-option-check theme-1a">
+                <input type="radio" name="color" value="1">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark mdc-theme--primary-bg item-header"></span>
+                    <span class="bg-white mdc-theme--primary-bg item-header"></span>
+                    <span class="mdc-theme--background"></span>
+                </span>
+            </label>
+            <label class="color-option-check theme-1a">
+                <input type="radio" name="color" value="1a">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark mdc-theme--secondary-bg item-header"></span>
+                    <span class="bg-white mdc-theme--secondary-bg item-header"></span>
+                    <span class="mdc-theme--background"></span>
+                </span>
+            </label>
+        </div>
+</section>
+
+
+<script>
+    $(function () {
+        $('input[name="color"]').bind('change', function (e) {
+            var prevName = $('body').attr('data-theme');
+            var newName = 'theme-' + e.target.value;
+            $('body')
+                .removeClass(newName)
+                .attr('data-theme', newName)
+                .addClass(newName);
+            console.log('changeTheme', newName);
+        })
+    });
+</script>
+    </div>
 
 
       <ul class="mdc-list">
@@ -4735,7 +4873,7 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-app-settings" class="pl-js-pattern-data">
-	
+	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-settings-colors","lineagePath":"../../patterns/organisms-global-settings-colors/organisms-global-settings-colors.rendered.html"},{"lineagePattern":"atoms-checkbox","lineagePath":"../../patterns/atoms-forms-checkbox/atoms-forms-checkbox.rendered.html"},{"lineagePattern":"atoms-slider","lineagePath":"../../patterns/atoms-forms-slider/atoms-forms-slider.rendered.html"}],"lineage":[{"lineagePattern":"organisms-settings-colors","lineagePath":"../../patterns/organisms-global-settings-colors/organisms-global-settings-colors.rendered.html"},{"lineagePattern":"atoms-checkbox","lineagePath":"../../patterns/atoms-forms-checkbox/atoms-forms-checkbox.rendered.html"},{"lineagePattern":"atoms-slider","lineagePath":"../../patterns/atoms-forms-slider/atoms-forms-slider.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-layout-drawer-temporary","lineagePath":"../../patterns/templates-layout-drawer-temporary/templates-layout-drawer-temporary.rendered.html"},{"lineagePattern":"organisms-page-top-bar","lineagePath":"../../patterns/organisms-global-page-top-bar/organisms-global-page-top-bar.rendered.html"},{"lineagePattern":"pages-dashboard","lineagePath":"../../patterns/pages-dashboard/pages-dashboard.rendered.html"},{"lineagePattern":"pages-detail","lineagePath":"../../patterns/pages-detail/pages-detail.rendered.html"},{"lineagePattern":"pages-products","lineagePath":"../../patterns/pages-products/pages-products.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"}],"lineageR":[{"lineagePattern":"templates-layout-drawer-temporary","lineagePath":"../../patterns/templates-layout-drawer-temporary/templates-layout-drawer-temporary.rendered.html"},{"lineagePattern":"organisms-page-top-bar","lineagePath":"../../patterns/organisms-global-page-top-bar/organisms-global-page-top-bar.rendered.html"},{"lineagePattern":"pages-dashboard","lineagePath":"../../patterns/pages-dashboard/pages-dashboard.rendered.html"},{"lineagePattern":"pages-detail","lineagePath":"../../patterns/pages-detail/pages-detail.rendered.html"},{"lineagePattern":"pages-products","lineagePath":"../../patterns/pages-products/pages-products.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"App Settings","patternPartial":"organisms-app-settings","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-page-top-bar" class="pl-c-pattern">
@@ -4833,7 +4971,7 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 
 <aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
   <nav class="mdc-drawer__drawer">
-    <nav class="mdc-drawer__content">
+    <nav class="mdc-drawer__content u-p">
 
     <h3>Settings</h3>
     <p>Adjust settings in real time.</p>
@@ -4845,11 +4983,149 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 
     <hr class="mdc-list-divider"/>
     <h4>Color Options</h4>
-    <ul>
-      <li>Color 1</li>
-    </ul>
+    <div class="color-options">
+    <style>
+    /**
+--mdc-theme-primary	The theme primary color
+--mdc-theme-secondary	The theme secondary color
+--mdc-theme-background	The theme background color
+--mdc-theme-surface	The theme surface color
+--mdc-theme-on-primary	Text color on top of a primary background
+--mdc-theme-on-secondary	Text color on top of a secondary background
+--mdc-theme-on-surface	Text color on top of a surface background
+--mdc-theme-text-<TEXT_STYLE>-on-light	Text color for TEXT_STYLE on top of light background
+--mdc-theme-text-<TEXT_STYLE>-on-dark	Text color for TEXT_STYLE on top of dark background
+*/
+
+    .theme-1 {
+        --mdc-theme--primary: var(--mdc-theme--primary, black);
+        --mdc-theme--secondary: red !important;
+
+        .bg-dark {
+            background-color: var(--mdc-theme--primary) !important;
+        }
+    }
+</style>
+
+<section class="mdc-layout-grid u-p-">
+    <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
 
 
+
+            <label class="color-option-check theme-1b">
+                <input type="radio" name="color" value="1b">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+
+
+            <label class="color-option-check">
+                <input type="radio" name="color" value="2">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-primary item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="3">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-success item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="4">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-info item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="5">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-warning item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="6">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-danger item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+
+
+
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+            <label class="color-option-check theme-1a">
+                <input type="radio" name="color" value="1">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark mdc-theme--primary-bg item-header"></span>
+                    <span class="bg-white mdc-theme--primary-bg item-header"></span>
+                    <span class="mdc-theme--background"></span>
+                </span>
+            </label>
+            <label class="color-option-check theme-1a">
+                <input type="radio" name="color" value="1a">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark mdc-theme--secondary-bg item-header"></span>
+                    <span class="bg-white mdc-theme--secondary-bg item-header"></span>
+                    <span class="mdc-theme--background"></span>
+                </span>
+            </label>
+        </div>
+</section>
+
+
+<script>
+    $(function () {
+        $('input[name="color"]').bind('change', function (e) {
+            var prevName = $('body').attr('data-theme');
+            var newName = 'theme-' + e.target.value;
+            $('body')
+                .removeClass(newName)
+                .attr('data-theme', newName)
+                .addClass(newName);
+            console.log('changeTheme', newName);
+        })
+    });
+</script>
+    </div>
 
 
       <ul class="mdc-list">
@@ -5085,7 +5361,178 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-page-top-bar" class="pl-js-pattern-data">
-	
+	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"lineage":[{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-account","lineagePath":"../../patterns/pages-account/pages-account.rendered.html"},{"lineagePattern":"pages-detail","lineagePath":"../../patterns/pages-detail/pages-detail.rendered.html"},{"lineagePattern":"pages-forms","lineagePath":"../../patterns/pages-forms/pages-forms.rendered.html"},{"lineagePattern":"pages-products","lineagePath":"../../patterns/pages-products/pages-products.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"}],"lineageR":[{"lineagePattern":"pages-account","lineagePath":"../../patterns/pages-account/pages-account.rendered.html"},{"lineagePattern":"pages-detail","lineagePath":"../../patterns/pages-detail/pages-detail.rendered.html"},{"lineagePattern":"pages-forms","lineagePath":"../../patterns/pages-forms/pages-forms.rendered.html"},{"lineagePattern":"pages-products","lineagePath":"../../patterns/pages-products/pages-products.rendered.html"},{"lineagePattern":"pages-sample-page","lineagePath":"../../patterns/pages-sample-page/pages-sample-page.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"Page Top Bar","patternPartial":"organisms-page-top-bar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-settings-colors" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-global-settings-colors&#x2F;organisms-global-settings-colors.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-settings-colors" title="Link to Pattern">
+				Settings Colors
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-settings-colors" data-patternpartial="organisms-settings-colors" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-settings-colors">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<style>
+    /**
+--mdc-theme-primary	The theme primary color
+--mdc-theme-secondary	The theme secondary color
+--mdc-theme-background	The theme background color
+--mdc-theme-surface	The theme surface color
+--mdc-theme-on-primary	Text color on top of a primary background
+--mdc-theme-on-secondary	Text color on top of a secondary background
+--mdc-theme-on-surface	Text color on top of a surface background
+--mdc-theme-text-<TEXT_STYLE>-on-light	Text color for TEXT_STYLE on top of light background
+--mdc-theme-text-<TEXT_STYLE>-on-dark	Text color for TEXT_STYLE on top of dark background
+*/
+
+    .theme-1 {
+        --mdc-theme--primary: var(--mdc-theme--primary, black);
+        --mdc-theme--secondary: red !important;
+
+        .bg-dark {
+            background-color: var(--mdc-theme--primary) !important;
+        }
+    }
+</style>
+
+<section class="mdc-layout-grid u-p-">
+    <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+
+
+
+            <label class="color-option-check theme-1b">
+                <input type="radio" name="color" value="1b">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+
+
+            <label class="color-option-check">
+                <input type="radio" name="color" value="2">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-primary item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="3">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-success item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="4">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-info item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="5">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-warning item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+            <label class="color-option-check">
+                <input type="radio" name="color" value="6">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-danger item-header"></span>
+                    <span class="bg-white item-header"></span>
+                    <span class="bg-dark"></span>
+                </span>
+            </label>
+
+
+
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+            <label class="color-option-check theme-1a">
+                <input type="radio" name="color" value="1">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark mdc-theme--primary-bg item-header"></span>
+                    <span class="bg-white mdc-theme--primary-bg item-header"></span>
+                    <span class="mdc-theme--background"></span>
+                </span>
+            </label>
+            <label class="color-option-check theme-1a">
+                <input type="radio" name="color" value="1a">
+                <span class="color-option-item bg-page">
+                    <span class="overlay">
+                        <i class="material-icons">check_circle</i>
+                    </span>
+                    <span class="bg-dark mdc-theme--secondary-bg item-header"></span>
+                    <span class="bg-white mdc-theme--secondary-bg item-header"></span>
+                    <span class="mdc-theme--background"></span>
+                </span>
+            </label>
+        </div>
+</section>
+
+
+<script>
+    $(function () {
+        $('input[name="color"]').bind('change', function (e) {
+            var prevName = $('body').attr('data-theme');
+            var newName = 'theme-' + e.target.value;
+            $('body')
+                .removeClass(newName)
+                .attr('data-theme', newName)
+                .addClass(newName);
+            console.log('changeTheme', newName);
+        })
+    });
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-settings-colors" class="pl-js-pattern-data">
+	{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"Settings Colors","patternPartial":"organisms-settings-colors","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 	</script>
 
 </div><!--end pl-c-pattern--><div id="viewall-organisms-lists" class="pl-c-category">
@@ -7173,7 +7620,7 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-tab-bar" class="pl-js-pattern-data">
-	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-tab","lineagePath":"../../patterns/molecules-navigation-tab/molecules-navigation-tab.rendered.html"}],"lineage":[{"lineagePattern":"molecules-tab","lineagePath":"../../patterns/molecules-navigation-tab/molecules-navigation-tab.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-detail","lineagePath":"../../patterns/pages-detail/pages-detail.rendered.html"}],"lineageR":[{"lineagePattern":"pages-detail","lineagePath":"../../patterns/pages-detail/pages-detail.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Tab Bar","patternPartial":"organisms-tab-bar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-tabs" class="pl-c-pattern">
@@ -7351,7 +7798,7 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-tabs" class="pl-js-pattern-data">
-	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-tab","lineagePath":"../../patterns/molecules-navigation-tab/molecules-navigation-tab.rendered.html"}],"lineage":[{"lineagePattern":"molecules-tab","lineagePath":"../../patterns/molecules-navigation-tab/molecules-navigation-tab.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Tabs","patternPartial":"organisms-tabs","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-toolbar" class="pl-c-pattern">
@@ -7819,20 +8266,20 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1533836654620">
+<script id="pl-js-polyfill-insert-1533847399421">
   (function() {
     if (self != top) {
-      var cb = '1533836654620';
+      var cb = '1533847399421';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1533836654620">
+<script id="pl-js-insert-1533847399421">
   (function() {
     if (self != top) {
-      var cb = '1533836654620';
+      var cb = '1533847399421';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
