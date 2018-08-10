@@ -1,4 +1,4 @@
-<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
+<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary mdc-typography">
   <nav class="mdc-drawer__drawer">
     <nav class="mdc-drawer__content u-p">
 
@@ -9,8 +9,11 @@
       <h4>Layout Options</h4>
       <div class="layout-options u-pb flex flex--col">
 
-        {{> atoms-checkbox(label: "Fixed header", name: "fixedHeader", value: false) }} {{> atoms-checkbox(label: "Fixed sidenav",
-        name: "fixedSidenav", value: false) }} {{> atoms-checkbox(label: "Collapsed sidenav", name: "collapsedSidenav") }}
+        {{> atoms-checkbox(label: "Fixed header", name: "fixedHeader", value: false) }} 
+        
+        {{> atoms-checkbox(label: "Logo sidenav", name: "logoSidenav", value: false) }} 
+        {{> atoms-checkbox(label: "Fixed sidenav", name: "fixedSidenav", value: false) }} 
+        {{> atoms-checkbox(label: "Collapsed sidenav", name: "collapsedSidenav") }}
 
       </div>
 
@@ -32,7 +35,7 @@
 
         <li class="mdc-list-group__subheader">Sidebar width</li>
         <li class="mdc-list-item">
-          {{> atoms-slider }}
+          {{> atoms-slider(name: "sidebarWidth", max: 260, min: 160) }}
         </li>
         <li role="separator" class="mdc-list-divider"></li>
       </ul>

@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1533856193927" media="all" />
-    <link rel="stylesheet" href="../../css/theme.css?1533856193927" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533856193927" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1533859623430" media="all" />
+    <link rel="stylesheet" href="../../css/theme.css?1533859623430" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533859623430" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1533856193927" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1533859623430" media="all">
     <!-- End Pattern Lab -->
 
        
@@ -540,7 +540,9 @@ mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
 </div>
 <script>
 (function(){
-document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.attachTo(el))
+  document.querySelectorAll('.mdc-slider').forEach(function(el){
+     mdc.slider.MDCSlider.attachTo(el)
+  })
 })()
 </script>
 	</div><!--end pl-js-pattern-example-->
@@ -3995,10 +3997,10 @@ window.chartColors = {
       <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
         <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Freyr Hines
+      Junius Koolen
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4008,36 +4010,10 @@ window.chartColors = {
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;sepia" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;grayscale" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Aquila Achterkamp
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;animals" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Duane Wilms
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;sepia" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Jacobus Sneiders
+      Plinius Sloane
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4060,10 +4036,36 @@ window.chartColors = {
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;sepia" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Junius Koolen
+      Aquila Achterkamp
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Teun Richard
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Frans Keegan
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4112,10 +4114,10 @@ list.singleSelection = true;
       <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
         <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Freyr Hines
+      Junius Koolen
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4125,36 +4127,10 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;sepia" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;grayscale" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Aquila Achterkamp
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;animals" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Duane Wilms
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;sepia" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Jacobus Sneiders
+      Plinius Sloane
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4177,10 +4153,36 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;sepia" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Junius Koolen
+      Aquila Achterkamp
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Teun Richard
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Frans Keegan
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4624,7 +4626,7 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
+	<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary mdc-typography">
   <nav class="mdc-drawer__drawer">
     <nav class="mdc-drawer__content u-p">
 
@@ -4646,7 +4648,21 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
     </div>
   </div>
   <label for="">Fixed header</label>
-</div> <div class="mdc-form-field">
+</div> 
+        
+        <div class="mdc-form-field">
+  <div class="mdc-checkbox">
+    <input type="checkbox" class="mdc-checkbox__native-control" id="" name="logoSidenav" value="false" checked=""/>
+    <div class="mdc-checkbox__background">
+      <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+      </svg>
+      <div class="mdc-checkbox__mixedmark"></div>
+    </div>
+  </div>
+  <label for="">Logo sidenav</label>
+</div> 
+        <div class="mdc-form-field">
   <div class="mdc-checkbox">
     <input type="checkbox" class="mdc-checkbox__native-control" id="" name="fixedSidenav" value="false" checked=""/>
     <div class="mdc-checkbox__background">
@@ -4657,7 +4673,8 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
     </div>
   </div>
   <label for="">Fixed sidenav</label>
-</div> <div class="mdc-form-field">
+</div> 
+        <div class="mdc-form-field">
   <div class="mdc-checkbox">
     <input type="checkbox" class="mdc-checkbox__native-control" id="" name="collapsedSidenav" value="" checked=""/>
     <div class="mdc-checkbox__background">
@@ -4954,7 +4971,9 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
 </div>
 <script>
 (function(){
-document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.attachTo(el))
+  document.querySelectorAll('.mdc-slider').forEach(function(el){
+     mdc.slider.MDCSlider.attachTo(el)
+  })
 })()
 </script>
         </li>
@@ -5032,42 +5051,82 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<style>
-    .theme-x {
-        --mdc-theme-secondary: #343a40;
-        --mdc-theme-background: #eee;
-    }
+	<!-- APP-TOP-BAR -->
+<style>
 
-    .test .mdc-top-app-bar__title {
-        color: var(--mdc-theme-secondary, black)
-    }
-
-    .test .hamburger .material-icons {
-        color: inherit;
-    }
-
-    .test .hamburger {
-        fill: black;
-        color: black !important;
-    }
-
-    .avatar {
+    .img-avatar {
         height: 30px;
         border-radius: 50%;
     }
 </style>
+
+<div class="app__drawer mdc-drawer mdc-drawer--temporary mdc-typography " data-type="temporary">
+<nav class="mdc-drawer__drawer mdc-drawer--">
+  <nav class="mdc-drawer__content mdc-list-group">
+    <nav class="mdc-list mdc-list--dense">
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html" title="Dashboard">
+   
+        <span class="material-icons mdc-list-item__graphic">dashboard</span>
+    <span>Dashboard</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html" title="Sample Page">
+   
+        <span class="material-icons mdc-list-item__graphic">extension</span>
+    <span>Sample Page</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html" title="Products">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Products</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html" title="My Account">
+   
+        <span class="material-icons mdc-list-item__graphic">account_circle</span>
+    <span>My Account</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html" title="Forms">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Forms</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html" title="About">
+   
+        <span class="material-icons mdc-list-item__graphic">info</span>
+    <span>About</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html" title="Permanent Drawer">
+   
+        <span class="material-icons mdc-list-item__graphic">view_quilt</span>
+    <span>Permanent Drawer</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html" title="Temporary Layout">
+   
+        <span class="material-icons mdc-list-item__graphic">web</span>
+    <span>Temporary Layout</span>
+</a>
+    <hr class="mdc-list-divider">
+    <a class="mdc-list-item" tabindex="-1" href="/logout">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
+        <span>Sign out</span>
+    </a>
+</nav>
+  </nav>
+</nav></div>
+
+
+
+
 <header class="page-top-bar mdc-top-app-bar mdc-theme--primary-bg mdc-top-app-bar--static ">
     <div class="mdc-top-app-bar__row flex flex--spaced">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <button class="hamburger mdc-top-app-bar__navigation-icon app__drawer-toggle" title="Toggle Drawer">
+            <button class="hamburger mdc-top-app-bar__navigation-icon app__drawer-toggle" title="Toggle Drawer" data-toggle="drawer" data-type="temporary">
                 <span class="material-icons">menu</span>
             </button>
             
-            <span class="mdc-top-app-bar__title"></span>
+            <span class="mdc-top-app-bar__title">PatternLab App</span>
         </section>
         <section class="mdc-toolbar__sectio"></section>
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-            <div class="flex">
                 <a class="mdc-top-app-bar__action-item " aria-label="Notifications">
   <i class="material-icons">notifications</i>
     
@@ -5080,30 +5139,24 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
   <i class="material-icons">tune</i>
     
 </a>
-            </div>
             
-            <div class="mdc-menu-anchor">
-                <a href="#" class="mdc-top-app-bar__action-item app__user-toggle">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4" alt="@username" class="avatar" />
+            <a href="#" class="mdc-top-app-bar__action-item app__user-toggle">
+                    
+                    <img src="https:&#x2F;&#x2F;s3-us-west-2.amazonaws.com&#x2F;s.cdpn.io&#x2F;49212&#x2F;profile&#x2F;profile-80.jpg?4" alt="" class="img-avatar"/>
+<style>
+.img-avatar {
+    border-radius: 50%;
+    max-height: 75px;
+}
+</style>
                 </a>
-                <div class="mdc-menu" tabindex="-1">
-                    <ul class="mdc-menu__items mdc-list" role="menu" aria-hidden="true">
-                        <li class="mdc-list-item" role="menuitem" tabindex="0">
-                            A Menu Item
-                        </li>
-                        <li class="mdc-list-item" role="menuitem" tabindex="0">
-                            Another Menu Item
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
         </section>
     </div>
 </header>
 
 
-<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
+<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary mdc-typography">
   <nav class="mdc-drawer__drawer">
     <nav class="mdc-drawer__content u-p">
 
@@ -5125,7 +5178,21 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
     </div>
   </div>
   <label for="">Fixed header</label>
-</div> <div class="mdc-form-field">
+</div> 
+        
+        <div class="mdc-form-field">
+  <div class="mdc-checkbox">
+    <input type="checkbox" class="mdc-checkbox__native-control" id="" name="logoSidenav" value="false" checked=""/>
+    <div class="mdc-checkbox__background">
+      <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+      </svg>
+      <div class="mdc-checkbox__mixedmark"></div>
+    </div>
+  </div>
+  <label for="">Logo sidenav</label>
+</div> 
+        <div class="mdc-form-field">
   <div class="mdc-checkbox">
     <input type="checkbox" class="mdc-checkbox__native-control" id="" name="fixedSidenav" value="false" checked=""/>
     <div class="mdc-checkbox__background">
@@ -5136,7 +5203,8 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
     </div>
   </div>
   <label for="">Fixed sidenav</label>
-</div> <div class="mdc-form-field">
+</div> 
+        <div class="mdc-form-field">
   <div class="mdc-checkbox">
     <input type="checkbox" class="mdc-checkbox__native-control" id="" name="collapsedSidenav" value="" checked=""/>
     <div class="mdc-checkbox__background">
@@ -5433,7 +5501,9 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 </div>
 <script>
 (function(){
-document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.attachTo(el))
+  document.querySelectorAll('.mdc-slider').forEach(function(el){
+     mdc.slider.MDCSlider.attachTo(el)
+  })
 })()
 </script>
         </li>
@@ -5484,6 +5554,8 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 
 <script>
     // Instantiation
+
+    /*
     var menuEl = document.querySelector('.mdc-menu');
     var menu = new mdc.menu.MDCMenu(menuEl);
     var menuButtonEl = document.querySelector('.app__user-toggle');
@@ -5503,19 +5575,36 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 
     // Turn off menu open animations
     menu.quickOpen = true;
-
+*/
 
     (function () {
+
         let drawerToggle = document.querySelector('.app__drawer-toggle');
         if (drawerToggle) {
             drawerToggle.addEventListener('click', function (e) {
                 console.log('Find and toggle drawer');
-                let appDrawer = document.querySelector('.app__drawer');
-                if (appDrawer) {
-                    let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
-                    drawer.open = !drawer.open;
-                    console.log('Toggle', drawer);
+                let appDrawers = document.querySelectorAll('.app__drawer');
+                if(appDrawers){
+                    appDrawers.forEach(function(el){
+                        var appDrawer = el;
+                        var type = el.getAttribute('data-type');
+
+                        //console.log(type);
+                        console.log('Check screensize');
+                        console.log('Toggle', type);      
+                        
+                        if(type=== 'temporary'){
+                            let drawer = new mdc.drawer.MDCTemporaryDrawer(appDrawer);
+                            drawer.open = !drawer.open;  
+                        } else if( type=== 'persistent'){
+                            
+                            let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
+                            drawer.open = !drawer.open;
+                            
+                        }
+                    });
                 }
+
             });
         }
 
@@ -5531,11 +5620,21 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
             });
         }
     })();
+
+
+$(function(){
+    var appDrawers = $('.app__drawer');
+    appDrawers.each(function(i, el){
+        var drawerType = $(el).attr('data-type');
+        console.log(i, el, drawerType)
+    })
+})
+
 </script>
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-app-topbar" class="pl-js-pattern-data">
-	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"lineage":[{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-list-detail-page","lineagePath":"../../patterns/templates-list-detail-page/templates-list-detail-page.rendered.html"},{"lineagePattern":"templates-page","lineagePath":"../../patterns/templates-page/templates-page.rendered.html"}],"lineageR":[{"lineagePattern":"templates-list-detail-page","lineagePath":"../../patterns/templates-list-detail-page/templates-list-detail-page.rendered.html"},{"lineagePattern":"templates-page","lineagePath":"../../patterns/templates-page/templates-page.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"App Topbar","patternPartial":"organisms-app-topbar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-drawer-temporary","lineagePath":"../../patterns/organisms-navigation-drawer-temporary/organisms-navigation-drawer-temporary.rendered.html"},{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"atoms-avatar","lineagePath":"../../patterns/atoms-global-avatar/atoms-global-avatar.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"lineage":[{"lineagePattern":"organisms-drawer-temporary","lineagePath":"../../patterns/organisms-navigation-drawer-temporary/organisms-navigation-drawer-temporary.rendered.html"},{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"atoms-avatar","lineagePath":"../../patterns/atoms-global-avatar/atoms-global-avatar.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-columns-to-tabs","lineagePath":"../../patterns/templates-columns-to-tabs/templates-columns-to-tabs.rendered.html"},{"lineagePattern":"templates-list-detail-page","lineagePath":"../../patterns/templates-list-detail-page/templates-list-detail-page.rendered.html"},{"lineagePattern":"templates-page","lineagePath":"../../patterns/templates-page/templates-page.rendered.html"}],"lineageR":[{"lineagePattern":"templates-columns-to-tabs","lineagePath":"../../patterns/templates-columns-to-tabs/templates-columns-to-tabs.rendered.html"},{"lineagePattern":"templates-list-detail-page","lineagePath":"../../patterns/templates-list-detail-page/templates-list-detail-page.rendered.html"},{"lineagePattern":"templates-page","lineagePath":"../../patterns/templates-page/templates-page.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"App Topbar","patternPartial":"organisms-app-topbar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-page-top-bar" class="pl-c-pattern">
@@ -5592,7 +5691,7 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
             <button class="hamburger mdc-top-app-bar__navigation-icon app__drawer-toggle" title="Toggle Drawer">
                 <span class="material-icons">menu</span>
             </button>
-            <span class="mdc-top-app-bar__title"></span>
+            <span class="mdc-top-app-bar__title">PatternLab App</span>
         </section>
         <section class="mdc-toolbar__sectio"></section>
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
@@ -5631,7 +5730,7 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 </header>
 
 
-<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary">
+<aside class="app__settings-drawer mdc-drawer mdc-drawer--right mdc-drawer--temporary mdc-typography">
   <nav class="mdc-drawer__drawer">
     <nav class="mdc-drawer__content u-p">
 
@@ -5653,7 +5752,21 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
     </div>
   </div>
   <label for="">Fixed header</label>
-</div> <div class="mdc-form-field">
+</div> 
+        
+        <div class="mdc-form-field">
+  <div class="mdc-checkbox">
+    <input type="checkbox" class="mdc-checkbox__native-control" id="" name="logoSidenav" value="false" checked=""/>
+    <div class="mdc-checkbox__background">
+      <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+        <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+      </svg>
+      <div class="mdc-checkbox__mixedmark"></div>
+    </div>
+  </div>
+  <label for="">Logo sidenav</label>
+</div> 
+        <div class="mdc-form-field">
   <div class="mdc-checkbox">
     <input type="checkbox" class="mdc-checkbox__native-control" id="" name="fixedSidenav" value="false" checked=""/>
     <div class="mdc-checkbox__background">
@@ -5664,7 +5777,8 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
     </div>
   </div>
   <label for="">Fixed sidenav</label>
-</div> <div class="mdc-form-field">
+</div> 
+        <div class="mdc-form-field">
   <div class="mdc-checkbox">
     <input type="checkbox" class="mdc-checkbox__native-control" id="" name="collapsedSidenav" value="" checked=""/>
     <div class="mdc-checkbox__background">
@@ -5961,7 +6075,9 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 </div>
 <script>
 (function(){
-document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.attachTo(el))
+  document.querySelectorAll('.mdc-slider').forEach(function(el){
+     mdc.slider.MDCSlider.attachTo(el)
+  })
 })()
 </script>
         </li>
@@ -6469,9 +6585,7 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
         </ul>
     </div>
     <div class="flex__item">
-        <h3>
-
-            Two Line with icon</h3>
+        <h3>Two Line with icon</h3>
         <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
             <li class="mdc-list-item">
                 <span class="mdc-list-item__graphic material-icons" aria-hidden="true">stars</span>
@@ -6639,7 +6753,9 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 </div>
 <script>
 (function(){
-document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.attachTo(el))
+  document.querySelectorAll('.mdc-slider').forEach(function(el){
+     mdc.slider.MDCSlider.attachTo(el)
+  })
 })()
 </script>
         </li>
@@ -6661,7 +6777,9 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 </div>
 <script>
 (function(){
-document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.attachTo(el))
+  document.querySelectorAll('.mdc-slider').forEach(function(el){
+     mdc.slider.MDCSlider.attachTo(el)
+  })
 })()
 </script>
         </li>
@@ -6785,27 +6903,27 @@ document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.atta
 	<div class="pl-js-pattern-example">
 	<ul id="list1" class="mdc-list" aria-orientation="vertical">
     <li class="mdc-list-item">
-      <span>Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo</span>
+      <span>Nullizzle shizznit velizzle, hizzle, suscipit own yo&#39;, gravida vizzle, arcu.</span>
     </li>
     <li class="mdc-list-item">
       <span class="mdc-list-item__text">
-        <span class="mdc-list-item__primary-text">Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo</span>
+        <span class="mdc-list-item__primary-text">Nullizzle shizznit velizzle, hizzle, suscipit own yo&#39;, gravida vizzle, arcu.</span>
       </span>
     </li>
     <li class="mdc-list-item">
-      <span>Cottage cheese brie lancashire. Boursin when the cheese comes out.</span>
+      <span>Help, help, I&#39;m being repressed!</span>
     </li>
     <li class="mdc-list-item">
       <span class="mdc-list-item__text">
-        <span class="mdc-list-item__primary-text">Cottage cheese brie lancashire. Boursin when the cheese comes out.</span>
+        <span class="mdc-list-item__primary-text">Help, help, I&#39;m being repressed!</span>
       </span>
     </li>
     <li class="mdc-list-item">
-      <span>Whatever swag accusamus </span>
+      <span>Danish danish candy canes bonbon cheesecake danish marzipan</span>
     </li>
     <li class="mdc-list-item">
       <span class="mdc-list-item__text">
-        <span class="mdc-list-item__primary-text">Whatever swag accusamus </span>
+        <span class="mdc-list-item__primary-text">Danish danish candy canes bonbon cheesecake danish marzipan</span>
       </span>
     </li>
 </ul>
@@ -6847,10 +6965,10 @@ list.singleSelection = true;
 	<div class="pl-js-pattern-example">
 	<ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Freyr Hines
+      Junius Koolen
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -6860,36 +6978,10 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;sepia" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;grayscale" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Aquila Achterkamp
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;animals" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Duane Wilms
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;sepia" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Jacobus Sneiders
+      Plinius Sloane
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -6912,10 +7004,36 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;sepia" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Junius Koolen
+      Aquila Achterkamp
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Teun Richard
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Frans Keegan
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -7325,61 +7443,31 @@ list.singleSelection = true;
 	
 <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
     <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
     <span class="mdc-list-item__text">  
       <span class="mdc-list-item__primary-text">
-        Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo
+        Nullizzle shizznit velizzle, hizzle, suscipit own yo&#39;, gravida vizzle, arcu.
       </span>
       
       <span class="mdc-list-item__secondary-text">
-        <strong>Freyr Hines</strong> --
-        Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.
+        <strong>Junius Koolen</strong> --
+        Fizzle crazy tortor. Sed rizzle. Ass pimpin&#39; dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo&#39; vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.
       </span>
     </span>
   </li>
   <li class="mdc-list-divider mdc-list-divider--inset"></li>
   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;sepia" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;grayscale" alt="Avatar"/> 
     <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
     <span class="mdc-list-item__text">  
       <span class="mdc-list-item__primary-text">
-        Cottage cheese brie lancashire. Boursin when the cheese comes out.
+        Help, help, I&#39;m being repressed!
       </span>
       
       <span class="mdc-list-item__secondary-text">
-        <strong>Aquila Achterkamp</strong> --
-        Queso caerphilly cheesecake. Parmesan chalk and cheese port-salut port-salut babybel cottage cheese cheesy grin pepper jack. Croque monsieur paneer st. agur blue cheese emmental airedale monterey jack bavarian bergkase cheese triangles. Halloumi parmesan.
-      </span>
-    </span>
-  </li>
-  <li class="mdc-list-divider mdc-list-divider--inset"></li>
-  <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;animals" alt="Avatar"/> 
-    <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
-    <span class="mdc-list-item__text">  
-      <span class="mdc-list-item__primary-text">
-        Whatever swag accusamus 
-      </span>
-      
-      <span class="mdc-list-item__secondary-text">
-        <strong>Duane Wilms</strong> --
-        Fanny pack ullamco et veniam semiotics. Shoreditch PBR reprehenderit cliche, magna Tonx aesthetic. Narwhal photo booth DIY aute post-ironic anim. Vice cliche brunch est before they sold out fap, street art Odd Future fashion axe messenger bag nihil Tonx tattooed. Nihil hashtag incididunt, do eu art party Banksy jean shorts four loko typewriter.
-      </span>
-    </span>
-  </li>
-  <li class="mdc-list-divider mdc-list-divider--inset"></li>
-  <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;sepia" alt="Avatar"/> 
-    <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
-    <span class="mdc-list-item__text">  
-      <span class="mdc-list-item__primary-text">
-        Rebel Mission to Ord Mantell
-      </span>
-      
-      <span class="mdc-list-item__secondary-text">
-        <strong>Jacobus Sneiders</strong> --
-        I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don&#39;t act so surprised, Your Highness. You weren&#39;t on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.
+        <strong>Plinius Sloane</strong> --
+        The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migrate? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. You don&#39;t frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!
       </span>
     </span>
   </li>
@@ -7400,16 +7488,46 @@ list.singleSelection = true;
   </li>
   <li class="mdc-list-divider mdc-list-divider--inset"></li>
   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;sepia" alt="Avatar"/> 
     <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
     <span class="mdc-list-item__text">  
       <span class="mdc-list-item__primary-text">
-        Nullizzle shizznit velizzle, hizzle, suscipit own yo&#39;, gravida vizzle, arcu.
+        Cottage cheese brie lancashire. Boursin when the cheese comes out.
       </span>
       
       <span class="mdc-list-item__secondary-text">
-        <strong>Junius Koolen</strong> --
-        Fizzle crazy tortor. Sed rizzle. Ass pimpin&#39; dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo&#39; vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.
+        <strong>Aquila Achterkamp</strong> --
+        Queso caerphilly cheesecake. Parmesan chalk and cheese port-salut port-salut babybel cottage cheese cheesy grin pepper jack. Croque monsieur paneer st. agur blue cheese emmental airedale monterey jack bavarian bergkase cheese triangles. Halloumi parmesan.
+      </span>
+    </span>
+  </li>
+  <li class="mdc-list-divider mdc-list-divider--inset"></li>
+  <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech" alt="Avatar"/> 
+    <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
+    <span class="mdc-list-item__text">  
+      <span class="mdc-list-item__primary-text">
+        Bacon ipsum dolor 
+      </span>
+      
+      <span class="mdc-list-item__secondary-text">
+        <strong>Teun Richard</strong> --
+        Boudin sausage jerky pastrami ground round salami biltong. Sausage fatback strip steak doner pork loin, pork belly drumstick ham short loin hamburger shankle. Short ribs sirloin rump tri-tip beef biltong. Meatball pig salami, jowl pork loin fatback short loin drumstick andouille.
+      </span>
+    </span>
+  </li>
+  <li class="mdc-list-divider mdc-list-divider--inset"></li>
+  <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <!--span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span-->
+    <span class="mdc-list-item__text">  
+      <span class="mdc-list-item__primary-text">
+        Marshall McLuhan Colbert bump backpack journalist vast wasteland Romenesko CPM
+      </span>
+      
+      <span class="mdc-list-item__secondary-text">
+        <strong>Frans Keegan</strong> --
+        Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.
       </span>
     </span>
   </li>
@@ -8003,7 +8121,7 @@ margin: 2px; }
     <button class="mdc-top-app-bar__navigation-icon menu-btn">
       <i class="material-icons">menu</i>
     </button>
-    <span class="mdc-top-app-bar__title"></span>
+    <span class="mdc-top-app-bar__title">PatternLab App</span>
    </section>
    <section class="mdc-toolbar__section"></section>
    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
@@ -8053,60 +8171,54 @@ margin: 2px; }
 
 	<div class="pl-js-pattern-example">
 	<nav class="mdc-drawer__drawer mdc-drawer--">
-
- 
-
   <nav class="mdc-drawer__content mdc-list-group">
-    <ul class="mdc-list">
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">dashboard</span>
-  <span>Dashboard</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">extension</span>
-  <span>Sample Page</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">list</span>
-  <span>Products</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">account_circle</span>
-  <span>My Account</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">list</span>
-  <span>Forms</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">info</span>
-  <span>About</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">view_quilt</span>
-  <span>Permanent Drawer</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">web</span>
-  <span>Temporary Layout</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-    </ul>
+    <nav class="mdc-list mdc-list--dense">
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html" title="Dashboard">
+   
+        <span class="material-icons mdc-list-item__graphic">dashboard</span>
+    <span>Dashboard</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html" title="Sample Page">
+   
+        <span class="material-icons mdc-list-item__graphic">extension</span>
+    <span>Sample Page</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html" title="Products">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Products</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html" title="My Account">
+   
+        <span class="material-icons mdc-list-item__graphic">account_circle</span>
+    <span>My Account</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html" title="Forms">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Forms</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html" title="About">
+   
+        <span class="material-icons mdc-list-item__graphic">info</span>
+    <span>About</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html" title="Permanent Drawer">
+   
+        <span class="material-icons mdc-list-item__graphic">view_quilt</span>
+    <span>Permanent Drawer</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html" title="Temporary Layout">
+   
+        <span class="material-icons mdc-list-item__graphic">web</span>
+    <span>Temporary Layout</span>
+</a>
+    <hr class="mdc-list-divider">
+    <a class="mdc-list-item" tabindex="-1" href="/logout">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
+        <span>Sign out</span>
+    </a>
+</nav>
   </nav>
 </nav>
 	</div><!--end pl-js-pattern-example-->
@@ -8141,66 +8253,164 @@ margin: 2px; }
 	<div class="pl-js-pattern-example">
 	<div class="mdc-drawer mdc-drawer--permanent">
     <nav class="mdc-drawer__drawer mdc-drawer--">
+  
+  <style>
+    .mdc-drawer__user .mdc-menu {
+        width: 100%;
+    }
 
- 
+    .mdc-drawer__user-avatar {
+        border-radius: 50%;
+        max-height: 44px;
+    }
+</style>
 
+<header class="mdc-drawer__header">
+    <div class="mdc-drawer__header-content">
+        <div class="mdc-drawer__user u-ph mdc-typography">
+            <img src="https:&#x2F;&#x2F;s3-us-west-2.amazonaws.com&#x2F;s.cdpn.io&#x2F;49212&#x2F;profile&#x2F;profile-80.jpg?4" alt="Jonnie Spratley" class="mdc-drawer__user-avatar" />
+
+            <h3 class="mdc-typography--headline6 u-m0">Jonnie Spratley</h3>
+
+            <div class="mdc-select ">
+                <select class="mdc-select__native-control">
+                    <option value="" disabled selected></option>
+                    <option value="jonniedollas@gmail.com">jonniedollas@gmail.com</option>
+                </select>
+                <label class="mdc-floating-label"> </label>
+                <div class="mdc-line-ripple"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<script>
+    mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
+</script>
+  
   <nav class="mdc-drawer__content mdc-list-group">
-    <ul class="mdc-list">
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">dashboard</span>
-  <span>Dashboard</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">extension</span>
-  <span>Sample Page</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">list</span>
-  <span>Products</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">account_circle</span>
-  <span>My Account</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">list</span>
-  <span>Forms</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">info</span>
-  <span>About</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">view_quilt</span>
-  <span>Permanent Drawer</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">web</span>
-  <span>Temporary Layout</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-    </ul>
+    <nav class="mdc-list mdc-list--dense">
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html" title="Dashboard">
+   
+        <span class="material-icons mdc-list-item__graphic">dashboard</span>
+    <span>Dashboard</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html" title="Sample Page">
+   
+        <span class="material-icons mdc-list-item__graphic">extension</span>
+    <span>Sample Page</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html" title="Products">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Products</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html" title="My Account">
+   
+        <span class="material-icons mdc-list-item__graphic">account_circle</span>
+    <span>My Account</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html" title="Forms">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Forms</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html" title="About">
+   
+        <span class="material-icons mdc-list-item__graphic">info</span>
+    <span>About</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html" title="Permanent Drawer">
+   
+        <span class="material-icons mdc-list-item__graphic">view_quilt</span>
+    <span>Permanent Drawer</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html" title="Temporary Layout">
+   
+        <span class="material-icons mdc-list-item__graphic">web</span>
+    <span>Temporary Layout</span>
+</a>
+    <hr class="mdc-list-divider">
+    <a class="mdc-list-item" tabindex="-1" href="/logout">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
+        <span>Sign out</span>
+    </a>
+</nav>
   </nav>
 </nav>
 </div>
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-drawer-header" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-drawer-header-user" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-navigation-drawer-header-user&#x2F;organisms-navigation-drawer-header-user.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-drawer-header-user" title="Link to Pattern">
+				Drawer Header User
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-drawer-header-user" data-patternpartial="organisms-drawer-header-user" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-drawer-header-user">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<style>
+    .mdc-drawer__user .mdc-menu {
+        width: 100%;
+    }
+
+    .mdc-drawer__user-avatar {
+        border-radius: 50%;
+        max-height: 44px;
+    }
+</style>
+
+<header class="mdc-drawer__header">
+    <div class="mdc-drawer__header-content">
+        <div class="mdc-drawer__user u-ph mdc-typography">
+            <img src="https:&#x2F;&#x2F;s3-us-west-2.amazonaws.com&#x2F;s.cdpn.io&#x2F;49212&#x2F;profile&#x2F;profile-80.jpg?4" alt="Jonnie Spratley" class="mdc-drawer__user-avatar" />
+
+            <h3 class="mdc-typography--headline6 u-m0">Jonnie Spratley</h3>
+
+            <div class="mdc-select ">
+                <select class="mdc-select__native-control">
+                    <option value="" disabled selected></option>
+                    <option value="jonniedollas@gmail.com">jonniedollas@gmail.com</option>
+                </select>
+                <label class="mdc-floating-label"> </label>
+                <div class="mdc-line-ripple"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<script>
+    mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-drawer-header-user" class="pl-js-pattern-data">
 	
 	</script>
 
@@ -8228,62 +8438,56 @@ margin: 2px; }
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<div class="mdc-drawer mdc-drawer--persistent">
+	<div class="app__drawer mdc-drawer mdc-drawer--persistent   " data-type="persistent">
     <nav class="mdc-drawer__drawer mdc-drawer--">
-
- 
-
   <nav class="mdc-drawer__content mdc-list-group">
-    <ul class="mdc-list">
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">dashboard</span>
-  <span>Dashboard</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">extension</span>
-  <span>Sample Page</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">list</span>
-  <span>Products</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">account_circle</span>
-  <span>My Account</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">list</span>
-  <span>Forms</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">info</span>
-  <span>About</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">view_quilt</span>
-  <span>Permanent Drawer</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-        <li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">web</span>
-  <span>Temporary Layout</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>
-    </ul>
+    <nav class="mdc-list mdc-list--dense">
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html" title="Dashboard">
+   
+        <span class="material-icons mdc-list-item__graphic">dashboard</span>
+    <span>Dashboard</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html" title="Sample Page">
+   
+        <span class="material-icons mdc-list-item__graphic">extension</span>
+    <span>Sample Page</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html" title="Products">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Products</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html" title="My Account">
+   
+        <span class="material-icons mdc-list-item__graphic">account_circle</span>
+    <span>My Account</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html" title="Forms">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Forms</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html" title="About">
+   
+        <span class="material-icons mdc-list-item__graphic">info</span>
+    <span>About</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html" title="Permanent Drawer">
+   
+        <span class="material-icons mdc-list-item__graphic">view_quilt</span>
+    <span>Permanent Drawer</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html" title="Temporary Layout">
+   
+        <span class="material-icons mdc-list-item__graphic">web</span>
+    <span>Temporary Layout</span>
+</a>
+    <hr class="mdc-list-divider">
+    <a class="mdc-list-item" tabindex="-1" href="/logout">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
+        <span>Sign out</span>
+    </a>
+</nav>
   </nav>
 </nav>
 </div>
@@ -8317,54 +8521,56 @@ margin: 2px; }
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<div class="mdc-drawer mdc-drawer--temporary ">
+	<div class="app__drawer mdc-drawer mdc-drawer--temporary mdc-typography " data-type="temporary">
     <nav class="mdc-drawer__drawer mdc-drawer--">
-
- 
-
   <nav class="mdc-drawer__content mdc-list-group">
-    <ul class="mdc-list">
-<li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">dashboard</span>
-  <span>Dashboard</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">extension</span>
-  <span>Sample Page</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">list</span>
-  <span>Products</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">account_circle</span>
-  <span>My Account</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">list</span>
-  <span>Forms</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">info</span>
-  <span>About</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">view_quilt</span>
-  <span>Permanent Drawer</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li><li class="mdc-list-item" data-href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html">
- 
-  <span class="material-icons mdc-list-item__graphic">web</span>
-  <span>Temporary Layout</span>
-  <span class="mdc-list-item__meta material-icons" aria-hidden="true">chevron_right</span>
-</li>    </ul>
+    <nav class="mdc-list mdc-list--dense">
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-dashboard&#x2F;pages-dashboard.rendered.html" title="Dashboard">
+   
+        <span class="material-icons mdc-list-item__graphic">dashboard</span>
+    <span>Dashboard</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-sample-page&#x2F;pages-sample-page.rendered.html" title="Sample Page">
+   
+        <span class="material-icons mdc-list-item__graphic">extension</span>
+    <span>Sample Page</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-products&#x2F;pages-products.rendered.html" title="Products">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Products</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-account&#x2F;pages-account.rendered.html" title="My Account">
+   
+        <span class="material-icons mdc-list-item__graphic">account_circle</span>
+    <span>My Account</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-forms&#x2F;pages-forms.rendered.html" title="Forms">
+   
+        <span class="material-icons mdc-list-item__graphic">list</span>
+    <span>Forms</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;pages-about&#x2F;pages-about.rendered.html" title="About">
+   
+        <span class="material-icons mdc-list-item__graphic">info</span>
+    <span>About</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-permanent&#x2F;templates-layout-drawer-permanent.rendered.html" title="Permanent Drawer">
+   
+        <span class="material-icons mdc-list-item__graphic">view_quilt</span>
+    <span>Permanent Drawer</span>
+</a>
+        <a class="mdc-list-item" href="&#x2F;patterns&#x2F;templates-layout-drawer-temporary&#x2F;templates-layout-drawer-temporary.rendered.html" title="Temporary Layout">
+   
+        <span class="material-icons mdc-list-item__graphic">web</span>
+    <span>Temporary Layout</span>
+</a>
+    <hr class="mdc-list-divider">
+    <a class="mdc-list-item" tabindex="-1" href="/logout">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
+        <span>Sign out</span>
+    </a>
+</nav>
   </nav>
 </nav>
 </div>
@@ -8374,7 +8580,7 @@ margin: 2px; }
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-drawer-temporary" class="pl-js-pattern-data">
-	
+	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-drawer","lineagePath":"../../patterns/organisms-navigation-drawer/organisms-navigation-drawer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-drawer","lineagePath":"../../patterns/organisms-navigation-drawer/organisms-navigation-drawer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-app-topbar","lineagePath":"../../patterns/organisms-global-app-topbar/organisms-global-app-topbar.rendered.html"},{"lineagePattern":"templates-layout-drawer-mini","lineagePath":"../../patterns/templates-layout-drawer-mini/templates-layout-drawer-mini.rendered.html"},{"lineagePattern":"templates-layout-drawer-temporary","lineagePath":"../../patterns/templates-layout-drawer-temporary/templates-layout-drawer-temporary.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-app-topbar","lineagePath":"../../patterns/organisms-global-app-topbar/organisms-global-app-topbar.rendered.html"},{"lineagePattern":"templates-layout-drawer-mini","lineagePath":"../../patterns/templates-layout-drawer-mini/templates-layout-drawer-mini.rendered.html"},{"lineagePattern":"templates-layout-drawer-temporary","lineagePath":"../../patterns/templates-layout-drawer-temporary/templates-layout-drawer-temporary.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Drawer Temporary","patternPartial":"organisms-drawer-temporary","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-footer" class="pl-c-pattern">
@@ -8893,7 +9099,7 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
     <h2 class="demo-card__title mdc-typography--headline6">Card 1</h2>
   </header>
     <div class="demo-card__secondary mdc-typography--body2">
-      Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.
+      Fizzle crazy tortor. Sed rizzle. Ass pimpin&#39; dolor dapibizzle turpis tempizzle fo shizzle my nizzle. Maurizzle pellentesque its fo rizzle izzle turpis. Get down get down we gonna chung nizzle. Shizzlin dizzle eleifend rhoncizzle break it down. In yo ghetto platea dictumst. Bling bling dapibizzle. Curabitur break yo neck, yall fo, pretizzle eu, go to hizzle dope, own yo&#39; vitae, nunc. Bizzle suscipizzle. Ass semper velit sizzle fo.
     </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -8911,7 +9117,7 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
     <h2 class="demo-card__title mdc-typography--headline6">Card 1</h2>
   </header>
     <div class="demo-card__secondary mdc-typography--body2">
-      Queso caerphilly cheesecake. Parmesan chalk and cheese port-salut port-salut babybel cottage cheese cheesy grin pepper jack. Croque monsieur paneer st. agur blue cheese emmental airedale monterey jack bavarian bergkase cheese triangles. Halloumi parmesan.
+      The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migrate? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. You don&#39;t frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!
     </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -8929,7 +9135,7 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
     <h2 class="demo-card__title mdc-typography--headline6">Card 1</h2>
   </header>
     <div class="demo-card__secondary mdc-typography--body2">
-      Fanny pack ullamco et veniam semiotics. Shoreditch PBR reprehenderit cliche, magna Tonx aesthetic. Narwhal photo booth DIY aute post-ironic anim. Vice cliche brunch est before they sold out fap, street art Odd Future fashion axe messenger bag nihil Tonx tattooed. Nihil hashtag incididunt, do eu art party Banksy jean shorts four loko typewriter.
+      Sugar plum wafer soufflé ice cream. Wafer topping biscuit pie gummi bears topping. Gummies toffee powder applicake oat cake cookie. Bear claw candy tootsie roll fruitcake danish applicake candy canes macaroon. Liquorice tiramisu danish cotton candy gummies. Tiramisu dessert gummi bears macaroon sweet roll jelly-o gummi bears marzipan.
     </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -8946,7 +9152,47 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
 <div class="cards flex flex--wrap">
         <div class="mdc-card demo-card flex__item card-3">
   <div class="mdc-card__media demo-card__media">
-    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;any&#x2F;grayscale" alt="16x9 Image" />
+    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;tech" alt="16x9 Image" />
+  </div>
+  <footer class="mdc-card__actions">
+    <div class="mdc-card__action-buttons">
+
+    </div>
+    <div class="mdc-card__action-icons">
+      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">favorite</button>
+      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">bookmark</button>
+      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">share</button>
+    </div>
+  </footer>
+</div>
+<style>
+  .demo-card__media img {
+    width: 100%;
+  }
+</style>
+        <div class="mdc-card demo-card flex__item card-3">
+  <div class="mdc-card__media demo-card__media">
+    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;arch&#x2F;grayscale" alt="16x9 Image" />
+  </div>
+  <footer class="mdc-card__actions">
+    <div class="mdc-card__action-buttons">
+
+    </div>
+    <div class="mdc-card__action-icons">
+      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">favorite</button>
+      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">bookmark</button>
+      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">share</button>
+    </div>
+  </footer>
+</div>
+<style>
+  .demo-card__media img {
+    width: 100%;
+  }
+</style>
+        <div class="mdc-card demo-card flex__item card-3">
+  <div class="mdc-card__media demo-card__media">
+    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;arch&#x2F;sepia" alt="16x9 Image" />
   </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -8967,46 +9213,6 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
         <div class="mdc-card demo-card flex__item card-3">
   <div class="mdc-card__media demo-card__media">
     <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;people&#x2F;sepia" alt="16x9 Image" />
-  </div>
-  <footer class="mdc-card__actions">
-    <div class="mdc-card__action-buttons">
-
-    </div>
-    <div class="mdc-card__action-icons">
-      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">favorite</button>
-      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">bookmark</button>
-      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">share</button>
-    </div>
-  </footer>
-</div>
-<style>
-  .demo-card__media img {
-    width: 100%;
-  }
-</style>
-        <div class="mdc-card demo-card flex__item card-3">
-  <div class="mdc-card__media demo-card__media">
-    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;people&#x2F;greyscale" alt="16x9 Image" />
-  </div>
-  <footer class="mdc-card__actions">
-    <div class="mdc-card__action-buttons">
-
-    </div>
-    <div class="mdc-card__action-icons">
-      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">favorite</button>
-      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">bookmark</button>
-      <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon">share</button>
-    </div>
-  </footer>
-</div>
-<style>
-  .demo-card__media img {
-    width: 100%;
-  }
-</style>
-        <div class="mdc-card demo-card flex__item card-3">
-  <div class="mdc-card__media demo-card__media">
-    <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;any&#x2F;sepia" alt="16x9 Image" />
   </div>
   <footer class="mdc-card__actions">
     <div class="mdc-card__action-buttons">
@@ -9049,7 +9255,7 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
 </div>
         <div class="mdc-card demo-card flex__item card-2 mdc-typography">
     <div class="mdc-card__media demo-card__media">
-        <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;any&#x2F;grayscale" alt="16x9 Image" />
+        <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;tech" alt="16x9 Image" />
         <div class="mdc-card__media-overlay u-ph">
             <h3 class="mdc-typography--headline6">Card Title</h3>
         </div>
@@ -9102,7 +9308,7 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
 </div>
         <div class="mdc-card demo-card flex__item card-2 mdc-typography">
     <div class="mdc-card__media demo-card__media">
-        <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;people&#x2F;sepia" alt="16x9 Image" />
+        <img src="http:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;360&#x2F;arch&#x2F;grayscale" alt="16x9 Image" />
         <div class="mdc-card__media-overlay u-ph">
             <h3 class="mdc-typography--headline6">Card Title</h3>
         </div>
@@ -9278,20 +9484,20 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1533856193927">
+<script id="pl-js-polyfill-insert-1533859623430">
   (function() {
     if (self != top) {
-      var cb = '1533856193927';
+      var cb = '1533859623430';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1533856193927">
+<script id="pl-js-insert-1533859623430">
   (function() {
     if (self != top) {
-      var cb = '1533856193927';
+      var cb = '1533859623430';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

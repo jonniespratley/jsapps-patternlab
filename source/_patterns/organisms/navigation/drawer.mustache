@@ -1,12 +1,17 @@
 <nav class="mdc-drawer__drawer mdc-drawer--{{anchor}}">
-
- 
-
+  {{#header}}
+  {{> organisms-drawer-header-user }}
+  {{/header}}
   <nav class="mdc-drawer__content mdc-list-group">
-    <ul class="mdc-list">
+    <nav class="mdc-list mdc-list--dense">
     {{#menu}}
-        {{> molecules-list-item }}
+        {{> molecules-nav-item }}
     {{/menu}}
-    </ul>
+    <hr class="mdc-list-divider">
+    <a class="mdc-list-item" tabindex="-1" href="/logout">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">lock</i>
+        <span>Sign out</span>
+    </a>
+</nav>
   </nav>
 </nav>

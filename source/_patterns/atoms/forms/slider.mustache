@@ -13,6 +13,8 @@
 </div>
 <script>
 (function(){
-document.querySelectorAll('.mdc-slider').forEach(el => mdc.slider.MDCSlider.attachTo(el))
+  document.querySelectorAll('.mdc-slider').forEach(function(el){
+     mdc.slider.MDCSlider.attachTo(el)
+  })
 })()
 </script>

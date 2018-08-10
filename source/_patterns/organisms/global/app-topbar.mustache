@@ -1,31 +1,18 @@
+<!-- APP-TOP-BAR -->
 <style>
-    .theme-x {
-        --mdc-theme-secondary: #343a40;
-        --mdc-theme-background: #eee;
-    }
 
-    .test .mdc-top-app-bar__title {
-        color: var(--mdc-theme-secondary, black)
-    }
-
-    .test .hamburger .material-icons {
-        color: inherit;
-    }
-
-    .test .hamburger {
-        fill: black;
-        color: black !important;
-    }
-
-    .avatar {
+    .img-avatar {
         height: 30px;
         border-radius: 50%;
     }
 </style>
+
+{{> organisms-drawer-temporary(header: true)}}
+
 <header class="page-top-bar mdc-top-app-bar mdc-theme--primary-bg mdc-top-app-bar--static {{#fixed}}mdc-top-app-bar--fixed{{/fixed}}">
     <div class="mdc-top-app-bar__row flex flex--spaced">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <button class="hamburger mdc-top-app-bar__navigation-icon app__drawer-toggle" title="Toggle Drawer">
+            <button class="hamburger mdc-top-app-bar__navigation-icon app__drawer-toggle" title="Toggle Drawer" data-toggle="drawer" data-type="temporary">
                 <span class="material-icons">menu</span>
             </button>
             
@@ -33,27 +20,14 @@
         </section>
         <section class="mdc-toolbar__sectio"></section>
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-            <div class="flex">
                 {{> molecules-app-bar-action(icon: "notifications", label: "Notifications") }} 
                 {{> molecules-app-bar-action(icon: "apps", label: "Apps") }} 
                 {{> molecules-app-bar-action(icon: "tune", label: "Settings", className: "app__settings-toggle") }}
-            </div>
             
-            <div class="mdc-menu-anchor">
-                <a href="#" class="mdc-top-app-bar__action-item app__user-toggle">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4" alt="@username" class="avatar" />
+            <a href="#" class="mdc-top-app-bar__action-item app__user-toggle">
+                    
+                    {{> atoms-avatar}}
                 </a>
-                <div class="mdc-menu" tabindex="-1">
-                    <ul class="mdc-menu__items mdc-list" role="menu" aria-hidden="true">
-                        <li class="mdc-list-item" role="menuitem" tabindex="0">
-                            A Menu Item
-                        </li>
-                        <li class="mdc-list-item" role="menuitem" tabindex="0">
-                            Another Menu Item
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
         </section>
     </div>
@@ -64,6 +38,8 @@
 
 <script>
     // Instantiation
+
+    /*
     var menuEl = document.querySelector('.mdc-menu');
     var menu = new mdc.menu.MDCMenu(menuEl);
     var menuButtonEl = document.querySelector('.app__user-toggle');
@@ -83,19 +59,36 @@
 
     // Turn off menu open animations
     menu.quickOpen = true;
-
+*/
 
     (function () {
+
         let drawerToggle = document.querySelector('.app__drawer-toggle');
         if (drawerToggle) {
             drawerToggle.addEventListener('click', function (e) {
                 console.log('Find and toggle drawer');
-                let appDrawer = document.querySelector('.app__drawer');
-                if (appDrawer) {
-                    let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
-                    drawer.open = !drawer.open;
-                    console.log('Toggle', drawer);
+                let appDrawers = document.querySelectorAll('.app__drawer');
+                if(appDrawers){
+                    appDrawers.forEach(function(el){
+                        var appDrawer = el;
+                        var type = el.getAttribute('data-type');
+
+                        //console.log(type);
+                        console.log('Check screensize');
+                        console.log('Toggle', type);      
+                        
+                        if(type=== 'temporary'){
+                            let drawer = new mdc.drawer.MDCTemporaryDrawer(appDrawer);
+                            drawer.open = !drawer.open;  
+                        } else if( type=== 'persistent'){
+                            
+                            let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
+                            drawer.open = !drawer.open;
+                            
+                        }
+                    });
                 }
+
             });
         }
 
@@ -111,4 +104,14 @@
             });
         }
     })();
+
+
+$(function(){
+    var appDrawers = $('.app__drawer');
+    appDrawers.each(function(i, el){
+        var drawerType = $(el).attr('data-type');
+        console.log(i, el, drawerType)
+    })
+})
+
 </script>

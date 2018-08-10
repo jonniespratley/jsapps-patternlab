@@ -1,0 +1,24 @@
+
+
+{{> organisms-app-topbar(pageTitle: "Columns to Tabs") }} 
+<div class="mdc-top-app-bar--fixed-adjust mdc-typography columns-to-tabs">
+    
+    <div class="flex">
+        {{> organisms-drawer-persistent }}
+        <section class="mdc-layout-grid flex__item">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-12-tablet demo-cell mdc-elevation--z1 mdc-list-group">
+                    <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
+                        {{# listItems.ten }}
+                        <li class="mdc-list-item">
+                            &nbsp;
+                        </li>
+                        <li role="separator" class="mdc-list-divider"></li>
+                        {{/ listItems.ten }}
+                    </ul>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-6 demo-cell mdc-elevation--z1"></div>
+            </div>
+        </section>
+    </div>
+</div>
