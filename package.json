@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
+    "dev": "npm run pl:serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run pl:build",
     "pl:build": "patternlab build --config ./patternlab-config.json",

@@ -1,0 +1,25 @@
+<header class="mdc-toolbar {{#fixed}}mdc-toolbar--fixed{{/fixed}} mdc-toolbar--waterfall">
+
+   <div class="mdc-toolbar__row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+      
+        {{> molecules-app-bar-action(icon: "format_bold")}}
+        {{> molecules-app-bar-action(icon: "format_italic")}}
+        {{> molecules-app-bar-action(icon: "format_underline")}}
+        {{> molecules-app-bar-action(icon: "format_color_fill")}}
+        <div></div>
+        {{> molecules-app-bar-action(icon: "insert_link")}}
+        {{> molecules-app-bar-action(icon: "insert_photo")}}
+       
+    </section>
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+      Section aligns to end.
+    </section>
+  </div>
+</header>
+
+<script>
+// When you are using toolbar with JavaScript
+  var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
+  toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+</script>

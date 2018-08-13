@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1533859623430" media="all" />
-    <link rel="stylesheet" href="../../css/theme.css?1533859623430" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1533859623430" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1534202328806" media="all" />
+    <link rel="stylesheet" href="../../css/theme.css?1534202328806" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1534202328806" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1533859623430" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1534202328806" media="all">
     <!-- End Pattern Lab -->
 
        
@@ -525,9 +525,7 @@ mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<div class="mdc-slider" tabindex="0" role="slider"
-     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-     aria-label="Select Value">
+	<div class="mdc-slider" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Select Value">
   <div class="mdc-slider__track-container">
     <div class="mdc-slider__track"></div>
   </div>
@@ -790,6 +788,43 @@ new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
 	
 	</script>
 
+</div><!--end pl-c-pattern--><div id="atoms-color" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/atoms-global-color&#x2F;atoms-global-color.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="atoms-color" title="Link to Pattern">
+				Color
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-atoms-color" data-patternpartial="atoms-color" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-atoms-color">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	  <li>
+    <span class="sg-swatch " style="background: ;"></span>
+    <span class="sg-label">
+      Text Label
+      <br> 
+    </span>
+  </li>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-atoms-color" class="pl-js-pattern-data">
+	
+	</script>
+
 </div><!--end pl-c-pattern--><div id="atoms-color-pallet" class="pl-c-pattern">
 
 	<div class="pl-c-pattern__header">
@@ -817,62 +852,63 @@ new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
 	<h2>Colors</h2>
 
 <div class="flex flex--wrap">
-    <div></div>
+  <div></div>
 </div>
 
 <ul class="sg-colors">
-		<li>
-		<span class="sg-swatch" style="background: #5C832F;"></span>
-		<span class="sg-label">
-			$color-brand-green <br>
-			#5C832F
-		</span>
-	</li>
-	<li>
-		<span class="sg-swatch" style="background: #825534;"></span>
-		<span class="sg-label">
-			$color-brand-brown <br>
-			#825534
-		</span>
-	</li>
+
+    <li>
+    <span class="sg-swatch " style="background: #5C832F;"></span>
+    <span class="sg-label">
+      $color-brand-green
+      <br> #5C832F
+    </span>
+  </li>
+    <li>
+    <span class="sg-swatch " style="background: #825534;"></span>
+    <span class="sg-label">
+      $color-brand-brown
+      <br> #825534
+    </span>
+  </li>
+   
 </ul>
 
 <style>
+  .sg-colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
-.sg-colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.sg-colors li {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  padding: 0.3em;
-  margin: 0 0.5em 0.5em 0;
-  min-width: 5em;
-  max-width: 14em;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
+  .sg-colors li {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    padding: 0.3em;
+    margin: 0 0.5em 0.5em 0;
+    min-width: 5em;
+    max-width: 14em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
 
-.sg-swatch {
-  display: block;
-  height: 4em;
-  margin-bottom: 0.3em;
-  border-radius: 5px;
-}
+  .sg-swatch {
+    display: block;
+    height: 4em;
+    margin-bottom: 0.3em;
+    border-radius: 5px;
+  }
 
-.sg-label {
-  font-size: 90%;
-  line-height: 1;
-}
-
+  .sg-label {
+    font-size: 90%;
+    line-height: 1;
+  }
 </style>
 	</div><!--end pl-js-pattern-example-->
 
@@ -1294,6 +1330,90 @@ new mdc.textField.MDCTextField(document.querySelector('.mdc-text-field'));
 	
 	</script>
 
+</div><!--end pl-c-pattern--><div id="viewall-molecules-forms" class="pl-c-category">
+		
+	<h2 class="pl-c-category__title">
+		<a href="../../patterns/molecules-forms&#x2F;index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-molecules-forms">forms</a>
+	</h2><!--end pl-c-category__title-->
+
+	<div class="pl-c-category__description pl-c-text-passage">
+		
+	</div><!--end pl-c-category__description-->
+	
+</div><!--end pl-c-category-->
+	<div id="molecules-editor-toolbar" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/molecules-forms-editor-toolbar&#x2F;molecules-forms-editor-toolbar.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="molecules-editor-toolbar" title="Link to Pattern">
+				Editor Toolbar
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-molecules-editor-toolbar" data-patternpartial="molecules-editor-toolbar" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-molecules-editor-toolbar">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<header class="mdc-toolbar  mdc-toolbar--waterfall">
+
+   <div class="mdc-toolbar__row">
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+      
+        <a class="mdc-top-app-bar__action-item " aria-label="Text Label">
+  <i class="material-icons">format_bold</i>
+    
+</a>
+        <a class="mdc-top-app-bar__action-item " aria-label="Text Label">
+  <i class="material-icons">format_italic</i>
+    
+</a>
+        <a class="mdc-top-app-bar__action-item " aria-label="Text Label">
+  <i class="material-icons">format_underline</i>
+    
+</a>
+        <a class="mdc-top-app-bar__action-item " aria-label="Text Label">
+  <i class="material-icons">format_color_fill</i>
+    
+</a>
+        <div></div>
+        <a class="mdc-top-app-bar__action-item " aria-label="Text Label">
+  <i class="material-icons">insert_link</i>
+    
+</a>
+        <a class="mdc-top-app-bar__action-item " aria-label="Text Label">
+  <i class="material-icons">insert_photo</i>
+    
+</a>
+       
+    </section>
+    <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+      Section aligns to end.
+    </section>
+  </div>
+</header>
+
+<script>
+// When you are using toolbar with JavaScript
+  var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
+  toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+</script>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-molecules-editor-toolbar" class="pl-js-pattern-data">
+	
+	</script>
+
 </div><!--end pl-c-pattern--><div id="viewall-molecules-layout" class="pl-c-category">
 		
 	<h2 class="pl-c-category__title">
@@ -1646,72 +1766,6 @@ for (i = 0; i < coll.length; i++) {
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-molecules-app-bar-action" class="pl-js-pattern-data">
-	
-	</script>
-
-</div><!--end pl-c-pattern--><div id="molecules-drawer-header-user" class="pl-c-pattern">
-
-	<div class="pl-c-pattern__header">
-
-		<h3 class="pl-c-pattern__title">
-				
-			<a href="../../patterns/molecules-navigation-drawer-header-user&#x2F;molecules-navigation-drawer-header-user.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="molecules-drawer-header-user" title="Link to Pattern">
-				Drawer Header User
-				
-
-			</a><!--end pl-c-pattern__title-link-->
-
-		</h3><!--end pl-c-pattern__title-->
-
-		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-molecules-drawer-header-user" data-patternpartial="molecules-drawer-header-user" title="View Pattern Info">
-			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
-		</button><!--end pl-c-pattern__extra-toggle-->
-		
-	</div><!--end pl-c-pattern__header-->
-  
-	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-molecules-drawer-header-user">
-    </div><!--end pl-c-pattern__extra-->
-
-	<div class="pl-js-pattern-example">
-	<style>
-    .mdc-drawer__user .mdc-menu {
-        width: 100%;
-    }
-
-    .mdc-drawer__user-avatar {
-        border-radius: 50%;
-        max-height: 44px;
-    }
-</style>
-
-<header class="mdc-drawer__header">
-    <div class="mdc-drawer__header-content">
-        <div class="mdc-drawer__user u-ph mdc-typography">
-            <img src="https:&#x2F;&#x2F;s3-us-west-2.amazonaws.com&#x2F;s.cdpn.io&#x2F;49212&#x2F;profile&#x2F;profile-80.jpg?4" alt="Jonnie Spratley" class="mdc-drawer__user-avatar" />
-
-            <h3 class="mdc-typography--headline6 u-m0">Jonnie Spratley</h3>
-
-            <div class="mdc-select ">
-                <select class="mdc-select__native-control">
-                    <option value="" disabled selected></option>
-                    <option value="jonniedollas@gmail.com">jonniedollas@gmail.com</option>
-                </select>
-                <label class="mdc-floating-label"> </label>
-                <div class="mdc-line-ripple"></div>
-            </div>
-        </div>
-    </div>
-</header>
-
-
-
-
-<script>
-    mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
-</script>
-	</div><!--end pl-js-pattern-example-->
-
-	<script type="text/json" id="pl-pattern-data-molecules-drawer-header-user" class="pl-js-pattern-data">
 	
 	</script>
 
@@ -3962,23 +4016,22 @@ window.chartColors = {
 	<h2>Alert Dialog</h2>
 <button data-toggle="dialog" data-target="#mdc-dialog-alert">Open</button>
 <aside id="mdc-dialog-alert" class="mdc-dialog mdc-dialog--sm" role="alertdialog">
-   
-    <div class="mdc-dialog__surface">
-     <header class="mdc-dialog__header">
-        <h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">
-         Confirm
-        </h2>
-      </header>
-      <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
-       Discard draft?
-      </section>
-      <footer class="mdc-dialog__footer">
-        <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cencel</button>
-        <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Discard</button>
-      </footer>
-    </div>
-    <div class="mdc-dialog__backdrop"></div>
-  </aside>
+  <div class="mdc-dialog__surface">
+    <header class="mdc-dialog__header">
+      <h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">
+        Confirm
+      </h2>
+    </header>
+    <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
+      Discard draft?
+    </section>
+    <footer class="mdc-dialog__footer">
+      <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cencel</button>
+      <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Discard</button>
+    </footer>
+  </div>
+  <div class="mdc-dialog__backdrop"></div>
+</aside>
 
 
 <h2>Confirm Dialog</h2>
@@ -3988,45 +4041,45 @@ window.chartColors = {
 <h2>Simple Dialog</h2>
 <button data-toggle="dialog" data-target="#mdc-dialog-simple">Open</button>
 <aside id="mdc-dialog-simple" class="mdc-dialog mdc-dialog--" role="alertdialog">
-    <div class="mdc-dialog__surface">
-     <header class="mdc-dialog__header">
-        <h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">
-         Set backup account
-        </h2>
-      </header>
-      <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
-        <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
+  <div class="mdc-dialog__surface">
+    <header class="mdc-dialog__header">
+      <h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">
+        Set account
+      </h2>
+    </header>
+    <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
+      <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Frans Keegan
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Bertil Aaij
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
    <li class="mdc-list-item">
     <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
       Junius Koolen
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;grayscale" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Plinius Sloane
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;sepia" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Matthias Macguinness
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4049,10 +4102,10 @@ window.chartColors = {
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Teun Richard
+      Freyr Hines
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4062,10 +4115,10 @@ window.chartColors = {
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;animals" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Frans Keegan
+      Duane Wilms
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4081,69 +4134,68 @@ var listEle = document.querySelector('.mdc-list--avatar-list');
 var list = new mdc.list.MDCList(listEle);
 list.singleSelection = true;
 </script>
-      </section>
-      
-    </div>
-    <div class="mdc-dialog__backdrop"></div>
-  </aside>
+    </section>
+  </div>
+  <div class="mdc-dialog__backdrop"></div>
+</aside>
 
 <button data-toggle="dialog" data-target="#mdc-dialog-full">Open</button>
 <aside id="mdc-dialog-full" class="mdc-dialog mdc-dialog--full" role="alertdialog">
-    <div class="mdc-dialog__surface">
+  <div class="mdc-dialog__surface">
     <header class="mdc-top-app-bar mdc-toolbar--fixe">
-        <div class="mdc-top-app-bar__row">
+      <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <button class="mdc-top-app-bar__navigation-icon">
+          <button class="mdc-top-app-bar__navigation-icon">
             <i class="material-icons">close</i>
-            </button>
-            <span class="mdc-top-app-bar__title">Theme Demo</span>
+          </button>
+          <span class="mdc-top-app-bar__title">Theme Demo</span>
         </section>
-        
+
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-            
-            <a class="mdc-top-app-bar__action-item " aria-label="Settings">
+
+          <a class="mdc-top-app-bar__action-item " aria-label="Settings">
   <i class="material-icons">settings</i>
     
 </a>
         </section>
-        </div>
+      </div>
     </header>
-     <header class="mdc-dialog__header">
-    
-      </header>
-      <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
-        <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
+    <header class="mdc-dialog__header">
+
+    </header>
+    <section id="mdc-dialog-with-list-description" class="mdc-dialog__body">
+      <ul class="mdc-list mdc-list--avatar-list" aria-orientation="vertical">
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Frans Keegan
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
+   <li class="mdc-list-item">
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any" alt="Avatar"/> 
+    <span class="mdc-list-item__text">
+      <span class="mdc-list-item__primary-text">
+      Bertil Aaij
+      </span>
+      <!--
+        <span class="mdc-list-item__secondary-text">
+          jonniespratley@gmail.com
+        </span>
+      -->
+    </span>
+  </li>
    <li class="mdc-list-item">
     <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
       Junius Koolen
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;grayscale" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Plinius Sloane
-      </span>
-      <!--
-        <span class="mdc-list-item__secondary-text">
-          jonniespratley@gmail.com
-        </span>
-      -->
-    </span>
-  </li>
-   <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech&#x2F;sepia" alt="Avatar"/> 
-    <span class="mdc-list-item__text">
-      <span class="mdc-list-item__primary-text">
-      Matthias Macguinness
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4166,10 +4218,10 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;tech" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;any&#x2F;grayscale" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Teun Richard
+      Freyr Hines
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4179,10 +4231,10 @@ list.singleSelection = true;
     </span>
   </li>
    <li class="mdc-list-item">
-    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;people&#x2F;grayscale" alt="Avatar"/> 
+    <img class="mdc-list-item__graphic" src="http:&#x2F;&#x2F;placeimg.com&#x2F;100&#x2F;100&#x2F;animals" alt="Avatar"/> 
     <span class="mdc-list-item__text">
       <span class="mdc-list-item__primary-text">
-      Frans Keegan
+      Duane Wilms
       </span>
       <!--
         <span class="mdc-list-item__secondary-text">
@@ -4198,11 +4250,11 @@ var listEle = document.querySelector('.mdc-list--avatar-list');
 var list = new mdc.list.MDCList(listEle);
 list.singleSelection = true;
 </script>
-      </section>
-      
-    </div>
-    <div class="mdc-dialog__backdrop"></div>
-  </aside>
+    </section>
+
+  </div>
+  <div class="mdc-dialog__backdrop"></div>
+</aside>
 
 
 
@@ -4211,13 +4263,25 @@ list.singleSelection = true;
 
 
 <style>
-.mdc-dialog--sm .mdc-dialog__surface{
+  .mdc-dialog--xs .mdc-dialog__surface {
+    
+    min-width: 275px;
+    max-width: 275px;
+  }
+
+  .mdc-dialog--sm .mdc-dialog__surface {
+    min-width: 330px;
     max-width: 330px;
-}
-.mdc-dialog--full .mdc-dialog__surface{
+  }
+  
+  .mdc-dialog--md .mdc-dialog__surface {
+    max-width: 520px;
+  }
+
+  .mdc-dialog--full .mdc-dialog__surface {
     width: 100%;
     height: 100%;
-}
+  }
 </style>
 	</div><!--end pl-js-pattern-example-->
 
@@ -4437,7 +4501,7 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
     </div><!--end pl-c-pattern__extra-->
 
 	<div class="pl-js-pattern-example">
-	<nav class="app__drawer mdc-drawer mdc-drawer--persistent ">
+	<nav class="app__drawer mdc-drawer  mdc-drawer--persistent ">
   <div class="mdc-drawer__toolbar-spacer"></div>
   <div class="mdc-drawer__drawer">
     
@@ -4951,34 +5015,6 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
 </script>
       </div>
 
-
-      <ul class="mdc-list">
-
-        <li class="mdc-list-group__subheader">Sidebar width</li>
-        <li class="mdc-list-item">
-          <div class="mdc-slider" tabindex="0" role="slider"
-     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-     aria-label="Select Value">
-  <div class="mdc-slider__track-container">
-    <div class="mdc-slider__track"></div>
-  </div>
-  <div class="mdc-slider__thumb-container">
-    <svg class="mdc-slider__thumb" width="21" height="21">
-      <circle cx="10.5" cy="10.5" r="7.875"></circle>
-    </svg>
-    <div class="mdc-slider__focus-ring"></div>
-  </div>
-</div>
-<script>
-(function(){
-  document.querySelectorAll('.mdc-slider').forEach(function(el){
-     mdc.slider.MDCSlider.attachTo(el)
-  })
-})()
-</script>
-        </li>
-        <li role="separator" class="mdc-list-divider"></li>
-      </ul>
     </nav>
   </nav>
 </aside>
@@ -5481,34 +5517,6 @@ document.querySelectorAll('.mdc-button').forEach(function(el){ mdc.ripple.MDCRip
 </script>
       </div>
 
-
-      <ul class="mdc-list">
-
-        <li class="mdc-list-group__subheader">Sidebar width</li>
-        <li class="mdc-list-item">
-          <div class="mdc-slider" tabindex="0" role="slider"
-     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-     aria-label="Select Value">
-  <div class="mdc-slider__track-container">
-    <div class="mdc-slider__track"></div>
-  </div>
-  <div class="mdc-slider__thumb-container">
-    <svg class="mdc-slider__thumb" width="21" height="21">
-      <circle cx="10.5" cy="10.5" r="7.875"></circle>
-    </svg>
-    <div class="mdc-slider__focus-ring"></div>
-  </div>
-</div>
-<script>
-(function(){
-  document.querySelectorAll('.mdc-slider').forEach(function(el){
-     mdc.slider.MDCSlider.attachTo(el)
-  })
-})()
-</script>
-        </li>
-        <li role="separator" class="mdc-list-divider"></li>
-      </ul>
     </nav>
   </nav>
 </aside>
@@ -5634,7 +5642,7 @@ $(function(){
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-app-topbar" class="pl-js-pattern-data">
-	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-drawer-temporary","lineagePath":"../../patterns/organisms-navigation-drawer-temporary/organisms-navigation-drawer-temporary.rendered.html"},{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"atoms-avatar","lineagePath":"../../patterns/atoms-global-avatar/atoms-global-avatar.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"lineage":[{"lineagePattern":"organisms-drawer-temporary","lineagePath":"../../patterns/organisms-navigation-drawer-temporary/organisms-navigation-drawer-temporary.rendered.html"},{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"atoms-avatar","lineagePath":"../../patterns/atoms-global-avatar/atoms-global-avatar.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-columns-to-tabs","lineagePath":"../../patterns/templates-columns-to-tabs/templates-columns-to-tabs.rendered.html"},{"lineagePattern":"templates-list-detail-page","lineagePath":"../../patterns/templates-list-detail-page/templates-list-detail-page.rendered.html"},{"lineagePattern":"templates-page","lineagePath":"../../patterns/templates-page/templates-page.rendered.html"}],"lineageR":[{"lineagePattern":"templates-columns-to-tabs","lineagePath":"../../patterns/templates-columns-to-tabs/templates-columns-to-tabs.rendered.html"},{"lineagePattern":"templates-list-detail-page","lineagePath":"../../patterns/templates-list-detail-page/templates-list-detail-page.rendered.html"},{"lineagePattern":"templates-page","lineagePath":"../../patterns/templates-page/templates-page.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"App Topbar","patternPartial":"organisms-app-topbar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-page-top-bar" class="pl-c-pattern">
@@ -6055,34 +6063,6 @@ $(function(){
 </script>
       </div>
 
-
-      <ul class="mdc-list">
-
-        <li class="mdc-list-group__subheader">Sidebar width</li>
-        <li class="mdc-list-item">
-          <div class="mdc-slider" tabindex="0" role="slider"
-     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-     aria-label="Select Value">
-  <div class="mdc-slider__track-container">
-    <div class="mdc-slider__track"></div>
-  </div>
-  <div class="mdc-slider__thumb-container">
-    <svg class="mdc-slider__thumb" width="21" height="21">
-      <circle cx="10.5" cy="10.5" r="7.875"></circle>
-    </svg>
-    <div class="mdc-slider__focus-ring"></div>
-  </div>
-</div>
-<script>
-(function(){
-  document.querySelectorAll('.mdc-slider').forEach(function(el){
-     mdc.slider.MDCSlider.attachTo(el)
-  })
-})()
-</script>
-        </li>
-        <li role="separator" class="mdc-list-divider"></li>
-      </ul>
     </nav>
   </nav>
 </aside>
@@ -6738,9 +6718,7 @@ $(function(){
         <li role="separator" class="mdc-list-divider"></li>
         <li class="mdc-list-group__subheader">Category</li>
         <li class="mdc-list-item">
-          <div class="mdc-slider" tabindex="0" role="slider"
-     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-     aria-label="Select Value">
+          <div class="mdc-slider" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Select Value">
   <div class="mdc-slider__track-container">
     <div class="mdc-slider__track"></div>
   </div>
@@ -6762,9 +6740,7 @@ $(function(){
         <li role="separator" class="mdc-list-divider"></li>
         <li class="mdc-list-group__subheader">Category</li>
         <li class="mdc-list-item">
-          <div class="mdc-slider" tabindex="0" role="slider"
-     aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
-     aria-label="Select Value">
+          <div class="mdc-slider" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Select Value">
   <div class="mdc-slider__track-container">
     <div class="mdc-slider__track"></div>
   </div>
@@ -8091,7 +8067,69 @@ margin: 2px; }
 	</div><!--end pl-c-category__description-->
 	
 </div><!--end pl-c-category-->
-	<div id="organisms-app-bar" class="pl-c-pattern">
+	<div id="organisms-account-switcher" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-navigation-account-switcher&#x2F;organisms-navigation-account-switcher.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-account-switcher" title="Link to Pattern">
+				Account Switcher
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-account-switcher" data-patternpartial="organisms-account-switcher" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-account-switcher">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<style>
+    .mdc-drawer__user .mdc-menu {
+        width: 100%;
+    }
+
+    .mdc-drawer__user-avatar {
+        border-radius: 50%;
+        max-height: 32px;
+    }
+</style>
+<div class="mdc-drawer__user  mdc-typography">
+    <img src="https:&#x2F;&#x2F;s3-us-west-2.amazonaws.com&#x2F;s.cdpn.io&#x2F;49212&#x2F;profile&#x2F;profile-80.jpg?4" alt="Jonnie Spratley" class="mdc-drawer__user-avatar u-mb-"/>
+
+    <h3 class="mdc-typography--headline6 u-m0">
+        Jonnie Spratley
+    </h3>
+
+    <div class="">
+        <select class="mdc-select__native-contro">
+            <option value="" disabled selected></option>
+            <option value="jonniedollas@gmail.com">jonniedollas@gmail.com</option>
+        </select>
+        <label class="mdc-floating-label"> </label>
+        <div class="mdc-line-ripple"></div>
+    </div>
+</div>
+
+<script>
+    //mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
+</script>
+
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-account-switcher" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-app-bar" class="pl-c-pattern">
 
 	<div class="pl-c-pattern__header">
 
@@ -8580,7 +8618,7 @@ margin: 2px; }
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-drawer-temporary" class="pl-js-pattern-data">
-	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-drawer","lineagePath":"../../patterns/organisms-navigation-drawer/organisms-navigation-drawer.rendered.html"}],"lineage":[{"lineagePattern":"organisms-drawer","lineagePath":"../../patterns/organisms-navigation-drawer/organisms-navigation-drawer.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-app-topbar","lineagePath":"../../patterns/organisms-global-app-topbar/organisms-global-app-topbar.rendered.html"},{"lineagePattern":"templates-layout-drawer-mini","lineagePath":"../../patterns/templates-layout-drawer-mini/templates-layout-drawer-mini.rendered.html"},{"lineagePattern":"templates-layout-drawer-temporary","lineagePath":"../../patterns/templates-layout-drawer-temporary/templates-layout-drawer-temporary.rendered.html"}],"lineageR":[{"lineagePattern":"organisms-app-topbar","lineagePath":"../../patterns/organisms-global-app-topbar/organisms-global-app-topbar.rendered.html"},{"lineagePattern":"templates-layout-drawer-mini","lineagePath":"../../patterns/templates-layout-drawer-mini/templates-layout-drawer-mini.rendered.html"},{"lineagePattern":"templates-layout-drawer-temporary","lineagePath":"../../patterns/templates-layout-drawer-temporary/templates-layout-drawer-temporary.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"navigation"},"patternExtension":"mustache","patternName":"Drawer Temporary","patternPartial":"organisms-drawer-temporary","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-footer" class="pl-c-pattern">
@@ -9484,20 +9522,20 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1533859623430">
+<script id="pl-js-polyfill-insert-1534202328806">
   (function() {
     if (self != top) {
-      var cb = '1533859623430';
+      var cb = '1534202328806';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1533859623430">
+<script id="pl-js-insert-1534202328806">
   (function() {
     if (self != top) {
-      var cb = '1533859623430';
+      var cb = '1534202328806';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

@@ -1,48 +1,47 @@
-<div class="app" id="list-detail">
-
-  <!-- APP-DRAWER -->
-  
-  {{> organisms-app-settings}}
-  {{> organisms-app-topbar(pageTitle: "Page Title")}} 
-  
-  
-  <main class="app-content flex">
-    {{> organisms-app-drawer(open: false)}}   
-
-    <div class="flex__item mdc-top-app-bar--fixed-adjust mdc-typography">
-    <!-- PAGE-CONTENT -->
-      <div class="page mdc-theme--background">
+<div class="drawer-container-flex app flex mdc-typography">
+   
+    <div class="drawer-header-flex">
+          {{> organisms-app-settings}}
+          {{> organisms-app-topbar(pageTitle: "Page Title")}} 
+    </div>
+    <div class="mdc-top-app-bar--fixed-adjust">
         <section class="mdc-layout-grid">
           <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-list-group">
-                
-            <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
-                {{# listItems.ten }}
-                <li class="mdc-list-item">
-                    
-                        <img
-                            class="mdc-list-item__graphic" 
-                            src="{{img.avatar.src}}" 
-                            alt="{{img.avatar.alt}}"/>
-                    
-                    <div class="mdc-list-item__text">
-                        <span class="mdc-list-item__primary-text">Two-line item</span>
-                        <span class="mdc-list-item__secondary-text">Secondary text lorem ipsum.</span>
-                    </div>
-                    <span class="mdc-list-item__meta material-icons" aria-hidden="true">check_box_outline_blank</span>
-                </li>
-                <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
-                {{/ listItems.ten }}
-            </ul>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-list-group">    
+              <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
+                  {{# listItems.ten }}
+                  <li class="mdc-list-item">
+                          <img
+                              class="mdc-list-item__graphic" 
+                              src="{{img.avatar.src}}" 
+                              alt="{{img.avatar.alt}}"/>
+                      
+                      <div class="mdc-list-item__text">
+                          <span class="mdc-list-item__primary-text">Two-line item</span>
+                          <span class="mdc-list-item__secondary-text">Secondary text lorem ipsum.</span>
+                      </div>
+                      <span class="mdc-list-item__meta material-icons" aria-hidden="true">check_box_outline_blank</span>
+                  </li>
+                  <li role="separator" class="mdc-list-divider mdc-list-divider--inset"></li>
+                  {{/ listItems.ten }}
+              </ul>
             </div>
 
-            
-
-            
           </div>
         </section>
-      </div>
     </div>
-  </main>
-
 </div>
+
+<script>
+    (function () {
+        document.querySelector('.app__drawer-toggle').addEventListener('click', function (e) {
+            console.log('Find and toggle settings drawer');
+            let appDrawer = document.querySelector('.mdc-drawer');
+
+            if (appDrawer) {
+                let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
+                drawer.open = !drawer.open;
+            }
+        });
+    })();
+</script>

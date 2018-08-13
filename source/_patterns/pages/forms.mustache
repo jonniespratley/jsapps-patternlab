@@ -1,16 +1,19 @@
-<div class="app">
+<div class="app flex">
 
   <!-- APP-DRAWER -->
   {{> organisms-app-drawer }}
+  {{> organisms-page-top-bar(pageTitle: "Forms")}}
   
   <!-- APP-CONTENT -->
 
-  <main class="app-content">
-{{> organisms-page-top-bar(pageTitle: "Forms")}}
+  <main class="app-content mdc-top-app-bar--fixed-adjust">
+  
     <div>
       Forms
     </div>
   </main>
-
+  
 </div>
 
+
+{{> organisms-app-notifications(open: false)}}
