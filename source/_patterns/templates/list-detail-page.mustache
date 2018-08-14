@@ -1,11 +1,44 @@
-<div class="drawer-container-flex app flex mdc-typography">
+<div class="drawer-container-flex app mdc-typography">
    
     <div class="drawer-header-flex">
           {{> organisms-app-settings}}
-          {{> organisms-app-topbar(pageTitle: "Page Title")}} 
+           <header class="mdc-top-app-bar">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <button class="material-icons mdc-top-app-bar__navigation-icon app__drawer-toggle">menu</button>
+                    <span class="mdc-top-app-bar__title">Persistent Drawer</span>
+                </section>
+            </div>
+        </header>
     </div>
-    <div class="mdc-top-app-bar--fixed-adjust">
-        <section class="mdc-layout-grid">
+    
+    <div class="mdc-top-app-bar--fixed-adjust flex">
+      <aside class="mdc-drawer mdc-drawer--persistent mdc-drawer--open">
+        <nav class="mdc-drawer__drawer">
+            <!--
+            <header class="mdc-drawer__header">
+                <div class="mdc-drawer__header-content mdc-theme--on-primary mdc-theme--primary-bg">
+                    <span>{{appName}}</span>
+                </div>
+            </header>
+            -->
+            <nav class="mdc-drawer__content mdc-list-group u-p-">
+                <div class="mdc-list mdc-list--dense">
+                <a class="mdc-list-item  mdc-list-item--selected" href="#">
+                        <span class="material-icons mdc-list-item__graphic">home</span>
+                      List Detail
+                  </a>
+                    {{# menu}}
+                    <a class="mdc-list-item" href="{{href}}">
+                        <span class="material-icons mdc-list-item__graphic">{{ icon }}</span>
+                        {{label}}
+                    </a>
+                    {{/menu}}
+                </div>
+            </nav>
+        </nav>
+    </aside>
+        <section class="mdc-layout-grid flex__item">
           <div class="mdc-layout-grid__inner">
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-list-group">    
               <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list" aria-orientation="vertical">
@@ -36,7 +69,7 @@
     (function () {
         document.querySelector('.app__drawer-toggle').addEventListener('click', function (e) {
             console.log('Find and toggle settings drawer');
-            let appDrawer = document.querySelector('.mdc-drawer');
+            let appDrawer = document.querySelector('.mdc-drawer--persistent');
 
             if (appDrawer) {
                 let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);

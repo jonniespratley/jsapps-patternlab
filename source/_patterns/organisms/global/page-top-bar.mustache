@@ -37,11 +37,11 @@
         </section>
         <section class="mdc-toolbar__sectio"></section>
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-            <div class="hidden-sm-down flex">
-                {{> molecules-app-bar-action(icon: "notifications", label: "Notifications")}} 
+            
+            {{> molecules-app-bar-action(icon: "notifications", label: "Notifications")}} 
                 {{> molecules-app-bar-action(icon: "apps", label: "Apps")}} 
                 {{> molecules-app-bar-action(icon: "tune", label: "Settings", className: "app__settings-toggle")}}
-            </div>
+                {{> molecules-app-bar-action(icon: "more_vert", label: "More", className: "app__user-menu-toggle")}}
             <div class="mdc-menu-anchor">
                 <a href="#" class="mdc-top-app-bar__action-item app__user-toggle">
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/49212/profile/profile-80.jpg?4" alt="@username" class="avatar" />
