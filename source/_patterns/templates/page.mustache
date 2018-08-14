@@ -1,15 +1,14 @@
 
 
 
-<div class="app">
-
-  <!-- APP-DRAWER -->
-  
-  {{> organisms-app-settings}}
+<div class="app flex">
+<!-- APP-TOPBAR -->
   {{> organisms-app-topbar}} 
+  <!-- APP-DRAWER -->
+  {{> organisms-app-drawer}}   
   <!-- APP-CONTENT -->
-  <main class="app-content flex">
-    {{> organisms-app-drawer}}   
+  <main class="app-content flex__item">
+    
     <div class="flex__item">
       <div class="mdc-top-app-bar--fixed-adjust mdc-typography">
         <section class="mdc-layout-grid demo-grid">
