@@ -1,14 +1,4 @@
-<style>
-    body {
-        background: var(--mdc-theme-background);
-    }
 
-    :root {
-        --mdc-theme-primary: #343a40;
-        --mdc-theme-secondary: #343a40;
-        --mdc-theme-background: #eee;
-    }
-</style>
 <div class="drawer-container-flex app flex mdc-typography">
     <aside class="mdc-drawer mdc-drawer--persistent">
         <nav class="mdc-drawer__drawer">
@@ -48,13 +38,17 @@
 
 <script>
     (function () {
-        document.querySelector('.app__drawer-toggle').addEventListener('click', function (e) {
-            console.log('Find and toggle settings drawer');
+        let drawer;
+        let drawerToggle = document.querySelector('.app__drawer-toggle');
+        drawerToggle.addEventListener('click', function (e) {
+            console.log('Find and toggle  drawer');
             let appDrawer = document.querySelector('.mdc-drawer');
 
             if (appDrawer) {
-                let drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
+                drawer = new mdc.drawer.MDCPersistentDrawer(appDrawer);
                 drawer.open = !drawer.open;
+                drawerToggle.innerText = drawer.open ? 'chevron_left' : 'menu';
+                console.log(drawerToggle.text);
             }
         });
     })();
