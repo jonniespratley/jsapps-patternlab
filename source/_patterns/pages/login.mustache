@@ -10,7 +10,9 @@
 
 <div class="app-login">
   <div class="login-wrapper">
-    {{> organisms-header(title: "{{appName}}") }} 
-    {{> organisms-login-form(action: "{{link.pages-home}}") }}
+    <div class="flex flex--center">
+      {{> molecules-app-logo }}
+    </div>
+    {{> organisms-login-form }}
   </div>
 </div>
