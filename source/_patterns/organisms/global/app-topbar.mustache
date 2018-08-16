@@ -1,6 +1,5 @@
 <!-- APP-TOP-BAR -->
 <style>
-
     .img-avatar {
         height: 30px;
         border-radius: 50%;
@@ -15,25 +14,20 @@
             <button class="hamburger mdc-top-app-bar__navigation-icon app__drawer-toggle" title="Toggle Drawer" data-toggle="drawer" data-type="temporary">
                 <span class="material-icons">menu</span>
             </button>
-            
             <span class="mdc-top-app-bar__title">{{ pageTitle }}</span>
         </section>
         <section class="mdc-toolbar__sectio"></section>
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-                {{> molecules-app-bar-action(icon: "notifications", label: "Notifications") }} 
-                {{> molecules-app-bar-action(icon: "apps", label: "Apps") }} 
-                {{> molecules-app-bar-action(icon: "tune", label: "Settings", className: "app__settings-toggle") }}
-            
+            {{> molecules-app-bar-action(icon: "notifications", label: "Notifications", className: "hidden-sm-down")}} 
+            {{> molecules-app-bar-action(icon: "apps", label: "Apps", className: "hidden-sm-down")}} 
+            {{> molecules-app-bar-action(icon: "tune", label: "Settings", className: "app__settings-toggle hidden-sm-down")}}
+            {{> molecules-app-bar-action(icon: "more_vert", label: "More", className: "app__user-menu-toggle hidden-md-up")}}
             <a href="#" class="mdc-top-app-bar__action-item app__user-toggle">
-                    
-                    {{> atoms-avatar}}
-                </a>
-
+                {{> atoms-avatar}}
+            </a>
         </section>
     </div>
 </header>
-
-
 {{> organisms-app-settings }}
 
 <script>

@@ -21,9 +21,10 @@
         "tools-docs": false
     },
     "ishViewportRange": {
-        "s": [240, 500],
-        "m": [500, 800],
-        "l": [800, 2600]
+        "xs": [0, 359],
+        "s": [359, 1023],
+        "m": [1024, 1439],
+        "l": [1440, 1920]
     },
     "logLevel": "info",
     "outputFileSuffixes": {
