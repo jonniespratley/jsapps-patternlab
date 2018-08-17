@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1534453751382" media="all" />
-    <link rel="stylesheet" href="../../css/theme.css?1534453751382" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1534453751382" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1534464104771" media="all" />
+    <link rel="stylesheet" href="../../css/theme.css?1534464104771" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1534464104771" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1534453751382" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1534464104771" media="all">
     <!-- End Pattern Lab -->
 
        
@@ -2499,6 +2499,172 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
 
 	<script type="text/json" id="pl-pattern-data-organisms-collapsible" class="pl-js-pattern-data">
 	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="organisms-contact-card" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/organisms-blocks-contact-card&#x2F;organisms-blocks-contact-card.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="organisms-contact-card" title="Link to Pattern">
+				Contact Card
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-organisms-contact-card" data-patternpartial="organisms-contact-card" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-organisms-contact-card">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="mdc-card demo-card flex__item card-3 mdc-typography mdc-card-collapsible mdc-card-collapsible--open">
+    <div class="mdc-card__media demo-card__media">
+        <img src="http://placeimg.com/175/100/tech" alt="Rectangle" />
+    </div>
+    <div class="demo-card__primary mdc-list mdc-list--two-line mdc-list--avatar-list">
+         <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic" aria-hidden="true">
+            <img src="https:&#x2F;&#x2F;s3-us-west-2.amazonaws.com&#x2F;s.cdpn.io&#x2F;49212&#x2F;profile&#x2F;profile-80.jpg?4" alt="" class="img-avatar"/>
+<style>
+.img-avatar {
+    border-radius: 50%;
+    max-height: 75px;
+}
+</style>
+            </span>
+            <div class="mdc-list-item__text">
+                <h3 class="mdc-list-item__primary-text">John Doen</h3>
+                <span class="mdc-list-item__secondary-text">Work Contact</span>
+            </div>
+            <a class="mdc-list-item__meta material-icons" aria-hidden="true">expand_more</a>
+        </li>
+    </div>
+    <div class="demo-card__secondary mdc-typography--body2 mdc-list mdc-list--two-line mdc-list--avatar-list mdc-list-group">
+         <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">phone</span>
+            <div class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">(555) 555-5555</span>
+                <span class="mdc-list-item__secondary-text">Mobile</span>
+            </div>
+        </li>
+        <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">mail</span>
+            
+            <div class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">johndoe@gmail.com</span>
+                <span class="mdc-list-item__secondary-text">Work</span>
+            </div>
+        </li>
+        
+    </div>
+
+    <!--
+    <footer class="mdc-card__actions">
+        <div class="mdc-card__action-buttons">
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
+        </div>
+    </footer>
+    -->
+</div>
+
+<style>
+
+.mdc-card-collapsible {
+
+}
+
+.mdc-card-collapsible--open{
+
+}
+.demo-card .mdc-list{
+    padding: 0;
+}
+
+.demo-card .img-avatar{
+    max-height: 40px;
+}
+
+.demo-card__media img {
+    width: 100%;
+}
+</style>
+
+<script>
+$(function() {
+   $("[data-toggle='collapse']").bind("click", function(e) {
+
+      let target = $(this).attr('data-target');
+      let isOpen = !$(target).hasClass('mdc-card-collapsible--open')
+      
+      console.log('toggle', target, isOpen);
+      $(target).toggleClass('mdc-card-collapsible--open')
+      $(target).find('.mdc-card__toggle').text(isOpen ? 'expand_less': 'expand_more')
+      
+   });
+});
+
+</script>
+
+
+<div id="card1" class="mdc-card demo-card flex__item card-3 mdc-typography mdc-card-collapsible mdc-card-collapsible--">
+   <!-- 
+   <div class="mdc-card__media demo-card__media">
+        <img src="http://placeimg.com/175/200/tech/3" alt="Rectangle" />
+    </div>
+   -->
+    <div class="demo-card__primary mdc-list mdc-list--two-line mdc-list--avatar-list">
+         <li class="mdc-list-item" data-toggle="collapse" data-target="#card1">
+            <span class="mdc-list-item__graphic" aria-hidden="true">
+            <img src="//s3-us-west-2.amazonaws.com&#x2F;s.cdpn.io&#x2F;49212&#x2F;profile&#x2F;profile-80.jpg?4" alt="" class="img-avatar"/>
+
+            </span>
+            <div class="mdc-list-item__text">
+                <h3 class="mdc-list-item__primary-text">Jonnie Spratley</h3>
+                <span class="mdc-list-item__secondary-text">Work Contact</span>
+            </div> 
+            <a class="mdc-list-item__meta mdc-card__toggle material-icons" aria-hidden="true">expand_more</a>
+        </li>
+    </div>
+    <div class="mdc-card__secondary mdc-typography--body2 mdc-list mdc-list--two-line mdc-list--avatar-list mdc-list-group">
+         <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">phone</span>
+            <div class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">(555) 555-5555</span>
+                <span class="mdc-list-item__secondary-text">Mobile</span>
+            </div>
+        </li>
+        <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">mail</span>
+            
+            <div class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">johndoe@gmail.com</span>
+                <span class="mdc-list-item__secondary-text">Work</span>
+            </div>
+        </li>
+        
+    </div>
+    <!--
+    <footer class="mdc-card__actions">
+        <div class="mdc-card__action-buttons">
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
+        </div>
+    </footer>
+    -->
+</div>
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-organisms-contact-card" class="pl-js-pattern-data">
+	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-avatar","lineagePath":"../../patterns/atoms-global-avatar/atoms-global-avatar.rendered.html"}],"lineage":[{"lineagePattern":"atoms-avatar","lineagePath":"../../patterns/atoms-global-avatar/atoms-global-avatar.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"blocks"},"patternExtension":"mustache","patternName":"Contact Card","patternPartial":"organisms-contact-card","patternState":"","patternEngineName":"mustache","extraOutput":{}}
 	</script>
 
 </div><!--end pl-c-pattern--><div id="viewall-organisms-charts" class="pl-c-category">
@@ -5639,7 +5805,7 @@ $(function(){
 	</div><!--end pl-js-pattern-example-->
 
 	<script type="text/json" id="pl-pattern-data-organisms-app-topbar" class="pl-js-pattern-data">
-	{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"organisms-drawer-temporary","lineagePath":"../../patterns/organisms-navigation-drawer-temporary/organisms-navigation-drawer-temporary.rendered.html"},{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"atoms-avatar","lineagePath":"../../patterns/atoms-global-avatar/atoms-global-avatar.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"lineage":[{"lineagePattern":"organisms-drawer-temporary","lineagePath":"../../patterns/organisms-navigation-drawer-temporary/organisms-navigation-drawer-temporary.rendered.html"},{"lineagePattern":"molecules-app-bar-action","lineagePath":"../../patterns/molecules-navigation-app-bar-action/molecules-navigation-app-bar-action.rendered.html"},{"lineagePattern":"atoms-avatar","lineagePath":"../../patterns/atoms-global-avatar/atoms-global-avatar.rendered.html"},{"lineagePattern":"organisms-app-settings","lineagePath":"../../patterns/organisms-global-app-settings/organisms-global-app-settings.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-columns-to-tabs","lineagePath":"../../patterns/templates-columns-to-tabs/templates-columns-to-tabs.rendered.html"},{"lineagePattern":"templates-page","lineagePath":"../../patterns/templates-page/templates-page.rendered.html"}],"lineageR":[{"lineagePattern":"templates-columns-to-tabs","lineagePath":"../../patterns/templates-columns-to-tabs/templates-columns-to-tabs.rendered.html"},{"lineagePattern":"templates-page","lineagePath":"../../patterns/templates-page/templates-page.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"global"},"patternExtension":"mustache","patternName":"App Topbar","patternPartial":"organisms-app-topbar","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+	
 	</script>
 
 </div><!--end pl-c-pattern--><div id="organisms-page-top-bar" class="pl-c-pattern">
@@ -9523,20 +9689,20 @@ document.querySelectorAll('.mdc-tab').forEach(function(el){
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1534453751382">
+<script id="pl-js-polyfill-insert-1534464104771">
   (function() {
     if (self != top) {
-      var cb = '1534453751382';
+      var cb = '1534464104771';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
   })();
 </script>
 
-<script id="pl-js-insert-1534453751382">
+<script id="pl-js-insert-1534464104771">
   (function() {
     if (self != top) {
-      var cb = '1534453751382';
+      var cb = '1534464104771';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

@@ -1,0 +1,130 @@
+<div class="mdc-card demo-card flex__item card-3 mdc-typography mdc-card-collapsible mdc-card-collapsible--open">
+    <div class="mdc-card__media demo-card__media">
+        <img src="http://placeimg.com/175/100/tech" alt="{{img.rectangle.alt}}" />
+    </div>
+    <div class="demo-card__primary mdc-list mdc-list--two-line mdc-list--avatar-list">
+         <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic" aria-hidden="true">
+            {{> atoms-avatar }}
+            </span>
+            <div class="mdc-list-item__text">
+                <h3 class="mdc-list-item__primary-text">John Doen</h3>
+                <span class="mdc-list-item__secondary-text">Work Contact</span>
+            </div>
+            <a class="mdc-list-item__meta material-icons" aria-hidden="true">expand_more</a>
+        </li>
+    </div>
+    <div class="demo-card__secondary mdc-typography--body2 mdc-list mdc-list--two-line mdc-list--avatar-list mdc-list-group">
+         <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">phone</span>
+            <div class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">(555) 555-5555</span>
+                <span class="mdc-list-item__secondary-text">Mobile</span>
+            </div>
+        </li>
+        <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">mail</span>
+            
+            <div class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">johndoe@gmail.com</span>
+                <span class="mdc-list-item__secondary-text">Work</span>
+            </div>
+        </li>
+        
+    </div>
+
+    <!--
+    <footer class="mdc-card__actions">
+        <div class="mdc-card__action-buttons">
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
+        </div>
+    </footer>
+    -->
+</div>
+
+<style>
+
+.mdc-card-collapsible {
+
+}
+
+.mdc-card-collapsible--open{
+
+}
+.demo-card .mdc-list{
+    padding: 0;
+}
+
+.demo-card .img-avatar{
+    max-height: 40px;
+}
+
+.demo-card__media img {
+    width: 100%;
+}
+</style>
+
+<script>
+$(function() {
+   $("[data-toggle='collapse']").bind("click", function(e) {
+
+      let target = $(this).attr('data-target');
+      let isOpen = !$(target).hasClass('mdc-card-collapsible--open')
+      
+      console.log('toggle', target, isOpen);
+      $(target).toggleClass('mdc-card-collapsible--open')
+      $(target).find('.mdc-card__toggle').text(isOpen ? 'expand_less': 'expand_more')
+      
+   });
+});
+
+</script>
+
+
+<div id="card1" class="mdc-card demo-card flex__item card-3 mdc-typography mdc-card-collapsible mdc-card-collapsible--">
+   <!-- 
+   <div class="mdc-card__media demo-card__media">
+        <img src="http://placeimg.com/175/200/tech/3" alt="Rectangle" />
+    </div>
+   -->
+    <div class="demo-card__primary mdc-list mdc-list--two-line mdc-list--avatar-list">
+         <li class="mdc-list-item" data-toggle="collapse" data-target="#card1">
+            <span class="mdc-list-item__graphic" aria-hidden="true">
+            <img src="//s3-us-west-2.amazonaws.com&#x2F;s.cdpn.io&#x2F;49212&#x2F;profile&#x2F;profile-80.jpg?4" alt="" class="img-avatar"/>
+
+            </span>
+            <div class="mdc-list-item__text">
+                <h3 class="mdc-list-item__primary-text">Jonnie Spratley</h3>
+                <span class="mdc-list-item__secondary-text">Work Contact</span>
+            </div> 
+            <a class="mdc-list-item__meta mdc-card__toggle material-icons" aria-hidden="true">expand_more</a>
+        </li>
+    </div>
+    <div class="mdc-card__secondary mdc-typography--body2 mdc-list mdc-list--two-line mdc-list--avatar-list mdc-list-group">
+         <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">phone</span>
+            <div class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">(555) 555-5555</span>
+                <span class="mdc-list-item__secondary-text">Mobile</span>
+            </div>
+        </li>
+        <li class="mdc-list-item">
+            <span class="mdc-list-item__graphic material-icons" aria-hidden="true">mail</span>
+            
+            <div class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">johndoe@gmail.com</span>
+                <span class="mdc-list-item__secondary-text">Work</span>
+            </div>
+        </li>
+        
+    </div>
+    <!--
+    <footer class="mdc-card__actions">
+        <div class="mdc-card__action-buttons">
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
+            <button class="mdc-button mdc-card__action mdc-card__action--button">Action</button>
+        </div>
+    </footer>
+    -->
+</div>
