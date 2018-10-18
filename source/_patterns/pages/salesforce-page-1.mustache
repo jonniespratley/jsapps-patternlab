@@ -1,99 +1,11 @@
-
-
-
-
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.6.2/styles/salesforce-lightning-design-system.min.css">
 {{> atoms-salesforce-css }}
 
 <!-- Global Header -->
-<header class="slds-global-header_container">
-    <div class="slds-global-header">
-        <div class="slds-global-header__item">
-            <div class="slds-global-header__logo"></div>
-        </div>
-        <!--
-        <div class="slds-global-header__item">Item</div>
-        <div class="slds-global-header__item slds-global-header__item_search">...</div>
-        <div class="slds-global-header__item">...</div>
-        -->
-    </div>
-</header>
-
-
-
-
-
+{{>organisms-slds-global-header}}
 
 <!-- Global Nav -->
-<div class="slds-context-bar slds-context-bar_tabs">
-    <div class="slds-context-bar__primary">
-        <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
-            <div class="slds-context-bar__icon-action">
-                <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Description of the icon when needed">
-                    <span class="slds-icon-waffle">
-                        <span class="slds-r1"></span>
-                        <span class="slds-r2"></span>
-                        <span class="slds-r3"></span>
-                        <span class="slds-r4"></span>
-                        <span class="slds-r5"></span>
-                        <span class="slds-r6"></span>
-                        <span class="slds-r7"></span>
-                        <span class="slds-r8"></span>
-                        <span class="slds-r9"></span>
-                    </span>
-                    <span class="slds-assistive-text">Open App Launcher</span>
-                </button>
-            </div>
-            <span class="slds-context-bar__label-action slds-context-bar__app-name">
-                <span class="slds-truncate" title="App Name">Console</span>
-            </span>
-        </div>
-        <div class="slds-context-bar__item slds-context-bar__object-switcher slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click">
-            <a href="javascript:void(0);" class="slds-context-bar__label-action">
-                <span class="slds-truncate" title="Object">Data Centers</span>
-            </a>
-            <div class="slds-context-bar__icon-action">
-                <button class="slds-button slds-button_icon slds-button_icon-container slds-button_icon-x-small"
-                    aria-haspopup="true" title="Open object switcher menu">
-                    <svg class="slds-button__icon" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/styleguide/bower_components/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#chevrondown" />
-                    </svg>
-                    <span class="slds-assistive-text">Open Data Center switcher menu</span>
-                </button>
-            </div>
-            <div class="slds-dropdown slds-dropdown_right">
-                <ul class="slds-dropdown__list" role="menu">
-                    <li class="slds-dropdown__item" role="presentation">
-                        <a href="javascript:void(0);" role="menuitem" tabindex="-1">
-                            <span class="slds-truncate" title="[object Object],Accounts">
-                                <svg class="slds-icon slds-icon_small slds-icon-standard-account slds-m-right_small"
-                                    aria-hidden="true">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/styleguide/bower_components/salesforce-lightning-design-system/assets/icons/standard-sprite/svg/symbols.svg#account" />
-                                </svg>Accounts</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="slds-context-bar__item slds-dropdown-trigger slds-dropdown-trigger_click">
-            <div class="slds-context-bar__icon-action">
-                <button class="slds-button slds-button_icon slds-button_icon-container slds-button_icon-small" title="Open a New Tab">
-                    <svg class="slds-button__icon" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/styleguide/bower_components/salesforce-lightning-design-system/assets/icons/utility-sprite/svg/symbols.svg#add" />
-                    </svg>
-                    <span class="slds-assistive-text">Open a New Tab</span>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="slds-context-bar__secondary">
-        <div class="slds-context-bar__vertical-divider"></div>
-        <ul class="slds-grid" role="tablist">
-        </ul>
-    </div>
-</div>
+{{>organisms-slds-global-nav}}
 
 
 
@@ -101,61 +13,20 @@
 
 <div class="content">
 
-
-
+    <!--  Data Center Side Nav -->
+    {{>organisms-slds-vertical-nav}}
 
     <!--  Data Center Map -->
-    <h1>Data Center Map</h1>
-
     <div class="map-container u-p">
-    {{>organisms-data-map-bubble}}
+    {{>organisms-data-map-world}}
     </div>
-
-
-
-
-    <style>
-    .map-container{
-        background: #eee;
-        min-height: 350px;
-    }
-    </style>
-
 
 
 
 
     <!--  Data Center - Nodes Context -->
-    <h1>Data Center - Context View</h1>
-    <div class="slds-page-header slds-page-header_record-home">
-        <div class="slds-page-header__row">
-            <div class="slds-page-header__col-title">
-                <div class="slds-media">
-                    <div class="slds-media__figure">
-                        <span class="slds-icon_container slds-icon-standard-opportunity">
-                            <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="slds-media__body">
-                        <div class="slds-page-header__name">
-                            <div class="slds-page-header__name-title">
-                                <h1 class="flex flex--col">
-                                    <span>Data Center</span>
-                                    <span class="slds-page-header__title slds-truncate" title="nyc-dc-1">Name</span>
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slds-page-header__col-actions">
-
-            </div>
-        </div>
-
-    </div>
+     {{> organisms-slds-page-header-base }}
+    
     <br>
     {{> organisms-slds-path(title: "node-1") }}
 
@@ -178,7 +49,7 @@
 
     <br>
 
-    <h1>Data Center Details View</h1>
+    
 
 
 
@@ -212,39 +83,15 @@
 
     <p>This is content 1</p>
 
-                
-                
-                
-                
-        
+              
             </div>
             <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
                 <p>This is content 2</p>
-                
-                </div>
+            </div>
 
 
             <div id="tab-default-3" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="tab-default-3__item">
-
-
-
-
-                <div class="u-p">
-                    <div class="slds-card-wrapper">
-                        <header>
-                            <h2 class="slds-text-heading_medium">Pod-1</h2>
-                        </header>
-                        <div class="slds-grid slds-gutters">
-                            {{#listItems.four}}
-                            <div class="slds-col slds-size_1-of-4">
-                                {{> organisms-slds-card-key-val(title: "node") }}
-                            </div>
-                            {{/listItems.four}}
-                        </div>
-                    </div>
-                </div>
-
-
+            {{>organisms-slds-pods}}
 
             </div>
         </div>
@@ -256,7 +103,6 @@
 
 
 
-{{> organisms-slds-panel(title: "node-1") }}
 
 <style>
     @font-face {
@@ -319,7 +165,9 @@ tabs.addEventListener('click', function(e){
     if(targetTab){
         console.log('change tab', e, targetTabName);
         
-        targetTab.classList.toggle('slds-show slds-hide');
+        document.querySelector('.slds-show').classList.remove('slds-show');
+        document.getElementById(targetTabName).classList.add('slds-show')
+        document.getElementById(targetTabName).classList.remove('slds-hide')
     }
     
     

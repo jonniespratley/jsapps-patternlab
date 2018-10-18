@@ -1,0 +1,84 @@
+<div id="container1" style="position: relative; width: 80%; max-height: 550px;"></div>
+
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.all.min.js'></script>
+
+  
+<script>
+//basic map config with custom fills, mercator projection
+var map = new Datamap({
+   scope: "world",
+   element: document.getElementById("container1"),
+   projection: "mercator",
+   height: 500,
+   fills: {
+      HIGH: "#afafaf",
+      LOW: "#123456",
+      MEDIUM: "blue",
+      UNKNOWN: "rgb(0,0,0)",
+      SUCCESS: "green",
+      ERROR: "red"
+      //defaultFill: "green",
+
+      //lt50: "rgba(0,244,244,0.9)",
+      //gt50: "red"
+   },
+
+   data: {
+      USA: { fillKey: "lt50" },
+      RUS: { fillKey: "lt50" },
+      CAN: { fillKey: "lt50" },
+      BRA: { fillKey: "gt50" },
+      ARG: { fillKey: "gt50" },
+      COL: { fillKey: "gt50" },
+      AUS: { fillKey: "gt50" },
+      ZAF: { fillKey: "gt50" },
+      MAD: { fillKey: "gt50" } 
+      } 
+      });
+
+
+
+
+//bubbles, custom popup on hover template
+map.bubbles(
+[
+    {
+    name: "data-center-1",
+    latitude: 40.63,
+      longitude: 73.77, 
+    radius: 20,
+    fillKey: "SUCCESS" 
+   },
+    {
+    name: "data-center-n",
+    latitude: 21.32,
+    longitude: 5.32,
+    radius: 30,
+    fillKey: "SUCCESS" 
+   },
+
+{
+   name: "Chilly",
+   latitude: -25.32,
+   longitude: 120.32,
+   radius: 18,
+   fillKey: "ERROR" 
+},
+
+{
+   name: "Hot again",
+   latitude: 21.32,
+   longitude: -84.32,
+   radius: 8,
+   fillKey: "gt50" }],
+
+
+{
+   popupTemplate: function popupTemplate(geo, data) {
+      return "<div class='hoverinfo'>It is " + data.name + "</div>";
+   } });
+
+</script>
